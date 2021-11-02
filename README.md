@@ -6,3 +6,7 @@ how to run
 
 how to stop
 - deactivate
+
+
+- django allauth for authentication (login etc.)
+- bootstrap as css framework
