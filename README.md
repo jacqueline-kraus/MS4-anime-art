@@ -13,3 +13,9 @@ how to stop
 
 fonts: font-family: 'Cinzel', serif;
 font-family: 'Roboto', sans-serif;
+
+heroimage:
+https://pixabay.com/illustrations/naruto-eyes-anime-cartoon-japan-5823848/
+Image by <a href="https://pixabay.com/users/haticeerol-14967706/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5823848">Hatice EROL</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5823848">Pixabay</a>
+
+Hover effect copied from Hover.css (https://github.com/IanLunn/Hover/blob/master/css/hover.css)
