@@ -10,3 +10,6 @@ how to stop
 
 - django allauth for authentication (login etc.)
 - bootstrap 5.1 as css framework
+
+fonts: font-family: 'Cinzel', serif;
+font-family: 'Roboto', sans-serif;
