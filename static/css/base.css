@@ -42,9 +42,10 @@
 
 .heroimage {
     background-image: url('/static/heroimage.png');
-    background-size: contain;
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
-    height: 500px;
+    height: 350px;
     width: 100%;
     margin-top: 5rem;
 }
@@ -65,4 +66,15 @@ p {
 .home-img {
     width: 400px;
     height: 400px;
+}
+
+.btn-lg {
+    padding: .9rem 5rem;
+    font-size: 2rem;
+    border-radius: .3rem;
+}
+
+.home-btn-margin {
+    margin-top: 3rem!important;
+    margin-bottom: 6rem!important;
 }
