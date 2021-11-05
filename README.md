@@ -9,4 +9,4 @@ how to stop
 
 
 - django allauth for authentication (login etc.)
-- bootstrap as css framework
+- bootstrap 5.1 as css framework

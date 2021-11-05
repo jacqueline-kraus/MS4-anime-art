@@ -19,7 +19,19 @@
     <title>Anime Art {% block extra_title %}{% endblock %}</title>
   </head>
   <body>
-    <header></header>
+    <header>
+        <div class="container-fluid fixed-top">
+            <div class="row align-items-start">
+                <div class="col search">
+                </div>
+                <div class="col logo">
+                </div>
+                <div class="col main-nav">
+                    {% include 'includes/nav.html' %}
+                </div>
+            </div>
+        </div>
+    </header>
 
     {% block page_header%}
     {% endblock %}
