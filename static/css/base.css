@@ -8,6 +8,14 @@
     text-shadow: 0.5px 0.5px 0.5px black;
 }
 
+a {
+    color: #000;
+}
+
+a:hover {
+    color: #000;
+}
+
 .nav-link {
     font-family: 'Cinzel', serif;
     color: #000;
@@ -17,7 +25,10 @@
 
 .nav-link:hover {
     color: #000;
-    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.9);
+}
+
+.nav-link:focus {
+    color: #000;
 }
 
 /* Copied from Hover.css (https://github.com/IanLunn/Hover/blob/master/css/hover.css) */
