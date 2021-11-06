@@ -48,6 +48,13 @@ a:hover {
     transform: scale(1.1);
   }
 
+  /* buttons */
+
+  .btn {
+      font-family: 'Cinzel', serif;
+      font-weight: 500;
+  }
+
 /* page header */
 
 .heroimage {
@@ -78,13 +85,20 @@ p {
     height: 400px;
 }
 
+.first-home-cta {
+    background-color: #000;
+    padding-bottom: 2rem;
+    margin-bottom: 6rem;
+}
+
+.second-home-cta {
+    margin-top: 3rem!important;
+    margin-bottom: 6rem!important;
+}
+
 .btn-lg {
     padding: .9rem 5rem;
     font-size: 2rem;
     border-radius: .3rem;
 }
 
-.home-btn-margin {
-    margin-top: 3rem!important;
-    margin-bottom: 6rem!important;
-}
