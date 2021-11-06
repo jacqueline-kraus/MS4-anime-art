@@ -9,11 +9,10 @@
 }
 
 .nav-link {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Cinzel', serif;
     color: #000;
     font-weight: 300;
-    padding-right: 2rem;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.9);
+    padding-right: 1rem;
 }
 
 .nav-link:hover {
