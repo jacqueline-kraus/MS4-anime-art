@@ -16,7 +16,11 @@ a:hover {
     color: #000;
 }
 
-.nav-link {
+.nav {
+    flex-wrap: unset;
+}
+
+.nav-link, .dropdown-item {
     font-family: 'Cinzel', serif;
     color: #000;
     font-weight: 300;
