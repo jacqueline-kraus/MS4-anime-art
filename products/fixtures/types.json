@@ -1,0 +1,18 @@
+[
+   {
+      "pk":1,
+      "model":"products.type",
+      "fields":{
+         "name":"classic_drawing",
+         "friendly_name":"Classic Drawing"
+      }
+   },
+   {
+      "pk":2,
+      "model":"products.type",
+      "fields":{
+         "name":"digital_drawing",
+         "friendly_name":"Digital Drawing"
+      }
+   }
+]
