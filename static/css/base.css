@@ -116,5 +116,10 @@ p {
 
 .card, .card-img-top {
     border: none;
+    /* Help from https://stackoverflow.com/questions/39031224/how-to-center-cards-in-bootstrap-4 */
+    margin: 0 auto;
+    float: none;
+    margin-bottom: 10px;
+
 }
 

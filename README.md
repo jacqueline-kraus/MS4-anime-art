@@ -21,3 +21,7 @@ Image by <a href="https://pixabay.com/users/haticeerol-14967706/?utm_source=link
 Hover effect copied from Hover.css (https://github.com/IanLunn/Hover/blob/master/css/hover.css)
 
 Navbar and header image needs to be mobile adjusted
+
+
+https://stackoverflow.com/questions/39031224/how-to-center-cards-in-bootstrap-4
+--> to align the product cards in center
