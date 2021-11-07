@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-xghefkvt8x!w1m(pa$y6j41tz*b$h+b(!^*_(9#1c9k5$279g+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['anime-art.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['anime-art.herokuapp.com', 'localhost', '127.0.0.1']
 
 
 # Application definition
@@ -156,7 +156,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles/')
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
