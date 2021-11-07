@@ -106,3 +106,15 @@ p {
     border-radius: .3rem;
 }
 
+/* page_header */
+
+.page-header-margin {
+    margin-top: 8rem;
+}
+
+/* products */
+
+.card, .card-img-top {
+    border: none;
+}
+
