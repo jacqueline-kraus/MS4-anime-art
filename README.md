@@ -25,3 +25,6 @@ Navbar and header image needs to be mobile adjusted
 
 https://stackoverflow.com/questions/39031224/how-to-center-cards-in-bootstrap-4
 --> to align the product cards in center
+
+
+For later: Order product list page by showing digital type first
