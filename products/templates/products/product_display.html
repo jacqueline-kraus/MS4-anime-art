@@ -15,23 +15,39 @@
     <div class="container">
       <div class="row">
         <div class="col">
-          <h6>sorting</h6>
+          <a class="btn btn-dark" href="{% url 'products' %}" role="button">
+            <i class="fas fa-long-arrow-alt-left"></i> Back To Overview
+          </a>
         </div>
       </div>
+    </div>
 
-      <div class="row">
-        {% for product in products %}
-          <div class="col-sm-6 text-center my-5">
-            <!-- From Bootstrap -->
-            <div class="card h-50 w-50">
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-6">
                 <img src="/static/{{ product.image }}" class="card-img-top" alt="{{product.name}}">
-              <div class="card-body">
-                <h5 class="card-title">{{ product.name}}</h5>
-                <p class="card-text">{{ product.price}}€</p>
-              </div>
             </div>
-          </div>
-        {% endfor %}
+            <div class="col-6 text-center my-5">
+                <div class="row">
+                    <h5>{{ product.name}}</h5>
+                </div>
+                <div class="row">
+                    <p>{{ product.price}}€</p>
+                </div>
+                <div class="row">
+                    <p>{{ product.description}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container">
+      <div class="row">
+        <div class="col text-center mt-5">
+          <a class="btn btn-dark" href="{% url 'products' %}" role="button">
+            <i class="fas fa-long-arrow-alt-left"></i> Back To Overview
+          </a>
+        </div>
       </div>
     </div>
 
