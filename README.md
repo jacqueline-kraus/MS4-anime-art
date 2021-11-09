@@ -30,3 +30,5 @@ https://stackoverflow.com/questions/39031224/how-to-center-cards-in-bootstrap-4
 For later: Order product list page by showing digital type first
 
 bootstrap messages and understanding how to use it from: https://www.ordinarycoders.com/blog/article/django-messages-framework
+
+Leave out sorting for now, might add later when time left.
