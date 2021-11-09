@@ -1,12 +1,5 @@
 # MS4-anime-art
 
-# [MS3-TravelCrowd](http://travelcrowd.herokuapp.com/home)
-
-TravelCrowd is a community platform to share the most amazing travel deals! "Sharing is caring" also (or especially?) counts for travelling! With hundreds of tour operators, an infinite amount of possibilities and for every possible price it is sometimes very hard to find the right trip. Frequent travellers and travel deal hunters know, that travelling does not have to be expensive and that everybody is able to see the world!
-This platform is supposed to help out: A user simply has to register and can view travel deals that other members published. A user can also create, update and delete own deals.
-
-![screenshot_showcase](readme-files/readme-images/showcase.png)
-
 
 # Table of contents
 - [UX](#ux)
