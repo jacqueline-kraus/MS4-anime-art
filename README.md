@@ -32,3 +32,4 @@ For later: Order product list page by showing digital type first
 bootstrap messages and understanding how to use it from: https://www.ordinarycoders.com/blog/article/django-messages-framework
 
 Leave out sorting for now, might add later when time left.
+Highlight active the button on product page that is active.
