@@ -7,8 +7,8 @@
           Products
       </a>
       <div class="dropdown-menu border-0" aria-labelledby="user-options">
-            <a href="#" class="dropdown-item">Classic Drawings</a>
-            <a href="#" class="dropdown-item">Digital Drawings</a>
+            <a href="{% url 'products' %}?type=classic_drawing" class="dropdown-item">Classic Drawings</a>
+            <a href="{% url 'products' %}}?type=digital_drawing" class="dropdown-item">Digital Drawings</a>
             <a href="{% url 'products' %}" class="dropdown-item">All Products</a>
       </div>
     </li>
