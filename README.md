@@ -204,3 +204,4 @@ how to stop
 - Add delivery fees
 - Change home to "about us" and show on home not the whole text
 - Add information like faq and delivery cost to about us page
+- footer is now fixed to bottom but should be sticky to bottom -> fix that later

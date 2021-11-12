@@ -14,17 +14,17 @@
 {% block content %}
   <div class="container">
     <div class="row">
-      <div class="col">
+      <div class="col my-5">
         {% if cart_items %}
           <div class="table-responsive">
             <table class="table table-sm table-borderless">
               <thead>
                 <tr>
                   <th scope="col">Product Info</th>
-                  <th scope="col"></th>
                   <th scope="col">Price</th>
                   <th scope="col">Qty</th>
                   <th scope="col">Subtotal</th>
+                  <th scope="col"></th>
                 </tr>
               </thead>
               {% for item in bag_items %}
@@ -49,8 +49,8 @@
               {% endfor %}
               <tr>
                 <td colspan="5" class="pt-5 text-right">
-                  <h6><strong>Cart Total: {{ total|floatformat:2 }}€</strong></h6>
-                  <h6>Delivery: {{ delivery|floatformat:2 }}</h6>
+                  <p><strong>Cart Total: {{ total|floatformat:2 }}€</strong></p>
+                  <p>Delivery: {{ delivery|floatformat:2 }}€</p>
                   <h4 class="mt-4"><strong>Grand Total: {{ grand_total|floatformat:2}}€</strong></h4>
                 </td>
               </tr>
@@ -69,6 +69,7 @@
         </div>
         {% else %}
           <p>Your shopping cart is empty. The products you add, will be shown here.</p>
+          <div></div>
           {% include 'includes/btn-product-overview.html' %}
         {% endif %}
       </div>
