@@ -44,7 +44,6 @@
                 </div>
                 <div class="row">
                   <div class="col">
-                    <!-- Form from Boutique Ado Project with adjustments (https://github.com/Code-Institute-Solutions/boutique_ado_v1/tree/21e3b111100f5c8daa4bc6e9565bde09980b33d8)-->
                     <form class="form" action="{% url 'add_to_cart' product.id %}" method="POST">
                       {% csrf_token %}
                       <div class="form-row">
