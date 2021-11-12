@@ -201,3 +201,6 @@ how to stop
 - Leave out sorting for now, might add later when time left.
 - Highlight active the button on product page that is active.
 - add favicon
+- Add delivery fees
+- Change home to "about us" and show on home not the whole text
+- Add information like faq and delivery cost to about us page
