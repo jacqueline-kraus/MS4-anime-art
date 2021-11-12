@@ -59,7 +59,7 @@
 - django allauth for authentication (login etc.)
 
 ### Product List Page
-## Filter
+#### Filter
 
 ### Product Display Page
 
