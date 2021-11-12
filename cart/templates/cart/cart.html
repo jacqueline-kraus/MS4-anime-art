@@ -21,36 +21,40 @@
               <thead>
                 <tr>
                   <th scope="col">Product Info</th>
+                  <th scope="col"></th>
                   <th scope="col">Price</th>
-                  <th scope="col">Qty</th>
+                  <th scope="col">Qantity</th>
                   <th scope="col">Subtotal</th>
                   <th scope="col"></th>
                 </tr>
               </thead>
-              {% for item in bag_items %}
+              {% for item in cart_items %}
                   <tr>
-                      <td class="p-3 w-25">
-                          <img class="img-fluid rounded" src="{{ item.product.image.url }}">
+                      <td class="py-3">
+                          <img class="" src="/static/{{ product.image }}">
                       </td>
                       <td class="py-3">
                           <p class="my-0"><strong>{{ item.product.name }}</strong></p>
                           <p class="my-0 small text-muted">SKU: {{ item.product.sku|upper }}</p>
                       </td>
                       <td class="py-3">
-                          <p class="my-0">${{ item.product.price }}</p>
+                          <p class="my-0">{{ item.product.price }}€</p>
                       </td>
                       <td class="py-3 w-25">
                           <p class="my-0">{{ item.quantity }}</p>
                       </td>
                       <td class="py-3">
-                          <p class="my-0">${{ item.product.price }}</p>
+                          <p class="my-0">{{ item.product.price }}€</p>
+                      </td>
+                      <td class="py-3">
+                          <a href="" class="btn btn-outline-dark">Delete</a>
                       </td>
                   </tr>
               {% endfor %}
               <tr>
                 <td colspan="5" class="pt-5 text-right">
                   <p><strong>Cart Total: {{ total|floatformat:2 }}€</strong></p>
-                  <p>Delivery: {{ delivery|floatformat:2 }}€</p>
+                  <p>Delivery cost: {{ delivery|floatformat:2 }}€</p>
                   <h4 class="mt-4"><strong>Grand Total: {{ grand_total|floatformat:2}}€</strong></h4>
                 </td>
               </tr>
