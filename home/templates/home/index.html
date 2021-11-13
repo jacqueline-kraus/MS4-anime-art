@@ -18,13 +18,33 @@
             </div>
         </div>
     </div>
-    
-    
-    <!-- CTA 2 -->
-    <div class="container-fluid second-home-cta">
-        <div class="row justify-content-center">
-            <div class="col text-center">
-                <a href="{% url 'products' %}" class="btn btn-lg btn-dark">Shop now</a>
+    <!-- Home text -->
+    <div class="container">
+        <div class="row">
+            <div class="col mx-5">
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+            </div>
+        </div>
+    </div>
+    <!-- Product Type Buttons -->
+    <div class="container">
+        <div class="row">
+            <div class="col m-5 text-center">
+                <a href="{% url 'products' %}" class="btn btn-lg btn-outline-secondary">All</a>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col m-5 text-center">
+                <a href="{% url 'products' %}?type=classic_drawing" class="btn btn-lg btn-outline-secondary">Classic Drawings</a>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col m-5 text-center">
+                <a href="{% url 'products' %}?type=digital_drawing" class="btn btn-lg btn-outline-secondary">Digital Drawings</a>
             </div>
         </div>
     </div>
