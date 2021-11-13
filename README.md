@@ -201,7 +201,17 @@ how to stop
 - Leave out sorting for now, might add later when time left.
 - Highlight active the button on product page that is active.
 - add favicon
-- Add delivery fees
+- Add delivery fees to faq
 - Change home to "about us" and show on home not the whole text
 - Add information like faq and delivery cost to about us page
-- footer is now fixed to bottom but should be sticky to bottom -> fix that later
+- footer is not fixed --> check how to fix for when cart is empty or how it is on XL devices
+- upload wireframes
+- rename button "back to overview"
+- find solution with image problem!!
+- fix navbar alignment -> when there is something in the cart, it breaks in two rows
+- django pagination (too many products on one page)
+- checkout app / stripe payment
+- profile/account page
+- admin
+- show total cost not always, only by hovering over.
+- write down a simple marketing strategy, why some things are like they are
