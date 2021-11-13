@@ -14,7 +14,7 @@
     <div class="container-fluid first-home-cta">
         <div class="row justify-content-center">
             <div class="col text-center">
-                <a href="{% url 'products' %}" class="btn btn-lg btn-light">Shop now</a>
+                <h1 class="txt-white">Welcome to anime Art</h1>
             </div>
         </div>
     </div>
@@ -29,22 +29,22 @@
     <!-- Product Type Buttons -->
     <div class="container">
         <div class="row">
-            <div class="col m-5 text-center">
-                <a href="{% url 'products' %}" class="btn btn-lg btn-outline-secondary">All</a>
+            <div class="col text-center">
+                <a href="{% url 'products' %}" class="btn btn-lg btn-dark home-btn m-5">All Products</a>
             </div>
         </div>
     </div>
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
-            <div class="col m-5 text-center">
-                <a href="{% url 'products' %}?type=classic_drawing" class="btn btn-lg btn-outline-secondary">Classic Drawings</a>
+            <div class="col text-center classic-drawing">
+                <a href="{% url 'products' %}?type=classic_drawing" class="btn btn-lg btn-dark home-btn home-btn-m">Classic Drawings</a>
             </div>
         </div>
     </div>
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
-            <div class="col m-5 text-center">
-                <a href="{% url 'products' %}?type=digital_drawing" class="btn btn-lg btn-outline-secondary">Digital Drawings</a>
+            <div class="col text-center digital-drawing">
+                <a href="{% url 'products' %}?type=digital_drawing" class="btn btn-lg btn-dark home-btn home-btn-m">Digital Drawings</a>
             </div>
         </div>
     </div>

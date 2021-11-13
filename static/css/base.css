@@ -98,12 +98,47 @@ p {
 .second-home-cta {
     margin-top: 3rem!important;
     margin-bottom: 6rem!important;
+
+}
+.txt-white {
+    color: #fff;
 }
 
 .btn-lg {
     padding: .9rem 5rem;
     font-size: 2rem;
     border-radius: .3rem;
+}
+
+.classic-drawing {
+    background-image: url('/static/classic_sukunaitadori.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 350px;
+    width: 100%;
+    margin-top: 0.5rem;
+}
+
+.digital-drawing {
+    background-image: url('/static/digital_kakshihatake.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 350px;
+    width: 100%;
+    margin-top: 0.5rem;
+}
+
+.home-btn {
+    background-color: #fff;
+    color: #000;
+    border-color: #000;
+    border-width: 3px;
+}
+
+.home-btn-m {
+    margin-top: 150px;
 }
 
 /* page_header */
