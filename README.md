@@ -215,3 +215,4 @@ how to stop
 - admin
 - show total cost not always, only by hovering over.
 - write down a simple marketing strategy, why some things are like they are
+- product list
