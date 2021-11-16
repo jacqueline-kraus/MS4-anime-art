@@ -22,18 +22,32 @@ function updateButtons() {
 
 $('.increment-qty').click(function(e) {
     e.preventDefault();
+    var itemId = $(this).data('item_id');
     var closestInput = $(this).closest('.input-group').find('.qty_input')[0];
     var currentValue = parseInt($(closestInput).val());
-    $(closestInput).val(currentValue + 1);
+    var newQuantity = currentValue + 1;
+    $(closestInput).val(newQuantity);
     updateButtons();
+    updateBackendQuantity(itemId, newQuantity);
 });
 
 $('.decrement-qty').click(function(e) {
     e.preventDefault();
+    var itemId = $(this).data('item_id');
+    console.log(itemId);
     var closestInput = $(this).closest('.input-group').find('.qty_input')[0];
     var currentValue = parseInt($(closestInput).val());
-    $(closestInput).val(currentValue - 1);
+    var newQuantity = currentValue - 1;
+    $(closestInput).val(newQuantity);
     updateButtons();
+    updateBackendQuantity(itemId, newQuantity);
 });
+
+function updateBackendQuantity(itemId, quantity) {
+    var csrf = $('input[name="csrfmiddlewaretoken"]').val();
+    var data = {quantity: quantity, csrfmiddlewaretoken: csrf};
+    // https://api.jquery.com/jquery.post/
+    $.post('/cart/update/' + itemId, data);
+}
 
 updateButtons();
