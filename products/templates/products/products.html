@@ -14,9 +14,16 @@
 {% block content %}
   <div class="container-fluid">
     <div class="row">
-      <div class="col text-center mt-3">
+      <div class="col-12 text-center mt-3">
         <a href="{% url 'products' %}" class="btn btn-outline-secondary">All</a>
+        </div>
+      <div class="col-12 text-center mt-3">
+        
         <a href="{% url 'products' %}?type=classic_drawing" class="btn btn-outline-secondary">Classic Drawings</a>
+        
+      </div>
+      <div class="col-12 text-center mt-3">
+       
         <a href="{% url 'products' %}?type=digital_drawing" class="btn btn-outline-secondary">Digital Drawings</a>
       </div>
     </div>
