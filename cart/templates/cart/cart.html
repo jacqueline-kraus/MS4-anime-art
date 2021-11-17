@@ -22,7 +22,6 @@
                 <tr>
                   <th scope="col">Product Info</th>
                   <th scope="col"></th>
-                  <th scope="col">Price</th>
                   <th scope="col">Qantity</th>
                   <th scope="col">Subtotal</th>
                   <th scope="col"></th>
@@ -31,13 +30,11 @@
               {% for item in cart_items %}
                   <tr>
                       <td class="py-3">
-                          <img class="" src="/static/{{ product.image }}">
+                          <img class="img-thumbnail" src="/static/{{ product.image }}">
                       </td>
                       <td class="py-3">
                           <p class="my-0"><strong>{{ item.product.name }}</strong></p>
                           <p class="my-0 small text-muted">SKU: {{ item.product.sku|upper }}</p>
-                      </td>
-                      <td class="py-3">
                           <p class="my-0">{{ item.product.price }}€</p>
                       </td>
                       <td class="py-3">

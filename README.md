@@ -215,4 +215,9 @@ how to stop
 - admin
 - show total cost not always, only by hovering over.
 - write down a simple marketing strategy, why some things are like they are
-- product list
+
+
+- evtl bug: look at the buttons logic before adding to cart. 
+
+- add subtotal
+update subtotal when adjusting the quantity in the cart.
