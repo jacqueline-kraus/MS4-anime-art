@@ -17,7 +17,8 @@ def cart_contents(request):
         cart_items.append({
             'item_id': item_id,
             'quantity': quantity,
-            'product':  product, 
+            'product':  product,
+            'subtotal': product.price * quantity,
         })
     
     delivery = 3.99

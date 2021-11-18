@@ -221,3 +221,6 @@ how to stop
 
 - add subtotal
 update subtotal when adjusting the quantity in the cart.
+add subtotal to checkout
+
+crispy forms in checkout
