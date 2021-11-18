@@ -196,31 +196,44 @@ how to stop
 
 # NOTES
 
-- Navbar and header image needs to be mobile adjusted
-- For later: Order product list page by showing digital type first
-- Leave out sorting for now, might add later when time left.
-- Highlight active the button on product page that is active.
+## Todos
+### Small styling/content stuff:
 - add favicon
 - Add delivery fees to faq
-- Change home to "about us" and show on home not the whole text
-- Add information like faq and delivery cost to about us page
+- Highlight active the button on product page that is active
 - footer is not fixed --> check how to fix for when cart is empty or how it is on XL devices
-- upload wireframes
 - rename button "back to overview"
-- find solution with image problem!!
+- Order product list page by showing digital type first
+- show total cost not always, only by hovering over
 - fix navbar alignment -> when there is something in the cart, it breaks in two rows
+
+### Responsive adjustments
+- Navbar and header image needs to be mobile adjusted
+
+### Features missing
 - django pagination (too many products on one page)
 - checkout app / stripe payment
 - profile/account page
+- crispy forms in checkout
 - admin
-- show total cost not always, only by hovering over.
+- Leave out sorting for now, might add later when time left
+- Messages
+
+### Other
+- Finish Readme
 - write down a simple marketing strategy, why some things are like they are
 
+### Bugs / Problems that NEED to be solved
+- find solution with image problem!! Maybe aws after all?
 
-- evtl bug: look at the buttons logic before adding to cart. 
 
+
+
+### done:
 - add subtotal
 update subtotal when adjusting the quantity in the cart.
 add subtotal to checkout
-
-crispy forms in checkout
+- evtl bug: look at the buttons logic before adding to cart. 
+- Change home to "about us" and show on home not the whole text
+- Add information like faq and delivery cost to about us page
+- upload wireframes
