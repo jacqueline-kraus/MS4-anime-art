@@ -23,6 +23,8 @@
   <body>
     <header>
         <div class="container-fluid fixed-top bg-light">
+            {% include 'includes/messages.html' %}
+
             <div class="row p-3 align-middle">
                 <div class="col-4">
                     <form method="GET" action="{% url 'products' %}">
@@ -41,8 +43,6 @@
             </div>
         </div>
     </header>
-
-    {% include 'includes/messages.html' %}
 
     {% block page_header%}
     {% endblock %}
