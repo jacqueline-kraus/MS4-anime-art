@@ -14,7 +14,7 @@ class Order(models.Model):
     email = models.EmailField(max_length=254, null=False, blank=False)
     street_address = models.CharField(max_length=80, null=False, blank=False)
     city = models.CharField(max_length=40, null=False, blank=False)
-    postcode = models.CharField(max_length=20, null=False  , blank=True)
+    postcode = models.CharField(max_length=20, null=False, blank=True)
     country = models.CharField(max_length=40, null=False, blank=False)
     date = models.DateTimeField(auto_now_add=True)
     delivery_cost = models.DecimalField(max_digits=6, decimal_places=2, null=False, default=0)
