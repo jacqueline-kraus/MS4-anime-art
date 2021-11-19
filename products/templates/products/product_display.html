@@ -24,17 +24,17 @@
     <div class="container">
         <div class="row mt-3 ">
             <div class="col-md-4 col-sm-12 offset-md-2">
-                <img src="/static/{{ product.image }}" class="card-img-top" alt="{{product.name}}">
+                <img src="{{ MEDIA_URL }}{{ product.image }}" class="card-img-top" alt="{{product.name}}">
             </div>
             <div class="col-md-6 col-sm-12">
                 <div class="row">
                   <div class="col">
-                    <h5>{{ product.name}}</h5>
+                    <h5>{{ product.name }}</h5>
                   </div>
                 </div>
                 <div class="row">
                   <div class="col-md-6 col-sm-12">
-                    <p>{{ product.description}}</p>
+                    <p>{{ product.description }}</p>
                   </div>
                 </div>
                 <div class="row">
