@@ -1,3 +1,4 @@
+from django.contrib import messages
 from django.shortcuts import render, redirect, reverse, HttpResponse
 
 def view_cart(request):
@@ -16,6 +17,8 @@ def add_to_cart(request, item_id):
         cart[item_id] = quantity
 
     request.session['cart'] = cart
+    messages.success(request, "Item added to cart")
+
     return redirect(redirect_url)
 
 
