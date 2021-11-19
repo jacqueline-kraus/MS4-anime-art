@@ -17,7 +17,7 @@
       <div class="col my-5">
         {% if cart_items %}
           <div class="table-responsive">
-            <table class="table table-sm table-borderless">
+            <table class="table table-sm table-borderless align-middle">
               <thead>
                 <tr>
                   <th scope="col">Product Info</th>
@@ -29,8 +29,8 @@
               </thead>
               {% for item in cart_items %}
                   <tr>
-                      <td class="py-3">
-                          <img class="img-thumbnail" src="/static/{{ product.image }}">
+                      <td class="py-3 w-25">
+                          <img class="img-thumbnail w-25" src="{{ MEDIA_URL }}{{ item.product.image }}">
                       </td>
                       <td class="py-3">
                           <p class="my-0"><strong>{{ item.product.name }}</strong></p>
