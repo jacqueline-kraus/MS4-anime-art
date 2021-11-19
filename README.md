@@ -206,6 +206,8 @@ how to stop
 - Order product list page by showing digital type first
 - show total cost not always, only by hovering over
 - fix navbar alignment -> when there is something in the cart, it breaks in two rows
+- alt names
+- social icons target blank
 
 ### Responsive adjustments
 - Navbar and header image needs to be mobile adjusted
@@ -224,7 +226,7 @@ how to stop
 - write down a simple marketing strategy, why some things are like they are
 
 ### Bugs / Problems that NEED to be solved
-- find solution with image problem!! Maybe aws after all?
+
 
 
 
@@ -237,3 +239,4 @@ add subtotal to checkout
 - Change home to "about us" and show on home not the whole text
 - Add information like faq and delivery cost to about us page
 - upload wireframes
+- find solution with image problem!! Maybe aws after all?
