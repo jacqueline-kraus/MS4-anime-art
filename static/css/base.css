@@ -16,6 +16,10 @@ a:hover {
     color: #000;
 }
 
+/* .navbar>.container-fluid {
+    justify-content: center;
+} */
+
 .nav {
     flex-wrap: unset;
 }
@@ -62,13 +66,13 @@ a:hover {
 /* page header */
 
 .heroimage {
-    background-image: url('/static/heroimage.png');
+    background-image: url('../img/heroimage.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height: 350px;
     width: 100%;
-    margin-top: 5rem;
+    margin-top: 4rem;
 }
 
 /* content styling */
@@ -111,7 +115,7 @@ p {
 }
 
 .classic-drawing {
-    background-image: url('/static/classic_sukunaitadori.jpeg');
+    background-image: url('/media/classic_sukunaitadori.jpeg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -121,7 +125,7 @@ p {
 }
 
 .digital-drawing {
-    background-image: url('/static/digital_kakshihatake.jpeg');
+    background-image: url('/media/digital_kakshihatake.jpeg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -165,4 +169,17 @@ body {
 
 #page-content {
   flex: 1 0 auto;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 600px) {
+    .heroimage {
+    background-image: url('../img/heroimage_mobile.png');
+    background-size: contain;
+    margin-top: 3rem;
+    background-position: unset;
+    height: 190px;
+    background-color: #000;
+    }
 }
