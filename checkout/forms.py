@@ -23,6 +23,7 @@ class CheckoutForm(forms.ModelForm) :
             'street_address': 'Street Address',
             'postcode': 'Postal Code',
             'city': 'City',
+            'country': 'Country',
         }
 
         self.fields['first_name'].widget.attrs['autofocus'] = True
