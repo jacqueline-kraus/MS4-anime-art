@@ -1,9 +1,9 @@
+import decimal
 import uuid
 
 from django.db import models
 from django.db.models import Sum
 from django.conf import settings
-from django.db.models.fields import DecimalField
 
 from products.models import Product
 
@@ -26,7 +26,7 @@ class Order(models.Model):
     
     def update_total(self):
         self.order_total = self.lineitems.aggregate(Sum('lineitem_total'))['lineitem_total__sum'] or 0
-        self.delivery_cost = 3.99
+        self.delivery_cost = decimal.Decimal(3.99)
         self.grand_total = self.order_total + self.delivery_cost
         self.save()
     
