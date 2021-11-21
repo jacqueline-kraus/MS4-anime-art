@@ -40,7 +40,7 @@ class Stripe_Webhook_Handler:
                 order = Order.objects.get(
                     first_name_iexact=first_name,
                     last_name_iexact=last_name,
-                    email_iexact=shipping_details.email,
+                    email_iexact=billing_details.email,
                     street_address_iexact=shipping_details.line1,
                     postcode_iexact=shipping_details.postal_code,
                     city_iexact=shipping_details.city,
@@ -64,7 +64,7 @@ class Stripe_Webhook_Handler:
                 order = Order.objects.create(
                     first_name_iexact=first_name,
                     last_name_iexact=last_name,
-                    email=shipping_details.email,
+                    email=billing_details.email,
                     street_address=shipping_details.line1,
                     postcode=shipping_details.postal_code,
                     city=shipping_details.city,
