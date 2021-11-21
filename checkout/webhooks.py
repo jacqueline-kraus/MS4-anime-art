@@ -10,6 +10,7 @@ import stripe
 @require_POST
 @csrf_exempt
 def webhook(request):
+    
     """ Listen for webhooks """
     wh_secret = settings.STRIPE_WH_SECRET
     stripe.api_key = settings.STRIPE_SECRET_KEY
@@ -38,7 +39,7 @@ def webhook(request):
     # map webhook events ro relevant handler functions
     event_map = {
         'payment_intent.succeeded': handler.handle_payment_intent_succeeded,
-        'payment_intent.payment_failed': handler.handle_payment_intent_payment_failed,
+        'payment_intent.payment_failed': handler.handle_payment_intent_failed,
     }
 
     # get the webhook type from stripe
