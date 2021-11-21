@@ -24,7 +24,7 @@ class Stripe_Webhook_Handler:
 
         billing_details = intent.charges.data[0].billing_details
         shipping_details = intent.shipping
-        grand_total = round(intent.data.charge[0].amount / 100, 2)
+        grand_total = round(intent.data.charges[0].amount / 100, 2)
 
         for field, value in shipping_details.address.items():
             if value == "":
@@ -32,10 +32,14 @@ class Stripe_Webhook_Handler:
         
         order_exists = False
         attempt = 1
+        name_pieces = shipping_details.name.split(' ',1)
+        first_name = name_pieces[0]
+        last_name = name_pieces[1]
         while attempt <= 5:
             try:
                 order = Order.objects.get(
-                    first_name_iexact=shipping_details.name,
+                    first_name_iexact=first_name,
+                    last_name_iexact=last_name,
                     email_iexact=shipping_details.email,
                     street_address_iexact=shipping_details.line1,
                     postcode_iexact=shipping_details.postal_code,
@@ -58,7 +62,8 @@ class Stripe_Webhook_Handler:
             order = None
             try:
                 order = Order.objects.create(
-                    first_name=shipping_details.name,
+                    first_name_iexact=first_name,
+                    last_name_iexact=last_name,
                     email=shipping_details.email,
                     street_address=shipping_details.line1,
                     postcode=shipping_details.postal_code,
