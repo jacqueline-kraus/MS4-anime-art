@@ -25,21 +25,29 @@ class Stripe_Webhook_Handler:
                 shipping_details.address[field] = None
         
         order_exists = False
-        try:
-            order = Order.objects.get(
-                first_name_iexact=shipping_details.name,
-                email_iexact=shipping_details.email,
-                street_address_iexact=shipping_details.line1,
-                postcode_iexact=shipping_details.postal_code,
-                city_iexact=shipping_details.city,
-                country_iexact=shipping_details.country,
-                grand_total=grand_total,
-            )
-            order_exists = True
+        attempt = 1
+        while attempt <= 5:
+            try:
+                order = Order.objects.get(
+                    first_name_iexact=shipping_details.name,
+                    email_iexact=shipping_details.email,
+                    street_address_iexact=shipping_details.line1,
+                    postcode_iexact=shipping_details.postal_code,
+                    city_iexact=shipping_details.city,
+                    country_iexact=shipping_details.country,
+                    grand_total=grand_total,
+                )
+                order_exists = True
+                break
+            except Order.DoesNotExist:
+                attempt += 1
+                time.sleep(1)
+        if order_exists:
             return HttpResponse(
                 content=f'Webhook received: {event["type"]} | SUCCESS: Verified order already exists in database',
                 status=200)
-        except Order.DoesNotExist:
+        else:
+            order = None
             try:
                 order = Order.objects.create(
                     first_name=shipping_details.name,
@@ -61,11 +69,11 @@ class Stripe_Webhook_Handler:
             except Exception as e:
                 if order:
                     order.delete()
-                return HttpResponse(content=f'Webhook received: {event["type"]} | ERROR {e}',
-                                    status=500)
-        
+                return HttpResponse(
+                    content=f'Webhook received: {event["type"]} | ERROR {e}',
+                    status=500)
         return HttpResponse(
-            content=f'Webhook received: {event["type"]}',
+            content=f'Webhook received: {event["type"]} | SUCCESS: Created order in webhook',
             status=200
         )
     
