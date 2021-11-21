@@ -41,7 +41,7 @@ class Stripe_Webhook_Handler:
                     first_name__iexact=first_name,
                     last_name__iexact=last_name,
                     email__iexact=billing_details.email,
-                    street__address_iexact=shipping_details.address.line1,
+                    street_address__iexact=shipping_details.address.line1,
                     postcode__iexact=shipping_details.address.postal_code,
                     city__iexact=shipping_details.address.city,
                     country__iexact=shipping_details.address.country,
