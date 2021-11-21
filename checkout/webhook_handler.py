@@ -1,5 +1,11 @@
 from django.http import HttpResponse
 
+from .models import Order, OrderLineItem
+from products.models import Product
+
+import json
+import time
+
 class Stripe_Webhook_Handler:
     def __init__(self, request):
         self.request = request
@@ -36,6 +42,8 @@ class Stripe_Webhook_Handler:
                     city_iexact=shipping_details.city,
                     country_iexact=shipping_details.country,
                     grand_total=grand_total,
+                    original_cart=cart,
+                    stripe_pid=pid,
                 )
                 order_exists = True
                 break
@@ -57,6 +65,8 @@ class Stripe_Webhook_Handler:
                     city=shipping_details.city,
                     country=shipping_details.country,
                     grand_total=grand_total,
+                    original_cart=cart,
+                    stripe_pid=pid,
                 )
                 for item_id, item_data in json.loads(cart).items():
                     product = Product.objects.get(id=item_id)
