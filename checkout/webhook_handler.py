@@ -38,13 +38,13 @@ class Stripe_Webhook_Handler:
         while attempt <= 5:
             try:
                 order = Order.objects.get(
-                    first_name_iexact=first_name,
-                    last_name_iexact=last_name,
-                    email_iexact=billing_details.email,
-                    street_address_iexact=shipping_details.address.line1,
-                    postcode_iexact=shipping_details.address.postal_code,
-                    city_iexact=shipping_details.address.city,
-                    country_iexact=shipping_details.address.country,
+                    first_name__iexact=first_name,
+                    last_name__iexact=last_name,
+                    email__iexact=billing_details.email,
+                    street__address_iexact=shipping_details.address.line1,
+                    postcode__iexact=shipping_details.address.postal_code,
+                    city__iexact=shipping_details.address.city,
+                    country__iexact=shipping_details.address.country,
                     grand_total=grand_total,
                     original_cart=cart,
                     stripe_pid=pid,
@@ -62,8 +62,8 @@ class Stripe_Webhook_Handler:
             order = None
             try:
                 order = Order.objects.create(
-                    first_name_iexact=first_name,
-                    last_name_iexact=last_name,
+                    first_name=first_name,
+                    last_name=last_name,
                     email=billing_details.email,
                     street_address=shipping_details.address.line1,
                     postcode=shipping_details.address.postal_code,
