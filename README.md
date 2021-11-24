@@ -3,9 +3,8 @@
 
 # Table of contents
 - [UX](#ux)
-    - [Website owner business goals](#website-owner-business-goals)
-    - [User goals](#user-goals)
-    - [User stories](#user-stories)
+    - [Business goals](#business-goals)
+    - [Customer goals](#customer-goals)
     - [Structure of the website](#structure-of-the-website)
     - [Wireframes](#wireframes)
     - [Surface](#surface)
@@ -22,15 +21,33 @@
 
 #  UX 
 
-## Website owner business goals
-
-## User goals
-### Unregistered user
-### Registered user
-
-## User stories
+## Business goals
 ### As a business owner:
+- I want to generate revenue through offering a product that can be purchased through a webshop.
+- I want the user to understand what product I am offering.
+- I want to offer only exclusive products, that a user cannot purchase anywhere else.
+
+## Customer goals
 ### As a user
+- I want to be able to view products so that I can purchase the products I like.
+- I want to be able to view the product details so that I can see the product name, product prize, product description and product image.
+- I want to be able to understand what the webshop is selling so that I can evaluate if I am interested in the products.
+- I want to be able to register for an user account so that I can view my profile.
+- I want to be able to login and logout so that I can access my profile.
+- I want to be able to reset my password so that I can access my profile in case I lost the password or secure my account by changing the password.
+- I want to be able to receive an email confirmation after registering so that I can know I registered successfully.
+- I want to be able to view my profile so that I can see my order history, open requests and save my information for future orders.
+- I want to be able to filter products so that I can find easily the products by category.
+- I want to be able to search for a product by name or description so that I can find a specific product.
+- I want to be able to see what I have searched for and the number of results so that I can know if there are results.
+- I want to be able to select the quantity of a product so that I can purchase a certain amount.
+- I want to be able to view products in my cart so that I can always be aware of what I am about to purchase and how much it will cost.
+- I want to be able to adjust the quantity of products in the cart so that I can delete or add more of the product.
+- I want to be able to delete products in my cart so that I can change my mind at any given time.
+- I want to be able to enter my payment information so that I can checkout quick and easy.
+- I want to be able to get an order confirmation after checkout so that I can double check that my data is correct.
+- I want to be able to receive an email confirmation so that I can keep track on my purchases and won't loose it.
+
 
 ## Structure of the website
 
@@ -74,7 +91,7 @@
 ### Includes
 
 ## Features left to implement:
-
+- Footer with imprint, SEO Texts, Contact Us page, Newsletter Signup
 
 # Technologies used:
 
@@ -167,6 +184,8 @@ how to stop
 - Page header image for home page taken from [Pixabay](https://pixabay.com/illustrations/naruto-eyes-anime-cartoon-japan-5823848/)
 - Product images created by [Shippudeve](https://www.instagram.com/shippudeve/)
 
+- bg for loading spinner: Image by <a href="https://pixabay.com/users/jsks-632850/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=595954">ryo taka</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=595954">Pixabay</a>
+
 
 ## Problem solving helpers
 - [Django documentation]()
@@ -186,7 +205,7 @@ how to stop
 - Hover effect copied from Hover.css (https://github.com/IanLunn/Hover/blob/master/css/hover.css)
 - https://stackoverflow.com/questions/39031224/how-to-center-cards-in-bootstrap-4
 --> to align the product cards in center
-
+- https://github.com/SmileyChris/django-countries to understand django countries in iso
 
 ## Acknowledgments
 - 
@@ -206,27 +225,32 @@ how to stop
 - Order product list page by showing digital type first
 - show total cost not always, only by hovering over
 - fix navbar alignment -> when there is something in the cart, it breaks in two rows
-- alt names
-- social icons target blank
+- evtl change font size of p
+- change color of account menu when logged in or show a small dot
+- search: error message when no result found
+
+- Messages
+- loading overlay in checkout --> fix image
+- product list: sm col 12 not 1
+- write texts
+- increment/decrement buttons --> right one is edgy, left is round
 
 ### Responsive adjustments
 - Navbar and header image needs to be mobile adjusted
 
 ### Features missing
 - django pagination (too many products on one page)
-- checkout app / stripe payment
 - profile/account page
-- crispy forms in checkout
 - admin
 - Leave out sorting for now, might add later when time left
-- Messages
 
 ### Other
 - Finish Readme
 - write down a simple marketing strategy, why some things are like they are
 
-### Bugs / Problems that NEED to be solved
 
+### Bugs / Problems that NEED to be solved
+- static / images are not shown in development
 
 
 
@@ -240,3 +264,9 @@ add subtotal to checkout
 - Add information like faq and delivery cost to about us page
 - upload wireframes
 - find solution with image problem!! Maybe aws after all?
+- add stripe keys to heroku
+- crispy forms in checkout
+- test if webhooks are working
+- social icons target blank
+- checkout app / stripe payment
+- alt names
