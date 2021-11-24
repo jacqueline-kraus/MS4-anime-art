@@ -20,6 +20,11 @@
 
 
 #  UX 
+### Backstory:
+My friend [Shippudeve](https://www.instagram.com/shippudeve/) draws amazing anime images - both classic (with pen and paper) and also digital. This e-commerce website should help her in the future to be able to sell her drawings as posters and with more features implemented, she can even draw images on request or on different materials (like shoes or shirts). To support her talent the idea of "Anime Art" came up. 
+
+Anime Art stands for exclusive, selfmade drawings that you can purchase nowhere else. One day every anime fan (or not fan) should be able to say: "I have a drawing of [Shippudeve](https://www.instagram.com/shippudeve/), the great artist". 
+
 
 ## Business goals
 ### As a business owner:
