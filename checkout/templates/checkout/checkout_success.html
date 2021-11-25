@@ -107,7 +107,13 @@
         </div>
         <div class="row mx-5">
             <div class="col">
-                {% include 'includes/btn-product-overview.html'%}
+                {% if from_profile %}
+                    <a href="{% url 'profile' %}" class="btn btn-dark rounded">
+                        To profile
+                    </a>
+                {% else %}
+                    {% include 'includes/btn-product-overview.html'%}
+                {% endif %}
             </div>
         </div>
     </div>
