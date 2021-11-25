@@ -55,8 +55,10 @@ Anime Art stands for exclusive, selfmade drawings that you can purchase nowhere 
 
 
 ## Structure of the website
+Anime Art is a responsive e-commerce website, so it is optimized for all devices and screen sizes (desktop, mobile and tablet). It has an intuitive, user friendly interface with an easy to use navigation bar on top. From the homepage a user can choose directly which kind of products to check out and on the "about" page the user finds exlpanation about Anime Art and its products. On the products navigation menu item, a user has another way to find either all products or the products filtered by type. On the Account menu Item a user can register or login. When a user registers, a form has to be filled out and the user receives an email, which has to be confirmed before the account is created successfully. When a user is already logged in, the user has the possibility to view their profile or to logout of their account. In the last item, the shopping cart icon, the user is able to view their shopping cart, so what they are about to purchase. From the shopping cart, the user can purchase whats in the shopping cart by clicking on a button ("Go to secure checkout") and filling out a form on the checkout page. The form contains input fields for shipping/billing information and card as a payment method. On this page the user can also review what they are about to purchase (in the order summary). When actually purchasing the product and the purchase was successful, the user will land on a "thank you" page with a summary of all information (User information and information of the product that was purchased).
 
 ## Wireframes
+---> Add wireframes here 
 
 ## Surface
 ### Fonts
