@@ -1,3 +1,4 @@
+from profiles.models import UserProfile
 from django.http import HttpResponse
 
 from .models import Order, OrderLineItem
@@ -29,6 +30,17 @@ class Stripe_Webhook_Handler:
         for field, value in shipping_details.address.items():
             if value == "":
                 shipping_details.address[field] = None
+        
+        profile = None
+        username = intent.metadata.username
+        if username != 'AnonymousUser':
+            profile = UserProfile.objects.get(user__username=username)
+            if save_info:
+                profile.default_street_address = shipping_details.address.line1
+                profile.default_postcode = shipping_details.address.postal_code
+                profile.default_city = shipping_details.address.city
+                profile.default_country = shipping_details.address.country
+                profile.save()
         
         order_exists = False
         attempt = 1
@@ -64,6 +76,7 @@ class Stripe_Webhook_Handler:
                 order = Order.objects.create(
                     first_name=first_name,
                     last_name=last_name,
+                    user_profile=profile,
                     email=billing_details.email,
                     street_address=shipping_details.address.line1,
                     postcode=shipping_details.address.postal_code,
