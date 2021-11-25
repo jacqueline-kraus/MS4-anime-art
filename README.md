@@ -69,68 +69,93 @@ Anime Art is a responsive e-commerce website, so it is optimized for all devices
 ### Images
 
 
-# Database Schema
 
-# Features
+
+# Apps & Features
 ## Existing Features
 
+## Global features
 ### Navigation
 #### Search
-
-### Home
-
 ### Authentication (Registration, Login, Logout, PW reset)
 - django allauth for authentication (login etc.)
+### Messages (django, styled with bootstrap)
+### Includes
 
-### Product List Page
+
+### Home app
+`home`
+
+#### About
+
+### Products app
+`products`
+
+#### Products (List Page)
+#### Product Display
 #### Filter
 
-### Product Display Page
+### Profiles app
+`profiles`
 
-### Account
 
-### Cart
+### Cart app
+`cart`
 
-### Checkout
+### Checkout app
+`checkout`
 
-### Messages (django, styled with bootstrap)
 
-### Includes
 
 ## Features left to implement:
 - Footer with imprint, SEO Texts, Contact Us page, Newsletter Signup
 
+# Database Schema
+### Data Models
+---> List all models and their name, database key,field type and type validation
+
+
 # Technologies used:
 
 ## Languages:
-- [Python](https://www.python.org/): 
-- [JavaScript](https://en.wikipedia.org/wiki/JavaScript): 
+- [Python](https://www.python.org/): logic and structure for backend
+- [JavaScript](https://en.wikipedia.org/wiki/JavaScript): to add interactivity to the frontend
 
-- [HTML](https://en.wikipedia.org/wiki/Hypertext_Markup_Language): for structuring the website
+- [HTML](https://en.wikipedia.org/wiki/Hypertext_Markup_Language): to structure the website
+- [Jinja](https://jinja.palletsprojects.com/en/2.11.x/): templating language for python
 
-## For styling:
-- [CSS](https://en.wikipedia.org/wiki/Cascading_Style_Sheets): to write custom style for the HTML code
-- [Bootstrap 5.1](): for responsiveness, styling and some functionality
+## Database
+[SQLite](https://www.sqlite.org/index.html): default database in django; used in development
+[PostgreSQL](https://www.postgresql.org/): production database in heroku
+
+## Styling:
+- [CSS](https://en.wikipedia.org/wiki/Cascading_Style_Sheets): to style the HTML code
+- [Bootstrap 5.1](https://getbootstrap.com/docs/5.1/getting-started/introduction/): to add responsiveness, styling and some functionality
 - [Fontawesome](https://fontawesome.com/): as an icon library
 - [Google Fonts](https://fonts.google.com/): as a font resource
 - [Favicon](https://favicon.io/): to generate favicon
 
 ## Frameworks and libraries:
-- [Django](): as a framework for Python
+- [Django](https://www.djangoproject.com/): high-level Python web framework
 - [JQuery](https://jquery.com/): as a JavaScript library
 
 ## Planning
 - [Balsamiq](https://balsamiq.com/): for creating wireframes
+- [Google Sheets](https://en.wikipedia.org/wiki/Google_Sheets): to write user stories and planning the data models
 
 ## Testing
-- 
+- [Am I responsive?](http://ami.responsivedesign.is/): for checking responsiveness on different screen sizes and using screenshot as a showcase for this projects README.md
+- [Comparium](https://front.comparium.app/livetesting): For live testing on different browsers
+- [Chrome Developer Tools](https://developers.google.com/web/tools/chrome-devtools): constantly testing styling, responsiveness and functionality
 
 ## Miscellaneous:
+
 - [Github](https://github.com/): for hosting the projects repository
-- [Heroku](): for deploying the website
-- [Postgres]():
+- [Heroku](https://www.heroku.com/): cloud platform for deploying web app
+- [Stripe](https://stripe.com/en-gb-de): to manage (test) payment transactions
 - [Visual Studio Code](https://code.visualstudio.com/): as a IDE (Integrated Development Environment) for developing the project
 - [Git](https://en.wikipedia.org/wiki/Git): for version control
+- [Popper.js](https://getbootstrap.com/docs/5.1/getting-started/introduction/): required for using bootstrap
 
 ## Code Validation Tools
 - [PEP8 checker](http://pep8online.com/): to validate Python code
