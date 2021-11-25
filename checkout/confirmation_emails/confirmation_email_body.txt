@@ -1,0 +1,23 @@
+Hello {{ order.first_name }} {{ order.last_name }},
+
+Thank you for your order! We can confirm we received your order and will ship it to you soon.
+
+Below you can find your order information:
+
+Order Number: {{ order.order_number }}
+Order Date: {{ order.date }}
+
+Order Total: {{ order.order_total }}€
+Delivery Cost: {{ order.delivery_cost }}€
+Grand Total: {{ order.grand_total }}€
+
+The order will be sent to following address:
+{{ order.street_address}}
+{{ order.postcode }}
+{{ order.city }}
+{{ order.country }}
+
+If you have any question, please contact us at {{ contact_email }}.
+
+Kind regards,
+Your Anime Art Team
