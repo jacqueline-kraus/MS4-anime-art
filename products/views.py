@@ -2,6 +2,8 @@ from django.shortcuts import get_object_or_404, render, redirect, reverse
 from django.contrib import messages
 from django.db.models import Q
 from .models import Product, Type
+from .forms import ProductForm
+
 
 def product_list(request):
 
@@ -43,3 +45,22 @@ def product_display(request, product_id):
     }
 
     return render(request ,'products/product_display.html', context)
+
+
+def add_product(request):
+    if request.method == 'POST':
+        form = ProductForm(request.POST, request.FILES)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Added product successfully.')
+            return redirect(reverse('add_product'))
+        else:
+            messages.error(request, 'Product could not be added. Please ensure the form is valid.')
+    else:
+        form = ProductForm()
+    template = 'products/add_product.html'
+    context = {
+        'form': form,
+    }
+
+    return render(request, template, context)
