@@ -86,6 +86,10 @@ a:hover {
       font-weight: 500;
   }
 
+  .to-cart-btn {
+
+  }
+
 /* page header */
 
 .page-header-margin {
@@ -218,7 +222,7 @@ button {
     font-weight: 500;
 }
 
-.checkout-btn {
+.green-btn {
     background-color: #cce0e0;
     border-color: #3d4343;
     color: #3d4343;
