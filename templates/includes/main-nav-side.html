@@ -1,0 +1,107 @@
+<nav class="navbar navbar-light fixed-top">
+  <div class="container-fluid justify-content-center">
+    <a class="navbar-brand" href="{% url 'home' %}"><h2 class=" justify-content-center">Anime Art</h2></a>
+    <button class="navbar-toggler cus-btn-red bg-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+      <span class="text-red py-2"><i class="fas fa-bars"></i></span>
+    </button>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Anime Art</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item">
+            <a class="nav-link hvr-grow" href="{% url 'view_cart' %}">
+              <p class="text-red"> <i class="fas fa fa-shopping-cart"></i>
+                {% if total %}
+                    {{ total|floatformat:2 }}€
+                {% endif %}
+              </p>
+            </a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link hvr-grow dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Products
+            </a>
+            <ul class="dropdown-menu border-0" aria-labelledby="offcanvasNavbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="{% url 'products' %}">
+                    <h6 class="text-red"><i class="fas fa-caret-right"></i> All Products</h6>
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="{% url 'products' %}?type=classic_drawing">
+                    <h6 class="text-red"><i class="fas fa-caret-right"></i> Classic Drawings</h6>
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="{% url 'products' %}?type=digital_drawing">
+                    <h6 class="text-red"><i class="fas fa-caret-right"></i> Digital Drawings</h6>
+                  </a>
+                </li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link hvr-grow dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Account
+            </a>
+            <ul class="dropdown-menu border-0" aria-labelledby="offcanvasNavbarDropdown">
+              {% if request.user.is_authenticated %}
+                <li>
+                  <a class="dropdown-item" href="{% url 'profile' %}">
+                    <h6 class="text-red"><i class="fas fa-caret-right"></i> My Profile</h6>
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="{% url 'account_logout' %}">
+                    <h6 class="text-red"><i class="fas fa-caret-right"></i> Logout</h6>
+                  </a>
+                </li>
+              {% else %}
+                <li>
+                  <a class="dropdown-item" href="{% url 'account_signup' %}">
+                    <h6 class="text-red"><i class="fas fa-caret-right"></i> Register</h6>
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="{% url 'account_login' %}">
+                    <h6 class="text-red"><i class="fas fa-caret-right"></i> Login</h6>
+                  </a>
+                </li>
+              {% endif %}
+            </ul>
+          </li>
+          {% if request.user.is_authenticated %}
+            {% if request.user.is_superuser %}
+              <li class="nav-item dropdown">
+                <a class="nav-link hvr-grow dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Admin
+                </a>
+                <ul class="dropdown-menu border-0" aria-labelledby="offcanvasNavbarDropdown">
+                  {% if request.user.is_authenticated %}
+                    <li>
+                      <a class="dropdown-item" href="{% url 'add_product' %}">
+                        <h6 class="text-red"><i class="fas fa-caret-right"></i> Add products</h6>
+                      </a>
+                    </li>
+                  {% endif %}
+                </ul>
+              </li>
+            {% endif %}
+          {% endif %}
+          <li class="nav-item">
+            <a class="nav-link hvr-grow" aria-current="page" href="{% url 'about' %}">About Us</a>
+          </li>
+        </ul>
+        <form class="d-flex" method="GET" action="{% url 'products' %}">
+          <input class="form-control me-2" type="search" placeholder="Type to search" name="q" aria-label="Search">
+          <button class="btn cus-btn-red" type="submit">Search</button>
+
+
+
+        </form>
+      </div>
+    </div>
+  </div>
+</nav>
