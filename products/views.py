@@ -5,7 +5,7 @@ from .models import Product, Type
 from .forms import ProductForm
 
 
-def product_list(request):
+def products(request):
 
     products = Product.objects.all()
     query = None
@@ -44,7 +44,7 @@ def product_display(request, product_id):
         'product': product, 
     }
 
-    return render(request ,'products/product_display.html', context)
+    return render(request,'products/product_display.html', context)
 
 
 def add_product(request):
@@ -71,7 +71,7 @@ def update_product(request, product_id):
     if request.method == 'POST':
         form = ProductForm(request.POST, request.FILES, instance=product)
         if form.is_valid():
-            form.save()
+            product = form.save()
             messages.success(request, 'Product successfully updated.')
             return redirect(reverse('product_display', args=[product.id]))
         else:
@@ -87,3 +87,11 @@ def update_product(request, product_id):
     }
 
     return render(request, template, context)
+
+
+def delete_product(request, product_id):
+    product = get_object_or_404(Product, pk=product_id)
+    product.delete()
+    messages.success(request, 'Product successfully deleted.')
+    return redirect(reverse('products'))
+
