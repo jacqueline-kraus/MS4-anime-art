@@ -10,85 +10,90 @@
     </div>
   </div>
 {% endblock %}
-  
+
 {% block content %}
-  <div class="container">
-    <div class="row">
-      <div class="col my-5">
-        {% if cart_items %}
-          <div class="table-responsive">
-            <table class="table table-sm table-borderless align-middle">
-              <thead>
-                <tr>
-                  <th scope="col">Product Info</th>
-                  <th scope="col"></th>
-                  <th scope="col">Quantity</th>
-                  <th scope="col">Subtotal</th>
-                  <th scope="col"></th>
-                </tr>
-              </thead>
-              {% for item in cart_items %}
-                  <tr>
-                      <td class="py-3 w-25">
-                          <img class="img-thumbnail w-25" src="{{ MEDIA_URL }}{{ item.product.image }}">
-                      </td>
-                      <td class="py-3">
-                          <p class="my-0"><strong>{{ item.product.name }}</strong></p>
-                          <p class="my-0 small text-muted">SKU: {{ item.product.sku|upper }}</p>
-                          <p class="my-0">{{ item.product.price }}€</p>
-                      </td>
-                      <td class="py-3">
-                          <div class="col">
-                            <div class="w-75">
-                                <div class="input-group">
-                                  <button class="btn btn-outline-secondary decrement-qty" type="button" data-item_id="{{ item.item_id }}" id="decrement-qty_{{ item.item_id }}"><i class="fas fa-xs fa-minus"></i></button>
-                                  <input class="form-control qty_input" type="number" readonly name="quantity" min="1" max="99" data-item_id="{{ item.item_id }}" id="id_qty_{{ item.item_id }}" value="{{ item.quantity }}">
-                                  <button class="btn btn-outline-secondary increment-qty" type="button" data-item_id="{{ item.item_id }}" id="increment-qty_{{ item.item_id }}"><i class="fas fa-xs fa-plus"></i></button>
-                                  {% csrf_token %}
-                                </div>
-                            </div>
-                          </div>
-                      </td>
-                      <td class="py-3">
-                          <p class="my-0">{{ item.subtotal }}€</p>
-                      </td>
-                      <td class="py-3">
-                        <form class="form" action="{% url 'remove_from_cart' item.product.id %}" method="POST">
-                        {% csrf_token %}
-                          <button type="submit" class="btn btn-outline-dark">Delete</a>
-                        </form>
-                      </td>
-                  </tr>
-              {% endfor %}
-              <tr>
-                <td colspan="5" class="pt-5 text-right">
-                  <p><strong>Cart Total: {{ total|floatformat:2 }}€</strong></p>
-                  <p>Delivery cost: {{ delivery|floatformat:2 }}€</p>
-                  <h4 class="mt-4"><strong>Grand Total: {{ grand_total|floatformat:2}}€</strong></h4>
-                </td>
-              </tr>
-              <tr>
-                  <td colspan="5" class="text-right">
-                      {% include 'includes/btn-product-overview.html' %}
-                      <a href="{% url 'checkout' %}" class="btn btn-success">
-                          <span class="text-uppercase">Secure Checkout</span>
-                          <span class="icon">
-                              <i class="fas fa-lock"></i>
-                          </span>
-                      </a>
-                  </td>
-              </tr>
-            </table>
+  {% if cart_items %}
+    <div class="container-fluid mt-5">
+      <div class="row offset-md-2 cart-th">
+        <div class="col-md-4">
+          <p class="text-muted">Product Info</p>
         </div>
-        {% else %}
-          <p>Your shopping cart is empty. The products you add, will be shown here.</p>
-          <div></div>
-          {% include 'includes/btn-product-overview.html' %}
-        {% endif %}
+        <div class="col-md-3">
+          <p class="text-muted">Quantity</p>
+        </div>
+        <div class="col-md-5">
+          <p class="text-muted">Subtotal</p>
+        </div>
+      </div>
+      {% for item in cart_items %}
+        <div class="row offset-md-2 pb-5">
+          <div class="col-5 col-md-2">
+            <a href="{% url 'product_display' item.product.id %}"><img class="img w-75" src="{{ MEDIA_URL }}{{ item.product.image }}"></a>
+          </div>
+          <div class="col-7 col-md-2">
+            <p class="my-0"><strong>{{ item.product.name }}</strong></p>
+            <p class="my-0 font-sm text-muted">SKU: {{ item.product.sku|upper }}</p>
+            <p class="my-0 font-sm">{{ item.product.price }}€</p>
+          </div>
+          <div class="col-6 col-md-3 cart-mt-sm">
+            <div class="w-75">
+              <div class="input-group">
+                <button class="btn btn-outline-secondary decrement-qty" type="button" data-item_id="{{ item.item_id }}" id="decrement-qty_{{ item.item_id }}"><i class="fas fa-xs fa-minus"></i></button>
+                <input class="form-control qty_input" type="number" readonly name="quantity" min="1" max="99" data-item_id="{{ item.item_id }}" id="id_qty_{{ item.item_id }}" value="{{ item.quantity }}">
+                <button class="btn btn-outline-secondary increment-qty" type="button" data-item_id="{{ item.item_id }}" id="increment-qty_{{ item.item_id }}"><i class="fas fa-xs fa-plus"></i></button>
+                {% csrf_token %}
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-1 cart-mt-sm">
+            <p class="my-0">{{ item.subtotal }}€</p>
+          </div>
+          <div class="col-12 col-md-3 text-center cart-mt-sm">
+            <form class="form" action="{% url 'remove_from_cart' item.product.id %}" method="POST">
+              {% csrf_token %}
+              <button type="submit" class="btn cus-btn-red font-sm">Delete</a>
+            </form>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+    <div class="container-fluid">
+      <div class="row offset-md-2">
+        <div class="col-12 col-md-6">
+          <p class="font-sm">Cart Total: {{ total|floatformat:2 }}€</p>
+          <p class="font-sm">Delivery cost: {{ delivery|floatformat:2 }}€</p>
+          <h4 class="mt-4"><strong>Grand Total: {{ grand_total|floatformat:2}}€</strong></h4>
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <a href="{% url 'checkout' %}" class="btn checkout-btn">
+              <span class="uppercase">Go To Secure Checkout</span>
+              <span class="checkout-icon">
+                  <i class="fas fa-lock"></i>
+              </span>
+            </a>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col">
+            <p>OR</p>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-6">
+              {% include 'includes/btn-product-overview.html' %}
+          </div>
+        </div>
       </div>
     </div>
-
-  </div>
+  {% else %}
+    <div class="row offset-md-4">
+      <div class="col-12 col-md-6">
+        <p>Your shopping cart is empty. The products you add, will be shown here.</p>
+        {% include 'includes/btn-product-overview.html' %}
+      </div>
+    </div>
+  {% endif %}
 {% endblock %}
 
 {% block postloadjs %}
