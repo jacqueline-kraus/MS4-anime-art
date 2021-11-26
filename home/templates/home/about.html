@@ -2,12 +2,10 @@
 {% load static %}
 
 {% block page_header%}
-    <div class="container-fluid mt-5">
+    <div class="container-fluid page-header-margin text-center">
         <div class="row">
             <div class="col">
-                <h1>Who are we?</h1>
-                <h1>Who are we?</h1>
-                <h1>Who are we?</h1>
+                <h1>About Anime Art</h1>
             </div>
         </div>
     </div>
@@ -17,11 +15,6 @@
     
     <!-- First content block -->
     <div class="container-fluid mt-5">
-        <div class="row">
-            <div class="col text-center">
-                <h1>About Anime Art</h1>
-            </div>
-        </div>
         <div class="row justify-content-center mt-5">
             <div class="col col-md-8 home-img">
                 <img class="img-fluid rounded" src="{% static 'product7.jpeg' %}" alt="About Anime Art">
@@ -49,13 +42,29 @@
     </div>
     <!-- Third content block -->
     <div class="container-fluid mt-5">
+        <div class="row mt-5">
+            <div class="col mt-5 text-center">
+                <h1>The Artist</h1>
+            </div>
+        </div>
+        <div class="row justify-content-center mt-5">
+            <div class="col col-md-8 home-img">
+                <img class="img-fluid rounded" src="{% static 'product7.jpeg' %}" alt="About Anime Art">
+            </div>
+            <div class="col col-md-4 mx-5">
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+            </div>
+        </div>
+    </div>
+    <!-- Fourth content block -->
+    <div class="container-fluid mt-5">
         <div class="row">
             <div class="col text-center">
                 <h1>FAQ</h1>
             </div>
         </div>
-        <div class="row justify-content-center mt-5">
-            <div class="col-6 mx-5 text-center">
+        <div class="row justify-content-center mt-5 offset-2">
+            <div class="col-6 mx-5">
                 <h6><strong>How much does it cost?</strong></h6>
                 <p>Prices have a span between xx and xx €.</p>
                 <br>
@@ -74,9 +83,8 @@
     <div class="container-fluid second-home-cta">
         <div class="row justify-content-center">
             <div class="col text-center">
-                <button type="button" class="btn btn-lg btn-dark">
-                    Shop now
-                 </button>
+                <a href="{% url 'products' %}" class="btn cus-btn-red">Shop Now</a>
+                
             </div>
         </div>
     </div>
