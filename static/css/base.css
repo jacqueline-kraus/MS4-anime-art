@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;700&family=Roboto:wght@100;300;400;500&display=swap');
 
+.font-sm {
+    font-size: 12px;
+}
+
 .text-red {
     color: #650000;
 }
@@ -20,11 +24,11 @@
 
 /* Navigation */
 
-.logo {
+/* .logo {
     font-family: 'Cinzel', serif;
     font-size: 30px;
     text-shadow: 0.5px 0.5px 0.5px black;
-}
+} */
 
 a {
     color: #000;
@@ -108,9 +112,9 @@ p {
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    height: 400px;
+    height: 300px;
     width: auto;
-    margin-top: 4rem;
+    margin-top: 4.2rem;
 }
 
 .home-img {
@@ -118,10 +122,11 @@ p {
     height: 400px;
 }
 
-.first-home-cta {
+.header-text {
     background-color: #181818;
     padding-bottom: 1rem;
-    margin-bottom: 6rem;
+    padding-top: 1rem;
+    margin-bottom: 4rem;
 }
 
 .second-home-cta {
@@ -133,11 +138,13 @@ p {
     color: #fff;
 }
 
+/* DONT USE! 
+
 .btn-lg {
     padding: .9rem 5rem;
     font-size: 2rem;
     border-radius: .3rem;
-}
+} */
 
 .classic-drawing {
     background-image: url('/media/classic_sukunaitadori.jpeg');
@@ -166,9 +173,9 @@ p {
     border-width: 3px;
 }
 
-.home-btn-m {
+/* .home-btn-m {
     margin-top: 150px;
-}
+} */
 
 
 
@@ -186,12 +193,18 @@ p {
 html,
 body {
   height: 100%;
+  
+}
+
+body, header {
+    background-color: #fbf9f9;
 }
 
 body > footer {
     position: sticky;
     top: 100vh;
 }
+
 
 #page-content {
   flex: 1 0 auto;
@@ -211,8 +224,9 @@ button {
     background-image: url('../img/naruto-5752319_640.png');
     background-size: contain;
     margin-top: 3rem;
-    background-position: unset;
-    /* height: 190px; */
+    background-position: center;
+    /* height: 3000px; */
     background-color: #181818;
+    width: 100%;
     }
 }
