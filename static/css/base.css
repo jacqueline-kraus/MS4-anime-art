@@ -188,6 +188,11 @@ body {
   height: 100%;
 }
 
+body > footer {
+    position: sticky;
+    top: 100vh;
+}
+
 #page-content {
   flex: 1 0 auto;
 }
