@@ -35,18 +35,18 @@
             <p class="my-0 font-sm text-muted">SKU: {{ item.product.sku|upper }}</p>
             <p class="my-0 font-sm">{{ item.product.price }}€</p>
           </div>
-          <div class="col-6 col-md-3 cart-mt-sm">
+          <div class="col-7 col-md-3 cart-mt-sm">
             <div class="w-75">
               <div class="input-group">
-                <button class="btn btn-outline-secondary decrement-qty" type="button" data-item_id="{{ item.item_id }}" id="decrement-qty_{{ item.item_id }}"><i class="fas fa-xs fa-minus"></i></button>
+                <button class="btn btn-sm btn-outline-secondary decrement-qty" type="button" data-item_id="{{ item.item_id }}" id="decrement-qty_{{ item.item_id }}"><i class="fas fa-xs fa-minus"></i></button>
                 <input class="form-control qty_input" type="number" readonly name="quantity" min="1" max="99" data-item_id="{{ item.item_id }}" id="id_qty_{{ item.item_id }}" value="{{ item.quantity }}">
-                <button class="btn btn-outline-secondary increment-qty" type="button" data-item_id="{{ item.item_id }}" id="increment-qty_{{ item.item_id }}"><i class="fas fa-xs fa-plus"></i></button>
+                <button class="btn btn-sm btn-outline-secondary increment-qty" type="button" data-item_id="{{ item.item_id }}" id="increment-qty_{{ item.item_id }}"><i class="fas fa-xs fa-plus"></i></button>
                 {% csrf_token %}
               </div>
             </div>
           </div>
-          <div class="col-6 col-md-1 cart-mt-sm">
-            <p class="my-0">{{ item.subtotal }}€</p>
+          <div class="col-5 col-md-1 cart-mt-sm">
+            <p class="my-0"><b>{{ item.subtotal }}€</b></p>
           </div>
           <div class="col-12 col-md-3 text-center cart-mt-sm">
             <form class="form" action="{% url 'remove_from_cart' item.product.id %}" method="POST">
@@ -87,7 +87,7 @@
       </div>
     </div>
   {% else %}
-    <div class="row offset-md-4">
+    <div class="row offset-1 offset-md-4">
       <div class="col-12 col-md-6">
         <p>Your shopping cart is empty. The products you add, will be shown here.</p>
         {% include 'includes/btn-product-overview.html' %}
