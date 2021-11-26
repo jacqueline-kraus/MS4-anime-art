@@ -37,6 +37,11 @@
             <div class="card-body">
               <h5 class="card-title">{{ product.name}}</h5>
               <p class="card-text">{{ product.price}}€</p>
+              {% if request.user.is_superuser %}
+                <small>
+                <a href="{% url 'update_product' product.id %}" class="btn btn-sm btn-outline-dark">Edit</a>
+                </small>
+              {% endif %}
             </div>
           </div>
         </div>
