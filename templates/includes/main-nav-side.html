@@ -1,4 +1,4 @@
-<nav class="navbar navbar-light fixed-top">
+<nav class="navbar navbar-light">
   <div class="container-fluid justify-content-center">
     <a class="navbar-brand" href="{% url 'home' %}"><h2 class=" justify-content-center">Anime Art</h2></a>
     <button class="navbar-toggler cus-btn-red bg-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
@@ -43,10 +43,10 @@
             </ul>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link hvr-grow dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link hvr-grow dropdown-toggle" href="#" id="accountNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Account
             </a>
-            <ul class="dropdown-menu border-0" aria-labelledby="offcanvasNavbarDropdown">
+            <ul class="dropdown-menu border-0" aria-labelledby="accountNavbarDropdown">
               {% if request.user.is_authenticated %}
                 <li>
                   <a class="dropdown-item" href="{% url 'profile' %}">
@@ -75,10 +75,10 @@
           {% if request.user.is_authenticated %}
             {% if request.user.is_superuser %}
               <li class="nav-item dropdown">
-                <a class="nav-link hvr-grow dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="nav-link hvr-grow dropdown-toggle" href="#" id="adminNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Admin
                 </a>
-                <ul class="dropdown-menu border-0" aria-labelledby="offcanvasNavbarDropdown">
+                <ul class="dropdown-menu border-0" aria-labelledby="adminNavbarDropdown">
                   {% if request.user.is_authenticated %}
                     <li>
                       <a class="dropdown-item" href="{% url 'add_product' %}">
