@@ -18,10 +18,11 @@
   </head>
   <body>
     <header>
-        <div class="container-fluid">
-            {% include 'includes/messages.html' %}
+        <div class="fixed-top">
             {% include 'includes/main-nav-side.html' %}
+            {% include 'includes/messages.html' %}
         </div>
+               
     </header>
 
     {% block page_header%}
