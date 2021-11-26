@@ -11,40 +11,38 @@
 
 {% block content %}
      <!-- CTA 1 -->
-    <div class="container-fluid first-home-cta">
+    <div class="container-fluid header-text">
         <div class="row justify-content-center">
             <div class="col text-center">
                 <h1 class="txt-white">Welcome to anime Art</h1>
             </div>
         </div>
     </div>
-    <!-- Home text -->
-    <div class="container">
+    <div class="container-fluid">
+         <!-- Home text -->
         <div class="row">
-            <div class="col mx-5">
+            <div class="col-sm-12">
                 <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
             </div>
         </div>
-    </div>
-    <!-- Product Type Buttons -->
-    <div class="container">
+        <!-- Product buttons-->
         <div class="row">
-            <div class="col text-center">
-                <a href="{% url 'products' %}" class="btn btn-lg btn-dark home-btn m-5">All Products</a>
+            <div class="col-sm-12 text-center">
+                <a href="{% url 'products' %}" class="btn btn-lg btn-dark home-btn">All Products</a>
             </div>
         </div>
     </div>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col text-center classic-drawing">
-                <a href="{% url 'products' %}?type=classic_drawing" class="btn btn-lg btn-dark home-btn home-btn-m">Classic Drawings</a>
+    <div class="container-fluid ">
+        <div class="row ">
+            <div class="col-sm-12 text-center classic-drawing">
+                <a href="{% url 'products' %}?type=classic_drawing" class="btn btn-lg btn-dark home-btn">Classic Drawings</a>
             </div>
         </div>
     </div>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col text-center digital-drawing">
-                <a href="{% url 'products' %}?type=digital_drawing" class="btn btn-lg btn-dark home-btn home-btn-m">Digital Drawings</a>
+    <div class="container-fluid ">
+        <div class="row ">
+            <div class="col-sm-12 text-center digital-drawing">
+                <a href="{% url 'products' %}?type=digital_drawing" class="btn btn-lg btn-dark home-btn">Digital Drawings</a>
             </div>
         </div>
     </div>
