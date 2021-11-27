@@ -1,10 +1,16 @@
+legend {
+  font-family: 'Cinzel', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+}
+
 .StripeElement,
 .stripe-style-input {
   box-sizing: border-box;
   height: 40px;
   padding: 10px 12px;
-  border: 1px solid #000;
-  border-radius: 0px;
+  border: 1px solid #cce0e0;
+  border-radius: 5px;
   background-color: white;
   box-shadow: 0 1px 3px 0 #e6ebf1;
   -webkit-transition: box-shadow 150ms ease;
@@ -25,15 +31,23 @@
     color: #aab7c4;
 }
 
-.fieldset-label {
-    position: relative;
-    right: .5rem;
+select,
+select option {
+    color: #000000;
+    font-size: 12px !important;
+    background-color: #e8f0fe;
+}
+
+select:invalid,
+select option[value=""] {
+    color: #aab7c4 !important;
+    font-size: 12px;
 }
 
 #payment-form .form-control,
 #card-element {
     color: #000;
-    border: 1px solid #000;
+    border: 1px solid #cce0e0;
 }
 
 #loading-overlay {
