@@ -20,7 +20,7 @@ def profile(request):
             messages.error(request, 'Profile could not be updated. Please check if the form is valid.')
 
     form = UserProfileForm(instance=profile)
-    orders = profile.orders.all().order_by('-date',)
+    orders = profile.orders.all().order_by('-date')
 
     template = 'profiles/profile.html'
     context = {
