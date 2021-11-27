@@ -90,22 +90,22 @@ def checkout(request):
             currency = settings.STRIPE_CURRENCY,
         )
 
-        # if request.user.is_authenticated:
-        #     try:
-        #         profile=UserProfile.objects.get(user=request.user)
-        #         order_form = CheckoutForm(initial={
-        #             'first_name': profile.user.get_first_name(),
-        #             'last_name': profile.user.get_last_name(),
-        #             'email': profile.user.email(),
-        #             'street_address': profile.default_street_address,
-        #             'postcode': profile.default_postcode,
-        #             'city': profile.default_city,
-        #             'country': profile.country,
-        #         })
-        #     except UserProfile.DoesNotExist:
-        #         order_form = CheckoutForm()
-        # else:
-        #     order_form = CheckoutForm()        
+        if request.user.is_authenticated:
+            try:
+                profile=UserProfile.objects.get(user=request.user)
+                order_form = CheckoutForm(initial={
+                    'first_name': profile.user.first_name,
+                    'last_name': profile.user.last_name,
+                    'email': profile.user.email,
+                    'street_address': profile.default_street_address,
+                    'postcode': profile.default_postcode,
+                    'city': profile.default_city,
+                    'country': profile.default_country,
+                })
+            except UserProfile.DoesNotExist:
+                order_form = CheckoutForm()
+        else:
+            order_form = CheckoutForm()        
 
         order_form = CheckoutForm()
 

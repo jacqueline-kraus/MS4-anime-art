@@ -5,7 +5,6 @@
   <div class="container-fluid page-header-margin">
     <div class="row">
       <div class="col text-center">
-        <h1>Product Management</h1>
         <h1>Add a Product</h1>
       </div>
     </div>
@@ -20,8 +19,8 @@
                 <form method="POST" action="{% url 'add_product' %}" class="form" enctype="multipart/form-data">
                     {% csrf_token %}
                     {{ form | crispy }}
-                    <a href="{% url 'products' %}" class="btn btn-outline-dark rounded">Cancel</a>
-                    <button class="btn btn-dark rounded" type="submit">Add Product</button>
+                    <a href="{% url 'products' %}" class="btn cus-btn-red hvr-grow mx-2">Cancel</a>
+                    <button class="btn green-btn hvr-grow mx-2" type="submit">Add Product</button>
                 </form>
             </div>
         </div>

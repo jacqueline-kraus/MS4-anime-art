@@ -105,14 +105,12 @@
                 </div>
             </div>
         </div>
-        <div class="row mx-5">
-            <div class="col">
+        <div class="row mt-4 offset-md-4">
+            <div class="col-sm-12 col-md-12">
                 {% if from_profile %}
-                    <a href="{% url 'profile' %}" class="btn btn-dark rounded">
-                        To profile
-                    </a>
+                    {% include 'includes/btn-back-to-profile.html'%}
                 {% else %}
-                    {% include 'includes/btn-product-overview.html'%}
+                    {% include 'includes/btn-go-to-profile.html'%}
                 {% endif %}
             </div>
         </div>

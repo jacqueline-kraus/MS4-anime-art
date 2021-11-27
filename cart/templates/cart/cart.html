@@ -51,7 +51,7 @@
           <div class="col-12 col-md-3 text-center cart-mt-sm">
             <form class="form" action="{% url 'remove_from_cart' item.product.id %}" method="POST">
               {% csrf_token %}
-              <button type="submit" class="btn cus-btn-red font-sm">Delete</a>
+              <button type="submit" class="btn delete-btn font-sm hvr-grow">Delete</a>
             </form>
           </div>
         </div>
@@ -66,7 +66,7 @@
         </div>
         <div class="row">
           <div class="col-12 col-md-6">
-            <a href="{% url 'checkout' %}" class="btn green-btn">
+            <a href="{% url 'checkout' %}" class="btn green-btn hvr-grow">
               <span class="uppercase">Go To Secure Checkout</span>
               <span class="checkout-icon">
                   <i class="fas fa-lock"></i>
@@ -74,13 +74,8 @@
             </a>
           </div>
         </div>
-        <div class="row mt-5">
-          <div class="col">
-            <p>OR</p>
-          </div>
-        </div>
-        <div class="row mt-5">
-          <div class="col-6">
+        <div class="row mt-5 offset-md-3">
+          <div class="col-sm-12">
               {% include 'includes/btn-product-overview.html' %}
           </div>
         </div>

@@ -59,7 +59,7 @@
 							<span class="text-red">Your card will be charged <strong>{{ grand_total|floatformat:2 }}€</strong></span>
 						</p>
                     <div class="submit-button text-right mt-3 mb-2">
-						<button id="submit-button" class="btn green-btn">
+						<button id="submit-button" class="btn green-btn hvr-grow">
 							<span class="font-weight-bold">Complete Order And Pay</span>
 							<span class="icon">
 								<i class="fas fa-lock"></i>
@@ -96,8 +96,7 @@
                         <p class="font-sm m-0">Cart Total: {{ total|floatformat:2 }}€</p>
                         <p class="font-sm">Delivery cost: {{ delivery|floatformat:2 }}€</p>
                         <h6 class="my-4"><strong>Grand Total: {{ grand_total|floatformat:2}}€</strong></h6>
-                        {% include 'includes/btn-product-overview.html' %}
-                        {% url 'view_cart' %}
+                        {% include 'includes/btn-back-to-cart.html' %}
                     </div>
                 </div>
             </div>
