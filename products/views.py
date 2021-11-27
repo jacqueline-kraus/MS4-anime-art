@@ -8,7 +8,7 @@ from .forms import ProductForm
 
 def products(request):
 
-    products = Product.objects.all()
+    products = Product.objects.all().order_by('-type',)
     query = None
     types = None
 
