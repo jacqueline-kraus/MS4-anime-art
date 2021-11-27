@@ -112,7 +112,7 @@ p {
 /* home */
 
 .heroimage {
-    background-image: url('../img/naruto-5752319_640.png');
+    background-image: url('../img/heroimage.png');
     background-color: #181818;
     background-size: contain;
     background-position: center;
@@ -124,7 +124,7 @@ p {
 
 .home-img {
     width: 400px;
-    height: 400px;
+    height: auto;
 }
 
 .header-text {
@@ -248,6 +248,16 @@ button {
 
 .checkout-icon {
     color: #3d4343;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #e0cccc !important;
+    color: #650000 !important;
+}
+
+.accordion-button:focus {
+    border-color: #650000 !important;
+    box-shadow: 0 0 0 0.25rem rgb(101 0 0 / 25%);
 }
 
 /* Media Queries */
