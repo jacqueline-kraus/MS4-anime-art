@@ -20,7 +20,7 @@ def profile(request):
             messages.error(request, 'Profile could not be updated. Please check if the form is valid.')
 
     form = UserProfileForm(instance=profile)
-    orders = profile.orders.all()
+    orders = profile.orders.all().order_by('-date',)
 
     template = 'profiles/profile.html'
     context = {
@@ -37,7 +37,7 @@ def order_history(request, order_number):
     order = get_object_or_404(Order, order_number=order_number)
 
     messages.info(request, (
-        f'This is a former confirmation for oder number {order_number}.'
+        f'This is a former confirmation for order number {order_number}.'
     ))
 
     template = 'checkout/checkout_success.html'
