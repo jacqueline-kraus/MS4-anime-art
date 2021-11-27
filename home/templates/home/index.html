@@ -28,21 +28,21 @@
         <!-- Product buttons-->
         <div class="row">
             <div class="col-sm-12 text-center">
-                <a href="{% url 'products' %}" class="btn btn-lg btn-dark home-btn">All Products</a>
+                <a href="{% url 'products' %}" class="btn home-btn-all">All Products</a>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12 classic-drawing text-center">
+                <a href="{% url 'products' %}?type=classic_drawing" class="btn home-btn">Classic Drawings</a>
             </div>
         </div>
     </div>
     <div class="container-fluid ">
-        <div class="row ">
-            <div class="col-sm-12 text-center classic-drawing">
-                <a href="{% url 'products' %}?type=classic_drawing" class="btn btn-lg btn-dark home-btn">Classic Drawings</a>
-            </div>
-        </div>
-    </div>
-    <div class="container-fluid ">
-        <div class="row ">
-            <div class="col-sm-12 text-center digital-drawing">
-                <a href="{% url 'products' %}?type=digital_drawing" class="btn btn-lg btn-dark home-btn">Digital Drawings</a>
+        <div class="row">
+            <div class="col-sm-12 digital-drawing text-center">
+                <a href="{% url 'products' %}?type=digital_drawing" class="btn home-btn">Digital Drawings</a>
             </div>
         </div>
     </div>
