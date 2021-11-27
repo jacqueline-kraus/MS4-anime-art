@@ -32,7 +32,7 @@
     <!-- order history -->
     <div class="col-12 col-md-5 col-lg-5 offset-md-1">
       <h6 class="text-muted">Order History</h6>
-      {% if order %}
+      {% if orders %}
         <div class="accordion" id="accordionExample-{{order.id}}">
           {% for order in orders %}
               <div class="accordion-item">
@@ -58,7 +58,7 @@
           {% endfor %}
         {% else %}
           <p>You did not order anything yet. When you make a order, the order details will be shown here.</p>
-          <a href="#">Shop now</a>
+          <a href="#">Shop</a>
         </div>
       {% endif %} 
     </div>
