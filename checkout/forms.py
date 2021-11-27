@@ -20,7 +20,7 @@ class CheckoutForm(forms.ModelForm) :
             'first_name': 'First Name',
             'last_name': 'Last Name',
             'email': 'Email',
-            'street_address': 'Street Address',
+            'street_address': 'Street Address (& Nr.)',
             'postcode': 'Postal Code',
             'city': 'City',
         }
