@@ -15,17 +15,16 @@
   </div>
 {% endblock %}
 
-
 {% block content %}
-    <p class="my-5 text-center">Please enter your shipping/billing information.<p>
     <div class="container-fluid">
-        <div class="row mx-5">
-            <div class="col-8">
-                    <!-- form start-->
+        <div class="row offset-md-1">
+            <div class="col-12 col-md-6">
+                <p class="font-sm">Please enter your shipping/billing information.<p>
+                <!-- form start-->
                 <form action="{% url 'checkout' %}" method="POST" id="payment-form">
                     {% csrf_token %}
                     <fieldset>
-                        <legend class="fieldset-label">Your Shipping Information</legend>
+                        <legend>Your Shipping Information</legend>
                         {{ order_form.first_name | as_crispy_field }}
                         {{ order_form.last_name | as_crispy_field }}
                         {{ order_form.email | as_crispy_field }}
@@ -35,7 +34,7 @@
                         {{ order_form.country | as_crispy_field }}
                         <div class="form-check form-check-inline float-right mr-0">
 							{% if user.is_authenticated %}
-								<label class="form-check-label" for="id-save-info">Save this information to my profile</label>
+								<label class="form-check-label font-sm" for="id-save-info">Save this information to my profile</label>
                                 <input class="form-check-input ml-2 mr-0" type="checkbox" id="id-save-info" name="save-info" checked>
 							{% else %}
 								<label class="form-check-label" for="id-save-info">
@@ -45,58 +44,47 @@
 							{% endif %}
 						</div>
                     </fieldset>
-                    <fieldset class="px-3">
-                        <legend class="fieldset-label">Payment</legend>
+                    <fieldset class="mt-3">
+                        <legend>Payment</legend>
                         <!-- A Stripe card element will go here -->
                         <div class="mb-3" id="card-element"></div>
                         <!-- Used to display form errors -->
                         <div class="mb-3 text-danger" id="card-errors" role="alert"></div>
                         <input type="hidden" value="{{ client_secret }}" name="client_secret">
                     </fieldset>
-
-                    <div class="submit-button text-right mt-5 mb-2">                    
-						<a href="{% url 'view_cart' %}" class="btn btn-outline-black rounded-0">
-							<span class="icon">
-								<i class="fas fa-chevron-left"></i>
+                    <p class="small text-danger my-0">
+							<span class="text-red">
+								<i class="fas fa-exclamation-circle"></i>
 							</span>
-							<span class="font-weight-bold">Adjust Bag</span>
-						</a>
-						<button id="submit-button" class="btn btn-black rounded-0">
-							<span class="font-weight-bold">Complete Order</span>
+							<span class="text-red">Your card will be charged <strong>{{ grand_total|floatformat:2 }}€</strong></span>
+						</p>
+                    <div class="submit-button text-right mt-3 mb-2">
+						<button id="submit-button" class="btn green-btn">
+							<span class="font-weight-bold">Complete Order And Pay</span>
 							<span class="icon">
 								<i class="fas fa-lock"></i>
 							</span>
 						</button>
-						<p class="small text-danger my-0">
-							<span class="icon">
-								<i class="fas fa-exclamation-circle"></i>
-							</span>
-							<span>Your card will be charged <strong>${{ grand_total|floatformat:2 }}</strong></span>
-						</p>
 					</div>
                 </form>
-
                 <!-- form end -->
-
-
-                </form>
             </div>
-            <div class="col-4 border py-4">
+            <div class="col-12 col-md-6 py-md-4 order-first order-md-last">
                     <div class="row">
-                        <div class="col table-responsive mx-5">
+                        <div class="col table-responsive mx-md-5">
                             <table class="table table-sm">
-                            <h5 class="mb-3"><strong><u>Order Summary</u></strong></h5>
+                            <h6 class="mb-3"><u>Order Summary</u></h6>
                             {% for item in cart_items %}
                                 <tr>
                                     <td>
-                                        <p class="fs-6">{{ item.quantity }}</p>
+                                        <p class="font-sm">{{ item.quantity }}</p>
                                     </td>
                                     <td>
-                                        <p class="my-0 fs-6"><strong>{{ item.product.name }}</strong></p>
-                                        <p class="my-0 fs-6 text-muted">SKU: {{ item.product.sku|upper }}</p>
+                                        <p class="my-0 font-sm"><strong>{{ item.product.name }}</strong></p>
+                                        <p class="my-0 font-sm text-muted">SKU: {{ item.product.sku|upper }}</p>
                                     </td>
                                     <td>
-                                        <p class="fs-6">{{ item.subtotal }}€</p>
+                                        <p class="font-sm">{{ item.subtotal }}€</p>
                                     </td>
                                 </tr>
                             {% endfor %}
@@ -104,11 +92,12 @@
                         </div>
                     </div>
                 <div class="row">
-                    <div class="col mt-3 mx-5">
-                        <p class="fs-6 m-0">Cart Total: {{ total|floatformat:2 }}€</p>
-                        <p class="fs-6">Delivery cost: {{ delivery|floatformat:2 }}€</p>
+                    <div class="col mt-3 mx-md-5">
+                        <p class="font-sm m-0">Cart Total: {{ total|floatformat:2 }}€</p>
+                        <p class="font-sm">Delivery cost: {{ delivery|floatformat:2 }}€</p>
                         <h6 class="my-4"><strong>Grand Total: {{ grand_total|floatformat:2}}€</strong></h6>
                         {% include 'includes/btn-product-overview.html' %}
+                        {% url 'view_cart' %}
                     </div>
                 </div>
             </div>
