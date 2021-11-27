@@ -14,6 +14,12 @@
     background-color: #e0cccc;
 }
 
+.delete-btn, .delete-btn:hover {
+    border-color: #650000 !important;
+    background-color: #650000;
+    color: #fff;
+}
+
 .form-control {
     font-size: 12px;
 }
@@ -25,12 +31,6 @@
 
 /* Navigation */
 
-/* .logo {
-    font-family: 'Cinzel', serif;
-    font-size: 30px;
-    text-shadow: 0.5px 0.5px 0.5px black;
-} */
-
 a {
     color: #000;
 }
@@ -38,10 +38,6 @@ a {
 a:hover {
     color: #000;
 }
-
-/* .navbar>.container-fluid {
-    justify-content: center;
-} */
 
 .nav {
     flex-wrap: unset;
@@ -183,6 +179,10 @@ p {
     padding: 2rem;
 }
 
+.btn:focus {
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0)
+}
+
 .home-btn-all {
     font-size: 20px;
     font-weight: 800;
@@ -216,7 +216,6 @@ p {
 html,
 body {
   height: 100%;
-  
 }
 
 body, header {
@@ -244,6 +243,7 @@ button {
     background-color: #cce0e0;
     border-color: #3d4343;
     color: #3d4343;
+    font-weight: 700;
 }
 
 .checkout-icon {
@@ -257,7 +257,7 @@ button {
 
 .accordion-button:focus {
     border-color: #650000 !important;
-    box-shadow: 0 0 0 0.25rem rgb(101 0 0 / 25%);
+    box-shadow: 0 0 0 0.25rem rgb(101 0 0 / 100%);
 }
 
 /* Media Queries */
