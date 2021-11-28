@@ -271,6 +271,7 @@ button {
     display: none;
     background-color: #650000;
     color: #fff;
+    z-index: 9999;
   }
 
 
