@@ -105,9 +105,7 @@ def checkout(request):
             except UserProfile.DoesNotExist:
                 order_form = CheckoutForm()
         else:
-            order_form = CheckoutForm()        
-
-        order_form = CheckoutForm()
+            order_form = CheckoutForm()
 
     if not stripe_public_key:
         messages.warning(request, 'Stripe public key is missing')
@@ -133,6 +131,8 @@ def checkout_success(request, order_number):
 
         if save_info:
             profile_data = {
+                'first_name': order.first_name,
+                'last_name': order.first_name,
                 'default_street_address': order.street_address,
                 'default_postcode': order.postcode,
                 'default_city': order.city,
