@@ -18,11 +18,11 @@
 {% block inner_content %}
   {% if confirmation %}
     {% user_display confirmation.email_address.user as user_display %}
-    <p>{% blocktrans with confirmation.email_address.email as email %}Please confirm that <a href="mailto:{{ email }}">{{ email }}</a> is an e-mail address for user {{ user_display }}.{% endblocktrans %}</p>
+    <p>{% blocktrans with confirmation.email_address.email as email %}Please confirm that <a class="text-red" href="mailto:{{ email }}">{{ email }}</a> is an e-mail address for user {{ user_display }}.{% endblocktrans %}</p>
     <form method="post" action="{% url 'account_confirm_email' confirmation.key %}">
     {% csrf_token %}
-      <p class="text-center">
-        <button class="btn-dark mt-3 rounded p-2" type="submit">{% trans 'Confirm' %}</button>
+      <p class="text-center mt-4">
+        <button class="btn green-btn hvr-grow p-2" type="submit">{% trans 'Confirm' %}</button>
       </p>
     </form>
   {% else %}

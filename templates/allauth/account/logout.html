@@ -15,18 +15,14 @@
 {% endblock %}
 
 {% block inner_content %}
-
-<p class="text-center pb-2">{% trans 'Are you sure you want to sign out?' %}</p>
-
-<form method="post" action="{% url 'account_logout' %}">
-  {% csrf_token %}
-  {% if redirect_field_value %}
-  <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}"/>
-  {% endif %}
-  <p class="text-center">
-    <button class="btn-outline-dark rounded px-2" type="submit">{% trans 'Sign Out' %}</button>
-  </p>
-</form>
-
-
+  <p class="text-center pb-2">{% trans 'Are you sure you want to sign out?' %}</p>
+  <form method="post" action="{% url 'account_logout' %}">
+    {% csrf_token %}
+    {% if redirect_field_value %}
+      <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}"/>
+    {% endif %}
+    <p class="text-center">
+      <button class="btn cus-btn-red hvr-grow px-2" type="submit">{% trans 'Sign Out' %}</button>
+    </p>
+  </form>
 {% endblock %}
