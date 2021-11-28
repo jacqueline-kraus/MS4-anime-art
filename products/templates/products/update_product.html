@@ -20,6 +20,8 @@
                 <form method="POST" action="{% url 'update_product' product.id %}" class="form" enctype="multipart/form-data">
                     {% csrf_token %}
                     {{ form | crispy }}
+                    <p class='alert alert-warning'>Unfortunately you can't change images here. 
+                    Please use a service like AWS to host your images.</p>
                     <a href="{% url 'products' %}" class="btn btn-outline-dark rounded">Cancel</a>
                     <button class="btn btn-dark rounded" type="submit">Update Product</button>
                 </form>
