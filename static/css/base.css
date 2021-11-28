@@ -33,6 +33,10 @@
     background-color: #e0cccc;
 }
 
+.navbar-brand {
+    padding-bottom: 0;
+}
+
 /* Navigation */
 
 a {
