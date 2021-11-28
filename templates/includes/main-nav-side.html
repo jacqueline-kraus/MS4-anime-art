@@ -13,7 +13,7 @@
         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
           <li class="nav-item">
             <a class="nav-link hvr-grow" href="{% url 'view_cart' %}">
-              <p class="text-red"> <i class="fas fa fa-shopping-cart"></i>
+              <p class="text-red"> <i class="fas fa-shopping-cart"></i>
                 {% if total %}
                     {{ total|floatformat:2 }}€
                 {% endif %}
@@ -98,8 +98,9 @@
           <input class="form-control me-2" type="search" placeholder="Type to search" name="q" aria-label="Search" required>
           <button class="btn cus-btn-red" type="submit">Search</button>
         </form>
+        <hr>
         <div class="social-nav">
-          <span class="mt-5"><b>Contact:</b></span>
+          <span><b>Contact:</b></span>
           <br>
           <p class="font-sm">
             <a class="text-decoration-none" href="mailto:animeartonlineshop@gmail.com" target="_blank" title="Email"><i class="far fa fa-envelope text-red"></i> animeartonlineshop@gmail.com</a><br>
