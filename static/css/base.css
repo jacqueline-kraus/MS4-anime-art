@@ -175,7 +175,7 @@ p {
     margin-top: 0.5rem;
 }
 
-.home-btn {
+.home-btn, .home-btn:hover {
     font-size: 20px;
     font-weight: 800;
     background-color: #e0cccc;
@@ -191,7 +191,7 @@ p {
     box-shadow: 0 0 1px rgba(0, 0, 0, 0)
 }
 
-.home-btn-all {
+.home-btn-all, .home-btn-all:hover {
     font-size: 20px;
     font-weight: 800;
     background-color: #e0cccc;
