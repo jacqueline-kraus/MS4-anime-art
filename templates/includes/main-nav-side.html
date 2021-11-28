@@ -27,17 +27,17 @@
             <ul class="dropdown-menu border-0" aria-labelledby="offcanvasNavbarDropdown">
                 <li>
                   <a class="dropdown-item" href="{% url 'products' %}">
-                    <h6 class="text-red"><i class="fas fa-caret-right"></i> All Products</h6>
+                    <h6 class="text-red"><i class="fas fa-paint-brush"></i> All Products</h6>
                   </a>
                 </li>
                 <li>
                   <a class="dropdown-item" href="{% url 'products' %}?type=classic_drawing">
-                    <h6 class="text-red"><i class="fas fa-caret-right"></i> Classic Drawings</h6>
+                    <h6 class="text-red"><i class="fas fa-paint-brush"></i> Classic Drawings</h6>
                   </a>
                 </li>
                 <li>
                   <a class="dropdown-item" href="{% url 'products' %}?type=digital_drawing">
-                    <h6 class="text-red"><i class="fas fa-caret-right"></i> Digital Drawings</h6>
+                    <h6 class="text-red"><i class="fas fa-paint-brush"></i> Digital Drawings</h6>
                   </a>
                 </li>
             </ul>
@@ -50,23 +50,23 @@
               {% if request.user.is_authenticated %}
                 <li>
                   <a class="dropdown-item" href="{% url 'profile' %}">
-                    <h6 class="text-red"><i class="fas fa-caret-right"></i> My Profile</h6>
+                    <h6 class="text-red"><i class="fas fa-user-circle"></i> My Profile</h6>
                   </a>
                 </li>
                 <li>
                   <a class="dropdown-item" href="{% url 'account_logout' %}">
-                    <h6 class="text-red"><i class="fas fa-caret-right"></i> Logout</h6>
+                    <h6 class="text-red"><i class="fas fa-sign-out-alt"></i> Logout</h6>
                   </a>
                 </li>
               {% else %}
                 <li>
                   <a class="dropdown-item" href="{% url 'account_signup' %}">
-                    <h6 class="text-red"><i class="fas fa-caret-right"></i> Register</h6>
+                    <h6 class="text-red"><i class="fas fa-user-plus"></i> Register</h6>
                   </a>
                 </li>
                 <li>
                   <a class="dropdown-item" href="{% url 'account_login' %}">
-                    <h6 class="text-red"><i class="fas fa-caret-right"></i> Login</h6>
+                    <h6 class="text-red"><i class="fas fa-sign-in-alt"></i> Login</h6>
                   </a>
                 </li>
               {% endif %}
@@ -82,7 +82,7 @@
                   {% if request.user.is_authenticated %}
                     <li>
                       <a class="dropdown-item" href="{% url 'add_product' %}">
-                        <h6 class="text-red"><i class="fas fa-caret-right"></i> Add products</h6>
+                        <h6 class="text-red"><i class="fas fa-plus-circle"></i> Add products</h6>
                       </a>
                     </li>
                   {% endif %}
