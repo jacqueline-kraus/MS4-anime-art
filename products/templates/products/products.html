@@ -12,43 +12,44 @@
 {% endblock %}
 
 {% block content %}
-  <div class="container-fluid">
-    <div class="row justify-content-center align-items-center">
-      <div class="col-12 col-md-12 text-center my-2">
-        <a href="{% url 'products' %}?type=classic_drawing" class="btn btn-sm cus-btn-red hvr-grow m-2">Classic Drawings</a>
-        <a href="{% url 'products' %}?type=digital_drawing" class="btn btn-sm cus-btn-red hvr-grow m-2">Digital Drawings</a>
-        <a href="{% url 'products' %}" class="btn btn-sm cus-btn-red hvr-grow m-2">All Products</a>
+  {% if not products %}
+      <div class="col-sm-12 col-md-12">
+        <p class="text-center">Your search criteria "<span class="text-red">{{ search_term }}</span>" did not match any product.</p>
+        <p class="text-center">{% include 'includes/btn-product-overview.html' %}</p>
+      </div>
+  {% else %}
+    <div class="container-fluid">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-12 col-md-12 text-center my-2">
+          <a href="{% url 'products' %}?type=classic_drawing" class="btn btn-sm cus-btn-red hvr-grow m-2">Classic Drawings</a>
+          <a href="{% url 'products' %}?type=digital_drawing" class="btn btn-sm cus-btn-red hvr-grow m-2">Digital Drawings</a>
+          <a href="{% url 'products' %}" class="btn btn-sm cus-btn-red hvr-grow m-2">All Products</a>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="container">
-    <div class="row row-cols-1 row-cols-md-3">
-      {% if not products %}
-        <div class="col-sm-12 col-md-12">
-          <p>Your search criteria "{{ search_term }}" did not match any product.</p>
-          {% include 'includes/btn-product-overview.html' %}
-        </div>
-      {% endif %}
-      {% for product in products %}
-        <div class="col col-sm-12 text-center my-3 my-md-5">
-          <!-- From Bootstrap -->
-          <div class="card h-100 w-75">
-            <a href="{% url 'product_display' product.id %}">
-              <img src="{{ MEDIA_URL }}{{ product.image }}" class="card-img-top" alt="{{product.name}}">
-            </a>
-            <div class="card-body">
-              <h5 class="card-title">{{ product.name}}</h5>
-              <p class="card-text">{{ product.price}}€</p>
-              {% if request.user.is_superuser %}
-                <small>
-                <a href="{% url 'update_product' product.id %}" class="btn btn-sm btn-outline-dark hvr-grow">Edit</a>
-                </small>
-              {% endif %}
+    <div class="container">
+      <div class="row row-cols-1 row-cols-md-3">
+        {% for product in products %}
+          <div class="col col-sm-12 text-center my-3 my-md-5">
+            <!-- From Bootstrap -->
+            <div class="card h-100 w-75">
+              <a href="{% url 'product_display' product.id %}">
+                <img src="{{ MEDIA_URL }}{{ product.image }}" class="card-img-top" alt="{{product.name}}">
+              </a>
+              <div class="card-body">
+                <h5 class="card-title">{{ product.name}}</h5>
+                <p class="card-text">{{ product.price}}€</p>
+                {% if request.user.is_superuser %}
+                  <small>
+                  <a href="{% url 'update_product' product.id %}" class="btn btn-sm btn-outline-dark hvr-grow">Edit</a>
+                  </small>
+                {% endif %}
+              </div>
             </div>
           </div>
-        </div>
-      {% endfor %}
-    </div>
+        {% endfor %}
+      </div>
+    {% endif %}
   </div>
 
 {% endblock %}
