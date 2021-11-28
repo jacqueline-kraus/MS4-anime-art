@@ -23,6 +23,12 @@
   </div>
   <div class="container">
     <div class="row row-cols-1 row-cols-md-3">
+      {% if not products %}
+        <div class="col-sm-12 col-md-12">
+          <p>Your search criteria "{{ search_term }}" did not match any product.</p>
+          {% include 'includes/btn-product-overview.html' %}
+        </div>
+      {% endif %}
       {% for product in products %}
         <div class="col col-sm-12 text-center my-3 my-md-5">
           <!-- From Bootstrap -->
