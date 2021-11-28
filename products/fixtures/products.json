@@ -5,7 +5,7 @@
     "fields":{
       "sku": "cd1000000001",
       "name": "Katsuki Bakugo",
-      "description": "My Hero Academia",
+      "description": "From the anime <b>My Hero Academia<\/b>. This classic drawing is available in the size of 42,0cm x 59,4cm.",
       "price": 49.99,
       "type": 1,
       "image": "classic_bakugoukatsuki.jpeg"
@@ -17,7 +17,7 @@
     "fields":{
       "sku": "cd1000000002",
       "name": "Boa Hancock",
-      "description": "One piece",
+      "description": "From the anime <b>One piece<\/b>. This classic drawing is available in the size of 42,0cm x 59,4cm.",
       "price": 49.99,
       "type": 1,
       "image": "classic_boahancock.jpeg"
@@ -29,7 +29,7 @@
     "fields":{
       "sku": "cd1000000003",
       "name": "Dabi",
-      "description": "My Hero Academia",
+      "description": "From the anime <b>My Hero Academia<\/b>. This classic drawing is available in the size of 42,0cm x 59,4cm.",
       "price": 49.99,
       "type": 1,
       "image": "classic_bokunoheroacademia.jpeg"
@@ -41,7 +41,7 @@
     "fields":{
       "sku": "cd1000000004",
       "name": "Ichigo Kurosaki vs. Grimmjow Jaegerjaquez",
-      "description": "Bleach",
+      "description": "From the anime <b>Bleach<\/b>. This classic drawing is available in the size of 42,0cm x 59,4cm.",
       "price": 49.99,
       "type": 1,
       "image": "classic_grimmjowvskurosaki.jpeg"
@@ -53,7 +53,7 @@
     "fields":{
       "sku": "cd1000000005",
       "name": "Levi Ackerman",
-      "description": "Attack on Titan",
+      "description": "From the anime <b>Attack on Titan<\/b>. This classic drawing is available in the size of 42,0cm x 59,4cm.",
       "price": 49.99,
       "type": 1,
       "image": "classic_leviackerman.jpeg"
@@ -65,7 +65,7 @@
     "fields":{
       "sku": "cd1000000006",
       "name": "Roronoa Zoro",
-      "description": "One piece",
+      "description": "From the anime <b>One piece<\/b>. This classic drawing is available in the size of 42,0cm x 59,4cm.",
       "price": 49.99,
       "type": 1,
       "image": "classic_roronoazoro.jpeg"
@@ -77,7 +77,7 @@
     "fields":{
       "sku": "cd1000000007",
       "name": "Sukuna x Itadori",
-      "description": "Jujutsu Kaisen",
+      "description": "From the anime <b>Jujutsu Kaisen<\/b>. This classic drawing is available in the size of 42,0cm x 59,4cm.",
       "price": 49.99,
       "type": 1,
       "image": "classic_sukunaitadori.jpeg"
@@ -89,7 +89,7 @@
     "fields":{
       "sku": "dd1000000001",
       "name": "Black Goku SSJ Rose With Rosé Background",
-      "description": "Dragon Ball",
+      "description": "From the anime <b>Dragon Ball<\/b>. This digital drawing is available in the size of 42,0cm x 59,4cm.",
       "price": 39.99,
       "type": 2,
       "image": "digital_blackgokussjrose_bgrose.jpeg"
@@ -101,7 +101,7 @@
     "fields":{
       "sku": "dd1000000002",
       "name": "Black Goku SSJ Rose",
-      "description": "Dragon Ball",
+      "description": "From the anime <b>Dragon Ball<\/b>. This digital drawing is available in the size of 42,0cm x 59,4cm.",
       "price": 39.99,
       "type": 2,
       "image": "digital_blackgokussjrose.jpeg"
@@ -113,7 +113,7 @@
     "fields":{
       "sku": "dd1000000003",
       "name": "Shoyo Hinata With Colored Background",
-      "description": "Haikyu",
+      "description": "From the anime <b>Haikyu<\/b>. This digital drawing is available in the size of 42,0cm x 59,4cm.",
       "price": 39.99,
       "type": 2,
       "image": "digital_haikyu_bg.jpeg"
@@ -125,7 +125,7 @@
     "fields":{
       "sku": "dd1000000004",
       "name": "Shoyo Hinata",
-      "description": "Haikyu",
+      "description": "From the anime <b>Haikyu<\/b>. This digital drawing is available in the size of 42,0cm x 59,4cm.",
       "price": 39.99,
       "type": 2,
       "image": "digital_haikyu.jpeg"
@@ -137,7 +137,7 @@
     "fields":{
       "sku": "dd1000000005",
       "name": "Haku & Zabuza With Real Background",
-      "description": "Naruto",
+      "description": "From the anime <b>Naruto<\/b>. This digital drawing is available in the size of 42,0cm x 59,4cm.",
       "price": 39.99,
       "type": 2,
       "image": "digital_hakuzabuza_bg.jpeg"
@@ -149,7 +149,7 @@
     "fields":{
       "sku": "dd1000000006",
       "name": "Haku & Zabuza",
-      "description": "Naruto",
+      "description": "From the anime <b>Naruto<\/b>. This digital drawing is available in the size of 42,0cm x 59,4cm.",
       "price": 39.99,
       "type": 2,
       "image": "digital_hakuzabuza.jpeg"
@@ -161,7 +161,7 @@
     "fields":{
       "sku": "dd1000000007",
       "name": "Hisoka Morow",
-      "description": "Hunter x Hunter",
+      "description": "From the anime <b>Hunter x Hunter<\/b>. This digital drawing is available in the size of 42,0cm x 59,4cm.",
       "price": 39.99,
       "type": 2,
       "image": "digital_hisokamorow.jpeg"
@@ -173,7 +173,7 @@
     "fields":{
       "sku": "dd1000000008",
       "name": "Ino Yamanaka",
-      "description": "Naruto",
+      "description": "From the anime <b>Naruto<\/b>. This digital drawing is available in the size of 42,0cm x 59,4cm.",
       "price": 39.99,
       "type": 2,
       "image": "digital_inoyamanaka.jpeg"
@@ -184,7 +184,7 @@
     "fields":{
       "sku": "dd1000000009",
       "name": "Kakashi Hatake",
-      "description": "Naruto",
+      "description": "From the anime <b>Naruto<\/b>. This digital drawing is available in the size of 42,0cm x 59,4cm.",
       "price": 39.99,
       "type": 2,
       "image": "digital_kakshihatake.jpeg"
@@ -196,7 +196,7 @@
     "fields":{
       "sku": "dd1000000010",
       "name": "Ken Kaneki",
-      "description": "Tokyo Ghoul",
+      "description": "From the anime <b>Tokyo Ghoul<\/b>. This digital drawing is available in the size of 42,0cm x 59,4cm.",
       "price": 39.99,
       "type": 2,
       "image": "digital_kenkaneki.jpeg"
@@ -208,7 +208,7 @@
     "fields":{
       "sku": "dd1000000011",
       "name": "Ken Ryuguji",
-      "description": "Tokyo Revengers",
+      "description": "From the anime <b>Tokyo Revengers<\/b>. This digital drawing is available in the size of 42,0cm x 59,4cm.",
       "price": 39.99,
       "type": 2,
       "image": "digital_kenryuguji.jpeg"
@@ -220,7 +220,7 @@
     "fields":{
       "sku": "dd1000000012",
       "name": "Killua Zoldyck",
-      "description": "Hunter x Hunter",
+      "description": "From the anime <b>Hunter x Hunter<\/b>. This digital drawing is available in the size of 42,0cm x 59,4cm.",
       "price": 39.99,
       "type": 2,
       "image": "digital_killuazoldyck.jpeg"
@@ -232,7 +232,7 @@
     "fields":{
       "sku": "dd1000000013",
       "name": "Levi x Naruto",
-      "description": "Attck on Titan / Naruto",
+      "description": "From the anime <b>Attack on Titan and Naruto<\/b>. This digital drawing is available in the size of 42,0cm x 59,4cm.",
       "price": 39.99,
       "type": 2,
       "image": "digital_livaixnaruto.jpeg"
@@ -244,7 +244,7 @@
     "fields":{
       "sku": "dd1000000014",
       "name": "Madara Uchiha",
-      "description": "Naruto",
+      "description": "From the anime <b>Naruto<\/b>. This digital drawing is available in the size of 42,0cm x 59,4cm.",
       "price": 39.99,
       "type": 2,
       "image": "digital_madarauchiha.jpeg"
@@ -256,7 +256,7 @@
     "fields":{
       "sku": "dd1000000015",
       "name": "Mikasa Ackerman",
-      "description": "Attack on Titan",
+      "description": "From the anime <b>Attack on Titan<\/b>. This digital drawing is available in the size of 42,0cm x 59,4cm.",
       "price": 39.99,
       "type": 2,
       "image": "digital_mikasaackerman.jpeg"
@@ -268,7 +268,7 @@
     "fields":{
       "sku": "dd1000000016",
       "name": "Rei Ayanami",
-      "description": "Neon Genesis Evangelion",
+      "description": "From the anime <b>Neon Genesis Evangelion<\/b>. This digital drawing is available in the size of 42,0cm x 59,4cm.",
       "price": 39.99,
       "type": 2,
       "image": "digital_reiayanami.jpeg"
@@ -280,7 +280,7 @@
     "fields":{
       "sku": "dd1000000017",
       "name": "Satoru Gojo",
-      "description": "Jujutsu Kaisen",
+      "description": "From the anime <b>Jujutsu Kaisen<\/b>. This digital drawing is available in the size of 42,0cm x 59,4cm.",
       "price": 39.99,
       "type": 2,
       "image": "digital_satorugojo.jpeg"
@@ -292,7 +292,7 @@
     "fields":{
       "sku": "dd1000000018",
       "name": "Guren & Mahiru",
-      "description": "Seraph of the End",
+      "description": "From the anime <b>Seraph of the End<\/b>. This digital drawing is available in the size of 42,0cm x 59,4cm.",
       "price": 39.99,
       "type": 2,
       "image": "digital_seraphoftheend.jpeg"
@@ -304,7 +304,7 @@
     "fields":{
       "sku": "dd1000000019",
       "name": "Sharingan",
-      "description": "Naruto",
+      "description": "From the anime <b>Naruto<\/b>. This digital drawing is available in the size of 42,0cm x 59,4cm.",
       "price": 39.99,
       "type": 2,
       "image": "digital_sharingan.jpeg"
@@ -316,7 +316,7 @@
     "fields":{
       "sku": "dd1000000020",
       "name": "Spike Spiegel",
-      "description": "Cowboy Bebop",
+      "description": "From the anime <b>Cowboy Bebop<\/b>. This digital drawing is available in the size of 42,0cm x 59,4cm.",
       "price": 39.99,
       "type": 2,
       "image": "digital_spikespiegel.jpeg"
@@ -328,7 +328,7 @@
       "fields":{
       "sku": "dd1000000021",
       "name": "Yumeko Jabami",
-      "description": "Kakegurui",
+      "description": "From the anime <b>Kakegurui<\/b>. This digital drawing is available in the size of 42,0cm x 59,4cm.",
       "price": 39.99,
       "type": 2,
       "image": "digital_yumekojabami.jpeg"
