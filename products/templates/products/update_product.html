@@ -5,7 +5,6 @@
   <div class="container-fluid page-header-margin">
     <div class="row">
       <div class="col text-center">
-        <h1>Product Management</h1>
         <h1>Update a Product</h1>
       </div>
     </div>
@@ -21,9 +20,9 @@
                     {% csrf_token %}
                     {{ form | crispy }}
                     <p class='alert alert-warning'>Unfortunately you can't change images here. 
-                    Please use a service like AWS to host your images.</p>
-                    <a href="{% url 'products' %}" class="btn btn-outline-dark rounded">Cancel</a>
-                    <button class="btn btn-dark rounded" type="submit">Update Product</button>
+                    Please use a service like AWS to host a new image.</p>
+                    <a href="{% url 'products' %}" class="btn cus-btn-red hvr-grow mx-2">Cancel</a>
+                    <button class="btn green-btn hvr-grow mx-2" type="submit">Update Product</button>
                 </form>
             </div>
         </div>
