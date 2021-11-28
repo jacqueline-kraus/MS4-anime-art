@@ -14,6 +14,10 @@
     background-color: #e0cccc;
 }
 
+.cus-bg, .dropdown-menu {
+    background-color: #fbf9f9;
+}
+
 .delete-btn, .delete-btn:hover {
     border-color: #650000 !important;
     background-color: #650000;
@@ -222,7 +226,7 @@ body, header {
     background-color: #fbf9f9;
 }
 
-body > footer {
+body > footer, .social-nav {
     position: sticky;
     top: 100vh;
 }
@@ -260,11 +264,12 @@ button {
     box-shadow: 0 0 0 0.25rem rgb(101 0 0 / 100%);
 }
 
+
 /* Media Queries */
 
 @media only screen and (max-width: 600px) {
     .heroimage {
-    background-image: url('../img/naruto-5752319_640.png');
+    background-image: url('../img/heroimage.png');
     background-size: contain;
     margin-top: 3rem;
     background-position: center;
