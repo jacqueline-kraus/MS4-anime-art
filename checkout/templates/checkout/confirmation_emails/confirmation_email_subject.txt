@@ -1,1 +1,1 @@
-Anime Art Order Confirmation for Oder Number {{ order.order_number }}
+Anime Art Order Confirmation for Order Number {{ order.order_number }}
