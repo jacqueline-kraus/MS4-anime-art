@@ -1,43 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;700&family=Roboto:wght@100;300;400;500&display=swap');
 
-.font-sm {
-    font-size: 12px;
+/* Basic elements */
+
+html, body {
+  height: 100%;
 }
 
-.text-red {
-    color: #650000;
-}
-
-.cus-btn-red {
-    color: #650000 !important;
-    border-color: #650000 !important;
-    background-color: #e0cccc;
-}
-
-.cus-bg, .dropdown-menu {
+body, header {
     background-color: #fbf9f9;
 }
 
-.delete-btn, .delete-btn:hover {
-    border-color: #650000 !important;
-    background-color: #650000;
-    color: #fff;
+body > footer, .social-nav {
+    position: sticky;
+    top: 100vh;
 }
 
-.form-control {
-    font-size: 12px;
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Cinzel', serif;
 }
 
-.navbar {
-    border-bottom: 1px solid #650000;
-    background-color: #e0cccc;
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
 }
-
-.navbar-brand {
-    padding-bottom: 0;
-}
-
-/* Navigation */
 
 a {
     color: #000;
@@ -47,8 +33,119 @@ a:hover {
     color: #000;
 }
 
-.nav {
-    flex-wrap: unset;
+/* Custom content style */
+
+.txt-white {
+    color: #fff;
+}
+
+.font-sm {
+    font-size: 12px;
+}
+
+.cus-bg, .dropdown-menu {
+    background-color: #fbf9f9;
+}
+
+.text-red {
+    color: #650000;
+}
+
+/* Buttons */
+
+button {
+    font-family: 'Cinzel', serif;
+    font-weight: 500;
+}
+
+.btn {
+    font-family: 'Cinzel', serif;
+    font-weight: 500;
+}
+
+.btn:focus {
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0)
+}
+
+.green-btn {
+    background-color: #cce0e0;
+    border-color: #3d4343;
+    color: #3d4343;
+    font-weight: 700;
+}
+
+.cus-btn-red {
+    color: #650000 !important;
+    border-color: #650000 !important;
+    background-color: #e0cccc;
+}
+
+.delete-btn, .delete-btn:hover {
+    border-color: #650000 !important;
+    background-color: #650000;
+    color: #fff;
+}
+
+.home-btn, .home-btn:hover {
+    font-size: 20px;
+    font-weight: 800;
+    background-color: #e0cccc;
+    color: #650000;
+    border-color: #650000;
+    border-radius: 10px;
+    border-width: 5px;
+    margin-top: 8rem;
+    padding: 2rem;
+}
+
+.home-btn-all, .home-btn-all:hover {
+    font-size: 20px;
+    font-weight: 800;
+    background-color: #e0cccc;
+    color: #650000;
+    border-color: #650000;
+    border-radius: 10px;
+    border-width: 5px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 2rem;
+}
+
+#btn-back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    background-color: #650000;
+    color: #fff;
+    z-index: 9999;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #e0cccc !important;
+    color: #650000 !important;
+}
+
+.accordion-button:focus {
+    border-color: #650000 !important;
+    box-shadow: 0 0 0 0.25rem rgb(101 0 0 / 100%);
+}
+
+/* Forms */
+
+.form-control {
+    font-size: 12px;
+}
+
+/* Navigation */
+
+.navbar {
+    border-bottom: 1px solid #650000;
+    background-color: #e0cccc;
+}
+
+.navbar-brand {
+    padding-bottom: 0;
 }
 
 .nav-link, .dropdown-item {
@@ -66,54 +163,14 @@ a:hover {
     color: #000;
 }
 
-/* Copied from Hover.css (https://github.com/IanLunn/Hover/blob/master/css/hover.css) */
-.hvr-grow {
-    display: inline-block;
-    vertical-align: middle;
-    -webkit-transform: perspective(1px) translateZ(0);
-    transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-    -webkit-transition-property: transform;
-    transition-property: transform;
-  }
-  .hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-  }
-
-  /* buttons */
-
-  .btn {
-      font-family: 'Cinzel', serif;
-      font-weight: 500;
-  }
-
-  .to-cart-btn {
-
-  }
-
-/* page header */
+/* Page header */
 
 .page-header-margin {
     margin-top: 6rem;
     margin-bottom: 2rem;
 }
 
-/* content styling */
-
-h1,h2,h3,h4,h5,h6 {
-    font-family: 'Cinzel', serif;
-}
-
-p {
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    font-weight: 300;
-}
-
-/* home */
+/* Home */
 
 .heroimage {
     background-image: url('../img/heroimage.png');
@@ -125,35 +182,6 @@ p {
     width: auto;
     margin-top: 4.2rem;
 }
-
-.home-img {
-    width: 400px;
-    height: auto;
-}
-
-.header-text {
-    background-color: #181818;
-    padding-bottom: 1rem;
-    padding-top: 1rem;
-    margin-bottom: 4rem;
-}
-
-.second-home-cta {
-    margin-top: 3rem!important;
-    margin-bottom: 6rem!important;
-
-}
-.txt-white {
-    color: #fff;
-}
-
-/* DONT USE! 
-
-.btn-lg {
-    padding: .9rem 5rem;
-    font-size: 2rem;
-    border-radius: .3rem;
-} */
 
 .classic-drawing {
     background-image: url('/media/classic_sukunaitadori.jpeg');
@@ -175,42 +203,19 @@ p {
     margin-top: 0.5rem;
 }
 
-.home-btn, .home-btn:hover {
-    font-size: 20px;
-    font-weight: 800;
-    background-color: #e0cccc;
-    color: #650000;
-    border-color: #650000;
-    border-radius: 10px;
-    border-width: 5px;
-    margin-top: 8rem;
-    padding: 2rem;
+.about-img {
+    width: 400px;
+    height: auto;
 }
 
-.btn:focus {
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0)
+.header-text {
+    background-color: #181818;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    margin-bottom: 4rem;
 }
 
-.home-btn-all, .home-btn-all:hover {
-    font-size: 20px;
-    font-weight: 800;
-    background-color: #e0cccc;
-    color: #650000;
-    border-color: #650000;
-    border-radius: 10px;
-    border-width: 5px;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    padding: 2rem;
-}
-
-/* .home-btn-m {
-    margin-top: 150px;
-} */
-
-
-
-/* products */
+/* Products */
 
 .card, .card-img-top {
     border: none;
@@ -218,66 +223,32 @@ p {
     margin: 0 auto;
     float: none;
     margin-bottom: 10px;
-
 }
 
-html,
-body {
-  height: 100%;
-}
-
-body, header {
-    background-color: #fbf9f9;
-}
-
-body > footer, .social-nav {
-    position: sticky;
-    top: 100vh;
-}
-
-
-#page-content {
-  flex: 1 0 auto;
-}
-
-/* need to be sorted: */
-
-button {
-    font-family: 'Cinzel', serif;
-    font-weight: 500;
-}
-
-.green-btn {
-    background-color: #cce0e0;
-    border-color: #3d4343;
-    color: #3d4343;
-    font-weight: 700;
-}
+/* Checkout */
 
 .checkout-icon {
     color: #3d4343;
 }
 
-.accordion-button:not(.collapsed) {
-    background-color: #e0cccc !important;
-    color: #650000 !important;
-}
+/* From Hover.css (https://github.com/IanLunn/Hover/blob/master/css/hover.css) */
 
-.accordion-button:focus {
-    border-color: #650000 !important;
-    box-shadow: 0 0 0 0.25rem rgb(101 0 0 / 100%);
-}
-
-#btn-back-to-top {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    display: none;
-    background-color: #650000;
-    color: #fff;
-    z-index: 9999;
+.hvr-grow {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
   }
 
+.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+-webkit-transform: scale(1.1);
+transform: scale(1.1);
+}
 
 /* Media Queries */
 
