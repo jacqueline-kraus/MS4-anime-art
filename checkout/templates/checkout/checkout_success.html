@@ -105,14 +105,22 @@
                 </div>
             </div>
         </div>
-        <div class="row mt-4 offset-md-4">
-            <div class="col-sm-12 col-md-12">
-                {% if from_profile %}
-                    {% include 'includes/btn-back-to-profile.html'%}
-                {% else %}
-                    {% include 'includes/btn-go-to-profile.html'%}
-                {% endif %}
+        {% if request.user.is_authenticated %}
+            <div class="row mt-4 offset-md-4">
+                <div class="col-sm-12 col-md-12">
+                    {% if from_profile %}
+                        {% include 'includes/btn-back-to-profile.html'%}
+                    {% else %}
+                        {% include 'includes/btn-go-to-profile.html'%}
+                    {% endif %}
+                </div>
             </div>
-        </div>
+        {% else %}
+            <div class="row mt-4 offset-md-4">
+                <div class="col-sm-12 col-md-12">
+                        {% include 'includes/btn-product-overview.html'%}
+                </div>
+            </div>
+        {% endif %}
     </div>
 {% endblock %}
