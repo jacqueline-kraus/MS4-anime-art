@@ -18,4 +18,3 @@ ENV/
 env.bak/
 venv.bak/
 env.py
-.env.py
