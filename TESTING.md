@@ -22,6 +22,7 @@ Tested all javascript code with [JShint](https://jshint.com/):
 - `product.js`
 ![product-js-validation](readme-files/code-validation/product-js-validation.png)
 
+
 ### HTML
 Tested html code with [W3 HTML Validator](https://validator.w3.org/): 
 - All good! No errors or warnings
@@ -92,6 +93,13 @@ The website was tested on following hardware devices:
 - FAQ arrow is blue
 
 - missing: askign to agree before delete in admin
+
+
+- make delivery cost an environment variable --> mention in readme that it should be not hardcoded
+
+order history --> security put user 
+
+get_user_model instrad of usin the User model directly --> rust send link
 
 ### 
 
