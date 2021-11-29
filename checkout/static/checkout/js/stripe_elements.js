@@ -52,11 +52,11 @@ form.addEventListener('submit', function(ev) {
         'csrfmiddlewaretoken': csrfToken,
         'client_secret': clientSecret,
         'save_info': saveInfo,
-    }
+    };
     var url = '/checkout/cache_checkout_data/';
 
     $.post(url, postData).done(function() {
-        const fullName = form.first_name.value + ' ' + form.last_name.value
+        const fullName = form.first_name.value + ' ' + form.last_name.value;
         stripe.confirmCardPayment(clientSecret, {
             payment_method: {
                 card: card,
@@ -100,5 +100,5 @@ form.addEventListener('submit', function(ev) {
         });
     }).fail(function() {
         location.reload();
-    })
+    });
 });
