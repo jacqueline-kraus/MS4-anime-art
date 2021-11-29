@@ -165,10 +165,21 @@ The different navigation items:
 ![back-to-top-btn-desktop](readme-files/features/back-to-top-btn-desktop.png)
 ![back-to-top-btn-mobile](readme-files/features/back-to-top-btn-mobile.png)
 
+### Automatic emails
+
 ### Home app
-`home`
+- `home` django app includes two pages `home page` and `about page`
+
+#### Home
+- On the `home page` the user will be welcomed and can read a short introduction to the Anime Art Onlineshop. The user can also start looking for products by clicking on one of the three prominent CTAs
+![homepage-desktop](readme-files/features/homepage-desktop.png)
+![homepage-mobile](readme-files/features/homepage-mobile.png)
 
 #### About
+- The `about page` is informative. The user can read here about why Anime Art was founded, about the products it offers and about the artist, who creates the products. Also the user can find a small FAQ on this page
+![about-desktop](readme-files/features/about-desktop.png)
+![about-mobile](readme-files/features/about-mobile.png)
+
 
 ### Products app
 `products`
