@@ -1,3 +1,5 @@
+/* jshint esversion: 8, jquery: true */
+
 // Followed the instructions of Boutique Ado Project
 function handleEnableDisable(itemId) {
     var currentValue = parseInt($(`#id_qty_${itemId}`).val());

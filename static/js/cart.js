@@ -1,3 +1,5 @@
+/* jshint esversion: 8, jquery: true */
+
 // Followed the instructions of Boutique Ado Project
 function handleEnableDisable(itemId) {
     var currentValue = parseInt($(`#id_qty_${itemId}`).val());
@@ -28,7 +30,9 @@ $('.increment-qty').click(function(e) {
     var newQuantity = currentValue + 1;
     $(closestInput).val(newQuantity);
     updateButtons();
-    updateBackendQuantity(itemId, newQuantity).then(() => {window.location.reload()});
+    updateBackendQuantity(itemId, newQuantity).then(() => {
+        window.location.reload();
+    });
 });
 
 $('.decrement-qty').click(function(e) {
@@ -39,7 +43,9 @@ $('.decrement-qty').click(function(e) {
     var newQuantity = currentValue - 1;
     $(closestInput).val(newQuantity);
     updateButtons();
-    updateBackendQuantity(itemId, newQuantity).then(() => {window.location.reload()});
+    updateBackendQuantity(itemId, newQuantity).then(() => {
+        window.location.reload();
+    });
 });
 
 function updateBackendQuantity(itemId, quantity) {
