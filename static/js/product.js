@@ -22,7 +22,6 @@ function updateButtons() {
 
 $('.increment-qty').click(function(e) {
     e.preventDefault();
-    var itemId = $(this).data('item_id');
     var closestInput = $(this).closest('.input-group').find('.qty_input')[0];
     var currentValueInput = $(closestInput).val();
     var currentValue = parseInt(currentValueInput);
@@ -33,7 +32,6 @@ $('.increment-qty').click(function(e) {
 
 $('.decrement-qty').click(function(e) {
     e.preventDefault();
-    var itemId = $(this).data('item_id');
     var closestInput = $(this).closest('.input-group').find('.qty_input')[0];
     var currentValue = parseInt($(closestInput).val());
     var newQuantity = currentValue - 1;
