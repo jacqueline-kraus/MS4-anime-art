@@ -1,6 +1,6 @@
 # MS4-anime-art
 
-Anime Art is a online shop for buying authentic, unique drawings from a real artist, who is specialized in drawing animes.
+Anime Art is an online shop for buying authentic, unique drawings from a real artist, who is specialized in drawing animes.
 
 ![showcase](readme-files/showcase/showcase.png)
 
@@ -24,27 +24,27 @@ Anime Art is a online shop for buying authentic, unique drawings from a real art
 
 #  UX 
 ### Backstory:
-My friend [Shippudeve](https://www.instagram.com/shippudeve/) draws amazing anime images - both **classic (with pen and paper) and also digital**. This e-commerce website should help her in the future to be able to sell her drawings as posters and with more features implemented, she can even draw images on request or on different materials (like shoes or shirts). To support her talent the idea of "Anime Art" came up. 
+My friend [Shippudeve](https://www.instagram.com/shippudeve/) draws amazing anime images - both **classic (with pen and paper) and also digital**. This e-commerce website should help her to sell her drawings as posters. To support her talent the idea of "Anime Art" came up. 
 
-**Anime Art stands for exclusive, selfmade drawings that you can purchase nowhere else.** One day every anime fan (or not fan) should be able to say: "I have a drawing of [Shippudeve](https://www.instagram.com/shippudeve/), the great artist". 
+**Anime Art stands for exclusive, self-made drawings that you can purchase nowhere else.** One day every anime fan (or not a fan) should be able to say: "I have a drawing of [Shippudeve](https://www.instagram.com/shippudeve/), the great artist". 
 
 
 ## Business goals
 ### As a business owner:
-- I want to generate revenue through offering a product that can be purchased through a webshop.
+- I want to generate revenue by offering a product that can be purchased through a webshop.
 - I want the user to understand what product I am offering.
 - I want to offer only exclusive products, that a user cannot purchase anywhere else.
 
 ## Customer goals
 ### As a user
 - I want to be able to view products so that I can purchase the products I like.
-- I want to be able to view the product details so that I can see the product name, product prize, product description and product image.
+- I want to be able to view the product details so that I can see the product name, product price, product description, and product image.
 - I want to be able to understand what the webshop is selling so that I can evaluate if I am interested in the products.
-- I want to be able to register for an user account so that I can view my profile.
+- I want to be able to register for a user account so that I can view my profile.
 - I want to be able to login and logout so that I can access my profile.
 - I want to be able to reset my password so that I can access my profile in case I lost the password or secure my account by changing the password.
 - I want to be able to receive an email confirmation after registering so that I can know I registered successfully.
-- I want to be able to view my profile so that I can see my order history, open requests and save my information for future orders.
+- I want to be able to view my profile so that I can see my order history, open requests, and save my information for future orders.
 - I want to be able to filter products so that I can find easily the products by category.
 - I want to be able to search for a product by name or description so that I can find a specific product.
 - I want to be able to see what I have searched for and the number of results so that I can know if there are results.
@@ -52,19 +52,19 @@ My friend [Shippudeve](https://www.instagram.com/shippudeve/) draws amazing anim
 - I want to be able to view products in my cart so that I can always be aware of what I am about to purchase and how much it will cost.
 - I want to be able to adjust the quantity of products in the cart so that I can delete or add more of the product.
 - I want to be able to delete products in my cart so that I can change my mind at any given time.
-- I want to be able to enter my payment information so that I can checkout quick and easy.
-- I want to be able to get an order confirmation after checkout so that I can double check that my data is correct.
-- I want to be able to receive an email confirmation so that I can keep track on my purchases and won't loose it.
+- I want to be able to enter my payment information so that I can check out quickly and easily.
+- I want to be able to get an order confirmation after checkout so that I can double-check that my data is correct.
+- I want to be able to receive an email confirmation so that I can keep track of my purchases and won't lose it.
 
 
 ## Structure of the website
-Anime Art is a responsive e-commerce website, so it is optimized for **all devices and screen sizes (desktop, mobile and tablet)**.
+Anime Art is a responsive e-commerce website, so it is optimized for **all devices and screen sizes (desktop, mobile, and tablet)**.
 
-It has an intuitive, user friendly interface with an easy to use **navigation bar** on top. From the **homepage** a user can choose directly which kind of products to check out and on the **about** page the user finds exlpanation about Anime Art and its products.On the products navigation menu item, a user has another way to find either all products or the products filtered by type.
+It has an intuitive, user-friendly interface with an easy to use **navigation bar** on top. From the **homepage** a user can choose directly which kind of products to check out and on the **about** page, the user finds an explanation about Anime Art and its products. On the products navigation menu item, a user has another way to find either all products or the products filtered by type.
 
 On the **account** menu item a user can **register or login**. When a user registers, a form has to be filled out and the user receives an email, which has to be confirmed before the account is created successfully. When a user is already logged in, the user has the possibility to view their **profile** or to **logout** of their account.
 
-When clicking on the shopping cart icon, the user is able to **view their shopping cart**, so what they are about to purchase. From the shopping cart, the user can purchase what is in the shopping cart by clicking on a button ("go to secure checkout") and filling out a form on the **checkout page**. The form contains input fields for shipping/billing information and card as a payment method. On this page the user can also review what they are about to purchase (in the order summary).
+When clicking on the shopping cart icon, the user is able to **view their shopping cart**, so what they are about to purchase. From the shopping cart, the user can purchase what is in the shopping cart by clicking on a button ("go to secure checkout") and filling out a form on the **checkout page**. The form contains input fields for shipping/billing information and card as a payment method. On this page, the user can also review what they are about to purchase (in the order summary).
 
 When actually purchasing the product and the purchase was successful, the user will land on a "thank you" page with a summary of all information (user information and information of the product that was purchased).
 
@@ -130,7 +130,7 @@ The different navigation items:
 
 ![navigation-logged-in](readme-files/features/navigation-logged-in.png)
 
-- Admin: When a user has admin rights (is a superuser), the user can add products. The option for this is shown by clicking on the dropdown item "Admin". As in the future there should be more items related to admin, this is a dropdown as well.
+- Admin: When a user has admin rights (is a superuser), the user can add products. The option for this is shown by clicking on the dropdown item "Admin". As in the future, there should be more items related to admin, this is a dropdown as well.
 
 ![navigation-admin](readme-files/features/navigation-admin.png)
 
@@ -141,7 +141,7 @@ The different navigation items:
 - In the navigation is also included the search field
 
 #### Search
-- The search field is included in the navigation offcanvas
+- The search field is included in the navigation `offcanvas`
 
 ![navigation-search](readme-files/features/navigation-search.png)
 
@@ -149,20 +149,20 @@ The different navigation items:
 
 ![search-input-error](readme-files/features/search-input-error.png)
 
-- The search field queries in all product names and product description to find a match
+- The search field queries in all product names and product descriptions to find a match
 
 - It brings the user to the product list page, where will be all products shown that match the search criteria
 
-- When there is no match, the user lands on the product list page with and sees an error message
+- When there is no match, the user lands on the product list page and sees an error message
 
 ![search-error-message](readme-files/features/search-error-message.png)
 
 ### Authentication (django-allauth feature)
-- Django-allauth is a Python package
+- `Django-allauth` is a Python package
 
-- "Integrated set of Django applications addressing authentication, registration, account management as well as 3rd party (social) account authentication." ([django allauth documenation](https://django-allauth.readthedocs.io/en/latest/))
+- "Integrated set of Django applications addressing authentication, registration, account management as well as 3rd party (social) account authentication." ([`django allauth` documenation](https://django-allauth.readthedocs.io/en/latest/))
 
-- It provides a set of features such as signup, login, logout and password change
+- It provides a set of features such as signup, login, logout, and password change
 
 - After signing up, a verification e-mail is sent to the registered e-mail to confirm it
 
@@ -208,14 +208,14 @@ The different navigation items:
 ![messages-profile-updated-successful](readme-files/features/messages-profile-updated-successful.png)
 
 ### Back to top button
-- On every page there is a **back to top button**, that the user can click to have an easy way to go to the top of the page without scrolling
+- On every page, there is a **back to top button**, that the user can click to have an easy way to go to the top of the page without scrolling
 
 ![back-to-top-btn-desktop](readme-files/features/back-to-top-btn-desktop.png)
 
 ![back-to-top-btn-mobile](readme-files/features/back-to-top-btn-mobile.png)
 
 ### Automatic emails
-- A gmail account **animeartonlineshop@gmail.com** has been created specifically for this project and used as a sender for all verification, reset and confirmation e-mails.
+- A Gmail account **animeartonlineshop@gmail.com** has been created specifically for this project and used as a sender for all verification, reset, and confirmation e-mails.
 - Users receive for instance an **order confirmation e-mail** after a purchase, **account verification e-mail** after the registration, **password reset e-mail** after requesting a password reset, etc.
 
 ## Apps
@@ -227,7 +227,7 @@ Anime Art is a [django project](https://docs.djangoproject.com/en/3.1/ref/applic
 - `checkout`
 - `profiles`
 
-Some features are available across the django project, while others are tied to a specific django application. The following lists explains every app and feature in detail.
+Some features are available across the Django project, while others are tied to a specific Django application. The following lists explains every app and feature in detail.
 
 ### Home app
 - `home` django app includes two pages `home` page and `about` page
@@ -240,7 +240,7 @@ Some features are available across the django project, while others are tied to 
 ![homepage-mobile](readme-files/features/homepage-mobile.png)
 
 #### About
-- The `about` page is informative. The user can read here about why Anime Art was founded, about the products it offers and about the artist, who creates the products. Also the user can find a small FAQ on this page
+- The `about` page is informative. The user can read here about why Anime Art was founded, about the products it offers, and about the artist, who creates the products. Also, the user can find a small FAQ on this page
 
 ![about-desktop](readme-files/features/about-desktop.png)
 
@@ -360,7 +360,7 @@ Some features are available across the django project, while others are tied to 
 
 ![cart-empty-mobile](readme-files/features/cart/cart-empty-mobile.png)
 
-- When there are items in the cart, these details will be displayed: `product image`, `product name`, `product sku`, `product price`, `quantity`, `subtotal`, `cart total`, `delivery cost` and `grand total`
+- When there are items in the cart, these details will be displayed: `product image`, `product name`, `product SKU, `product price`, `quantity`, `subtotal`, `cart total`, `delivery cost` and `grand total`
 
 - When clicking on the `product image`, the user will be redirected to the `product_display` page, where again the details can be viewed
 
@@ -493,9 +493,9 @@ Some features are available across the django project, while others are tied to 
 
 - The order history contains the `order date`, `order number`, `quantity of products`, `product names`, `grand total` and is visually displayed via an Bootstrap5 accordion, that closes the last menu item, when a new one is being opened
 
-![profile-order-history](readme-files/features/profile/order-history.png)
+![profile-order-history](readme-files/features/profile/profile-order-history.png)
 
-![profile-order-history-mobile](readme-files/features/profile/order-history-mobile.png)
+![profile-order-history-mobile](readme-files/features/profile/profile-order-history-mobile.png)
 
 ![profile-order-history-accordion](readme-files/features/profile/profile-order-history-accordion.png)
 
@@ -503,17 +503,17 @@ Some features are available across the django project, while others are tied to 
 
 ## Features left to implement
 ### Footer upgrade
-- [SEO](https://en.wikipedia.org/wiki/Search_engine_optimization) wise it would be good to have more text and keywords related to the product that Anime Art sells in the footer, as well as blogarticles etc.
+- [SEO](https://en.wikipedia.org/wiki/Search_engine_optimization) wise it would be good to have more text and keywords related to the product that Anime Art sells in the footer, as well as blog articles, etc.
 
 - A proper imprint and a contact page (with a contact form) should be implemented, to make the website more serious and trustworthy
 
-- A newsletter sign up field and a regular newsletter about new products would help promote the website and bring frequent traffic to the page
+- A newsletter sign-up field and a regular newsletter about new products would help promote the website and bring frequent traffic to the page
 
 ### Django pagination
 - When more and more products will be added, something like [django pagination](https://docs.djangoproject.com/en/3.2/topics/pagination/) should be added, so the user does not have to scroll through the whole page
 
 ### Sorting products
-- At the moment there are only two types of products (with only two different prices). As the inventory increases and more products with different prices will be added, then the user should be given the option not only to filter by type, but also to sort the products by price
+- At the moment there are only two types of products (with only two different prices). As the inventory increases and more products with different prices will be added, then the user should be given the option not only to filter by type but also to sort the products by price
 
 ### Service to host static images
 - As the product range is very small right now and is not increasing daily, I did not use any service for hosting static files (like [AWS](https://aws.amazon.com/)). As Heroku does not host static files by default, I used the workaround with [Whitenoise](http://whitenoise.evans.io/en/stable/), but this is not a scalable solution and does not allow you to upload images when adding or updating products in the `add_product` and `update_product` form
@@ -542,7 +542,7 @@ Some features are available across the django project, while others are tied to 
 
 ## Planning
 - [Balsamiq](https://balsamiq.com/): for creating wireframes
-- [Google Sheets](https://en.wikipedia.org/wiki/Google_Sheets): to write user stories and planning the data models
+- [Google Sheets](https://en.wikipedia.org/wiki/Google_Sheets): to write user stories and plan the data models
 - [DBeaver](https://dbeaver.io/): for database schema
 
 ## Testing
@@ -638,7 +638,7 @@ python3 manage.py createsuperuser
 python3 manage.py runserver
 ```
 
-8. Log into django admin
+8. Log into Django admin
 - After running the web app, add `/admin` at the end of the URL and log in with the superuser credentials from the previous step
 
 ## Heroku Deployment
@@ -647,7 +647,7 @@ python3 manage.py runserver
 pip3 freeze --local > requirements.txt
 ``` 
 
-2. Create a `Procfile` in the root directory and add the following line to the file:
+2. Create a `Profile` in the root directory and add the following line to the file:
 ```
 web: gunicorn anime_art.wsgi:application
 ```
@@ -670,7 +670,7 @@ web: gunicorn anime_art.wsgi:application
 - Open the "Settings" tab and click on "Reveal Config Vars"
 - Add your configuration variables, you can find these in your `.env.py` file
 
-10. Set up new database
+10. Set up a new database
 - In `settings.py`:
 ```
 import dj_database_url
@@ -691,7 +691,7 @@ else:
     }
 ```
 
-11. Migrate the models to Postgres database:
+11. Migrate the models to the Postgres database:
 ```
 python3 manage.py makemigrations
 ```
@@ -707,7 +707,7 @@ python3 manage.py loaddata types
 python3 manage.py loaddata products
 ```
 
-13. Create a superuser in order to access the django admin panel:
+13. Create a superuser in order to access the Django admin panel:
 ```
 python3 manage.py createsuperuser
 
@@ -726,7 +726,7 @@ git push
 
 10. Set up automatic deploys
 - Go back to Heroku, navigate to the tab "Deploy" and enable "Automatic Deploys"
-- Everytime you push now to your Github repository the changes will be automatically deployed in Heroku.
+- Every time you push now to your Github repository the changes will be automatically deployed in Heroku.
 
 ## Handling payments with Stripe
 1. Sign up for a free Stripe account
@@ -738,11 +738,11 @@ git push
 - Secret Key (`STRIPE_SECRET_KEY`): sk_test_key
 
 ## Sending emails through Gmail
-1. If you don't have any Gmail account yet, then you have to create one
+1. If you don't have a Gmail account yet, then you have to create one
 
 2. Navigate to "Other Google Account Settings" > "Security" tab > turn on 2-step-verification
 
-3. Go back to "Security" tab and click on "App passwords"
+3. Go back to the "Security" tab and click on "App passwords"
 
 4. Select "Mail" (in app dropdown) > select "Other" (in device dropdown)
 
