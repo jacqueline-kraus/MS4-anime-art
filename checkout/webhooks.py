@@ -7,22 +7,23 @@ from checkout.webhook_handler import Stripe_Webhook_Handler
 
 import stripe
 
+
 @require_POST
 @csrf_exempt
 def webhook(request):
-    
+
     """ Listen for webhooks """
     wh_secret = settings.STRIPE_WH_SECRET
     stripe.api_key = settings.STRIPE_SECRET_KEY
 
-    """ code from stripe documentation https://stripe.com/docs/webhooks/signatures """
+    """ code from stripe documentation"""
     payload = request.body
     sig_header = request.META['HTTP_STRIPE_SIGNATURE']
     event = None
 
     try:
         event = stripe.Webhook.construct_event(
-        payload, sig_header, wh_secret
+             payload, sig_header, wh_secret
         )
     except ValueError as e:
         # Invalid payload
@@ -32,7 +33,7 @@ def webhook(request):
         return HttpResponse(status=400)
     except Exception as e:
         return HttpResponse(content=e, status=400)
-    
+
     # set up a webhook handler
     handler = Stripe_Webhook_Handler(request)
 

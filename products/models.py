@@ -1,7 +1,7 @@
 from django.db import models
 
-# Create your models here.
-class Type(models.Model):    
+
+class Type(models.Model):
     name = models.CharField(max_length=254)
     friendly_name = models.CharField(max_length=254, null=True, blank=True)
 
@@ -13,7 +13,11 @@ class Type(models.Model):
 
 
 class Product(models.Model):
-    type = models.ForeignKey('Type', null=True, blank=True, on_delete=models.SET_NULL)
+    type = models.ForeignKey(
+        'Type',
+        null=True,
+        blank=True,
+        on_delete=models.SET_NULL)
     sku = models.CharField(max_length=254, null=True, blank=True)
     name = models.CharField(max_length=254)
     description = models.TextField()

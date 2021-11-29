@@ -7,7 +7,7 @@ def cart_contents(request):
     cart_items = []
     total = 0
     product_count = 0
-    
+
     cart = request.session.get('cart', {})
 
     for item_id, quantity in cart.items():
@@ -20,7 +20,7 @@ def cart_contents(request):
             'product':  product,
             'subtotal': product.price * quantity,
         })
-    
+
     delivery = 3.99
     grand_total = total + Decimal(delivery)
 

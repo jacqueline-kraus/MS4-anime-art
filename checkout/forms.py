@@ -3,13 +3,14 @@ from .models import Order
 from crispy_forms.helper import FormHelper
 from crispy_forms.layout import Layout, Submit, Row, Column
 
-class CheckoutForm(forms.ModelForm) :
+
+class CheckoutForm(forms.ModelForm):
     class Meta:
         model = Order
         fields = ('first_name', 'last_name', 'email',
                   'street_address', 'postcode', 'city',
                   'country',)
-    
+
     def __init__(self, *args, **kwargs):
         """
         Add placeholders and classes, remove auto-generated

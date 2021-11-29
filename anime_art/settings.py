@@ -67,7 +67,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware', # Simplified static file serving
+    'whitenoise.middleware.WhiteNoiseMiddleware',  # Simplified static file serving
 ]
 
 ROOT_URLCONF = 'anime_art.urls'

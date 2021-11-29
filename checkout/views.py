@@ -16,6 +16,7 @@ from profiles.models import UserProfile
 import stripe
 import json
 
+
 @require_POST
 def cache_checkout_data(request):
     try:
@@ -28,7 +29,9 @@ def cache_checkout_data(request):
         })
         return HttpResponse(status=200)
     except Exception as e:
-        messages.error(request, 'Your payment cannot be processed at the moment. Please try again later.')
+        messages.error(request, ('Your payment cannot be '
+                                 'processed at the moment. '
+                                 'Please try again later.'))
         return HttpResponse(content=e, status=400)
 
 
@@ -65,34 +68,37 @@ def checkout(request):
                     )
                     order_line_item.save()
                 except Product.DoesNotExist:
-                    messages.error(request, (
-                        "We cannot find one of the products in your cart. Please contact us for help.")
-                    )
+                    messages.error(request, ('We cannot find one of '
+                                             'the products in your cart. '
+                                             'Please contact us for help.'))
                     order.delete()
                     return redirect(reverse('view_cart'))
 
             request.session['save_info'] = 'save-info' in request.POST
-            return redirect(reverse('checkout_success', args=[order.order_number]))
+            return redirect(reverse('checkout_success',
+                                    args=[order.order_number]))
         else:
-            messages.error(request, 'An error ocurred. Please check your information.')
-    else: 
+            messages.error(request, ('An error ocurred. '
+                                     'Please check your information.'))
+    else:
         cart = request.session.get('cart', {})
         if not cart:
-            messages.error(request, "Your cart is empty. There is nothing to purchase.")
+            messages.error(request, ('Your cart is empty. '
+                                     'There is nothing to purchase.'))
             return redirect(reverse('products'))
-        
+
         current_cart = cart_contents(request)
         total = current_cart['grand_total']
         stripe_total = round(total * 100)
         stripe.api_key = stripe_secret_key
         intent = stripe.PaymentIntent.create(
-            amount = stripe_total,
-            currency = settings.STRIPE_CURRENCY,
+            amount=stripe_total,
+            currency=settings.STRIPE_CURRENCY,
         )
 
         if request.user.is_authenticated:
             try:
-                profile=UserProfile.objects.get(user=request.user)
+                profile = UserProfile.objects.get(user=request.user)
                 order_form = CheckoutForm(initial={
                     'first_name': profile.user.first_name,
                     'last_name': profile.user.last_name,
@@ -145,10 +151,10 @@ def checkout_success(request, order_number):
     messages.success(request, f'Your order was successful! \
         Your order number is {order_number}. \
             A confrmation email will be sent to {order.email} soon.')
-    
+
     if 'cart' in request.session:
         del request.session['cart']
-    
+
     template = 'checkout/checkout_success.html'
     context = {
         'order': order,
