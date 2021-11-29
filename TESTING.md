@@ -1,4 +1,24 @@
+[Code Validation](#code-validation)
+
 # Testing
+
+## Code Validation
+### PEP8
+Tested all python code with the [PEP8 checker](http://pep8online.com/):
+- Lines are too long in `setting.py`
+![settings-validation](readme-files/code-validation/settings-validation.png)
+- Lines too long in products `views.py`
+![products-view-validation](readme-files/code-validation/products-view-validation.png)
+- The issues (blank lines, line too long, whitespaces) are fixed and besides the 2 know errors above the code is clean without errors
+
+
+
+
+
+
+
+
+- screenshot for every device tested on
 
 ## Functionality testing
 For testing responsiveness, styling and interactivity I used for the project [Chrome Developer Tools](https://developers.google.com/web/tools/chrome-devtools).
@@ -45,4 +65,21 @@ The website was tested on following hardware devices:
 
 
 ## Bugs and problems
+- No image upload --> explain in Readme: replace image field with text(string) field -> (have user upload image somewhere else like aws)
+
+- note in readme: you have to click 2times back when you are on the product_display page (because of JS reload)--> add it to Bugs section
+
+- FAQ arrow is blue
+
+- missing: askign to agree before delete in admin
+
 ### 
+
+
+# Code validation
+- [PEP8 checker](http://pep8online.com/): 
+- [JShint](https://jshint.com/): 
+- [W3 CSS Validator](https://jigsaw.w3.org/css-validator/): 
+- [W3 HTML Validator]( ): 
+
+- code validation: screenshots
