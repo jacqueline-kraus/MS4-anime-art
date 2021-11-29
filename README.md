@@ -185,7 +185,7 @@ The different navigation items:
 `products`
 
 #### Products (List Page)
-
+###### Filter
 #### Product Display
 
 #### Admin
@@ -193,10 +193,7 @@ Edit & Update images: - No image upload --> explain in Readme: replace image fie
 - static files nicht in /media/
 -> document in the README that aws and image upload will be a future feature  and add screenshots of admin (how it looks like)
 
-#### Filter
 
-### Profiles app
-`profiles`
 
 
 ### Cart app
@@ -206,6 +203,9 @@ Edit & Update images: - No image upload --> explain in Readme: replace image fie
 `checkout`
 
 
+
+### Profiles app
+`profiles`
 
 
 ## Features left to implement:
@@ -268,10 +268,13 @@ Edit & Update images: - No image upload --> explain in Readme: replace image fie
 - [W3 HTML Validator](https://validator.w3.org/) to validate HTML code
 
 # Database
+As Django works with SQL databases by default, I was using SQLite in development. When deploying to Heroku, it provides a PostgreSQL database, that was used for deployment.
+
 ## Entity Relationship Diagram
-![screenshot_erd](readme-files/db-images/erd.jpeg)
+![erd](readme-files/db-images/erd.jpeg)
 
 ## Data Models
+![database-models](readme-files/db-images/database-models.png)
 
 # Deployment
 To run this project, you have to install 
