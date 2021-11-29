@@ -87,6 +87,9 @@ Buttons:
 
 - Green: border and text #3d4343 | background #cce0e0
 
+### Effects
+- All buttons have a hover grow effect
+
 ### Images
 - Product images created by [Shippudeve](https://www.instagram.com/shippudeve/)
 - Heroimage from [Pixabay.com](https://pixabay.com/de/illustrations/naruto-ninja-maske-charakter-5752319/)
@@ -96,18 +99,71 @@ Buttons:
 
 
 # Apps & Features
-## Existing Features
--back to top button
 
 ## Global features
 ### Navigation
+- The Logo "Anime Art", brings the user always to the homepage
+- The website has a Bootstrap5 <b>Offcanvas</b> side navigation. It is functional and adjusted for every screensize.
+![side-navigation](readme-files/features/side-navigation.png)
+![navigation](readme-files/features/navigation.png)
+
+The different navigation items:
+- The shopping cart: The total price is shown next to the shopping cart icon, when a user adds something to the cart
+![navigation-cart](readme-files/features/navigation-cart.png)
+- Products: The user can open a dropdown item to see and select the different types of products
+- The options are "All Products", "Digital Drawings" or "Classic Drawings"
+![navigation-products](readme-files/features/navigation-products.png)
+- Account: Via the account dropdown menu, a user can register or login (when logged out) <b>or</b> view the profile or logout (when logged in)
+![navigation-account-logged-out](readme-files/features/navigation-account-logged-out.png)
+![navigation-logged-in](readme-files/features/navigation-logged-in.png)
+- Admin: When a user has admin rights (is a superuser), the user can add products. The option for this is shown by clicking on the dropdown item "Admin". As in the future there should be more items related to admin, this is a dropdown as well.
+![navigation-admin](readme-files/features/navigation-admin.png)
+- About us: This item is not a dropdown. By clicking on this item, the user will land on the "about us" page
+- When a user opens a dropdown item and then clicks on another one, the previous dropdown closes by itself
+- In the navigation is also included the search field
 
 #### Search
-### Authentication (Registration, Login, Logout, PW reset)
-- django allauth for authentication (login etc.)
-### Messages (django, styled with bootstrap)
-### Includes
+- The search field is included in the navigation offcanvas
+![navigation-search](readme-files/features/navigation-search.png)
+- When clicking on the search button without typing search input, the field will throw an error
+![search-input-error](readme-files/features/search-input-error.png)
+- The search field queries in all product names and product description to find a match
+- It brings the user to the product list page, where will be all products shown that match the search criteria
+- When there is no match, the user lands on the product list page with and sees an error message
+![search-error-message](readme-files/features/search-error-message.png)
 
+### Authentication (django-allauth feature)
+- Django-allauth is a Python package
+- "Integrated set of Django applications addressing authentication, registration, account management as well as 3rd party (social) account authentication." ([django allauth documenation](https://django-allauth.readthedocs.io/en/latest/))
+- It provides a set of features such as signup, login, logout and password change
+- After signing up, a verification e-mail is sent to the registered e-mail to confirm it
+- Once confirmed, the user can log in with their credentials and access the profiles app
+- The links to these features can be found in the navigation, under the "Account" dropdown menu
+- Screenshots of the flow:
+![auth-sign-up](readme-files/features/auth-sign-up.png)
+![auth-verify-email](readme-files/features/auth-verify-email.png)
+![email-auth-conf](readme-files/features/email-auth-conf.png)
+![auth-conf-email](readme-files/features/auth-conf-email.png)
+![auth-sign-in](readme-files/features/auth-sign-in.png)
+![auth-sign-out](readme-files/features/auth-sign-out.png)
+
+### Messages (django, styled with bootstrap)
+- There are many ways what message a user might receive throughout the website
+- The messages are Bootstrap5 alerts
+- Here are some examples:
+![messages-sign-out](readme-files/features/messages-sign-out.png)
+![messages-sign-up-conf-email](readme-files/features/messages-sign-up-conf-email.png)
+![messages-email-conf-success](readme-files/features/messages-email-conf-success.png)
+![messages-sign-in-successful](readme-files/features/messages-sign-in-successful.png)
+![messages-item-add-cart](readme-files/features/messages-item-add-cart.png)
+![messages-item-removed-cart](readme-files/features/messages-item-removed-cart.png)
+![messages-order-successful](readme-files/features/messages-order-successful.png)
+![messages-profile-updated-successful](readme-files/features/messages-profile-updated-successful.png)
+
+### Back to top button
+- On every page there is a <b>back to top button</b>, that the user can click to have an easy way to go to the top of the page without scrolling
+![back-to-top-btn-desktop](readme-files/features/back-to-top-btn-desktop.png)
+![back-to-top-btn-mobile](readme-files/features/back-to-top-btn-mobile.png)
 
 ### Home app
 `home`
@@ -140,6 +196,7 @@ Edit & Update images: - No image upload --> explain in Readme: replace image fie
 
 
 
+
 ## Features left to implement:
 - Footer with imprint, SEO Texts, Contact Us page, Newsletter Signup
 
@@ -147,10 +204,6 @@ Edit & Update images: - No image upload --> explain in Readme: replace image fie
 - Leave out sorting for now, might add later when time left
 
 -> document in the README that aws and image upload will be a future feature  and add screenshots of admin (how it looks like)
-
-# Database Schema
-### Data Models
----> List all models and their name, database key,field type and type validation
 
 
 # Technologies used
@@ -194,6 +247,8 @@ Edit & Update images: - No image upload --> explain in Readme: replace image fie
 - [Stripe](https://stripe.com/en-gb-de): to manage (test) payment transactions
 - [Visual Studio Code](https://code.visualstudio.com/): as a IDE (Integrated Development Environment) for developing the project
 - [Popper.js](https://getbootstrap.com/docs/5.1/getting-started/introduction/): required for using bootstrap
+- [Stripe](https://stripe.com/docs/webhooks/signatures): for payments
+- [Gmail](https://www.google.com/intl/en/gmail/about/): for sending emails
 
 ## Code Validation Tools
 - [PEP8 checker](http://pep8online.com/): to validate Python code
