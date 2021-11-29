@@ -8,12 +8,11 @@
     - [Structure of the website](#structure-of-the-website)
     - [Wireframes](#wireframes)
     - [Surface](#surface)
-- [Database Schema](#database-schema)
 - [Features](#features)
     - [Existing features](#existing-features)
     - [Features left to implement](#features-left-to-implement)
+- [Database Schema](#database-schema)
 - [Technologies used](#technologies-used)
-- [Code Validation](#code-validation)
 - [Database](#database)
 - [Deployment](#deployment)
 - [Credits](#credits)
@@ -21,9 +20,9 @@
 
 #  UX 
 ### Backstory:
-My friend [Shippudeve](https://www.instagram.com/shippudeve/) draws amazing anime images - both classic (with pen and paper) and also digital. This e-commerce website should help her in the future to be able to sell her drawings as posters and with more features implemented, she can even draw images on request or on different materials (like shoes or shirts). To support her talent the idea of "Anime Art" came up. 
+My friend [Shippudeve](https://www.instagram.com/shippudeve/) draws amazing anime images - both <b>classic (with pen and paper) and also digital</b>. This e-commerce website should help her in the future to be able to sell her drawings as posters and with more features implemented, she can even draw images on request or on different materials (like shoes or shirts). To support her talent the idea of "Anime Art" came up. 
 
-Anime Art stands for exclusive, selfmade drawings that you can purchase nowhere else. One day every anime fan (or not fan) should be able to say: "I have a drawing of [Shippudeve](https://www.instagram.com/shippudeve/), the great artist". 
+<b>Anime Art stands for exclusive, selfmade drawings that you can purchase nowhere else.</b> One day every anime fan (or not fan) should be able to say: "I have a drawing of [Shippudeve](https://www.instagram.com/shippudeve/), the great artist". 
 
 
 ## Business goals
@@ -55,27 +54,54 @@ Anime Art stands for exclusive, selfmade drawings that you can purchase nowhere 
 
 
 ## Structure of the website
-Anime Art is a responsive e-commerce website, so it is optimized for all devices and screen sizes (desktop, mobile and tablet). It has an intuitive, user friendly interface with an easy to use navigation bar on top. From the homepage a user can choose directly which kind of products to check out and on the "about" page the user finds exlpanation about Anime Art and its products. On the products navigation menu item, a user has another way to find either all products or the products filtered by type. On the Account menu Item a user can register or login. When a user registers, a form has to be filled out and the user receives an email, which has to be confirmed before the account is created successfully. When a user is already logged in, the user has the possibility to view their profile or to logout of their account. In the last item, the shopping cart icon, the user is able to view their shopping cart, so what they are about to purchase. From the shopping cart, the user can purchase whats in the shopping cart by clicking on a button ("Go to secure checkout") and filling out a form on the checkout page. The form contains input fields for shipping/billing information and card as a payment method. On this page the user can also review what they are about to purchase (in the order summary). When actually purchasing the product and the purchase was successful, the user will land on a "thank you" page with a summary of all information (User information and information of the product that was purchased).
+Anime Art is a responsive e-commerce website, so it is optimized for <b>all devices and screen sizes (desktop, mobile and tablet)</b>.
+
+It has an intuitive, user friendly interface with an easy to use <b>navigation bar</b> on top. From the <b>homepage</b> a user can choose directly which kind of products to check out and on the <b>about</b> page the user finds exlpanation about Anime Art and its products.On the products navigation menu item, a user has another way to find either all products or the products filtered by type.
+
+On the <b>account</b> menu item a user can <b>register or login</b>. When a user registers, a form has to be filled out and the user receives an email, which has to be confirmed before the account is created successfully. When a user is already logged in, the user has the possibility to view their <b>profile</b> or to <b>logout</b> of their account.
+
+When clicking on the shopping cart icon, the user is able to <b>view their shopping cart</b>, so what they are about to purchase. From the shopping cart, the user can purchase what is in the shopping cart by clicking on a button ("go to secure checkout") and filling out a form on the <b>checkout page</b>. The form contains input fields for shipping/billing information and card as a payment method. On this page the user can also review what they are about to purchase (in the order summary).
+
+When actually purchasing the product and the purchase was successful, the user will land on a "thank you" page with a summary of all information (user information and information of the product that was purchased).
 
 ## Wireframes
----> Add wireframes here 
+Wireframes can be found here: [WIREFRAMES](readme-files/wireframes/anime-art-wireframes.pdf)
 
 ## Surface
 ### Fonts
-- font-family: 'Cinzel', serif;
-- font-family: 'Roboto', sans-serif;
+- Headlines (h1-h6) and buttons: [Cinzel](https://fonts.google.com/specimen/Cinzel)
+- All other elements (like paragraphs, links, etc.): [Roboto](https://fonts.google.com/specimen/Roboto)
 
 ### Colors
+- Primary background-color: #fbf9f9
+
+- Secondary background-color: #e0cccc
+
+- Main font color: #000000
+
+- Borders, texts, icons: #650000
+
+Buttons:
+
+- Red: border and text #650000 | background #e0cccc
+
+- Green: border and text #3d4343 | background #cce0e0
+
 ### Images
-
-
+- Product images created by [Shippudeve](https://www.instagram.com/shippudeve/)
+- Heroimage from [Pixabay.com](https://pixabay.com/de/illustrations/naruto-ninja-maske-charakter-5752319/)
+- Loading Spinner from [Pixabay.com](https://pixabay.com/de/illustrations/moe-frau-m%c3%a4dchen-manga-anime-595954/)
+- Image "Image coming soon" from [Freeiconspng.com](https://www.freeiconspng.com/downloadimg/23499)
+- Favicon from [Softicons.com](https://www.softicons.com/culture-icons/sharingan-icons-1.5-by-harenome-razanajato/kakashi-icon)
 
 
 # Apps & Features
 ## Existing Features
+-back to top button
 
 ## Global features
 ### Navigation
+
 #### Search
 ### Authentication (Registration, Login, Logout, PW reset)
 - django allauth for authentication (login etc.)
@@ -92,7 +118,14 @@ Anime Art is a responsive e-commerce website, so it is optimized for all devices
 `products`
 
 #### Products (List Page)
+
 #### Product Display
+
+#### Admin
+Edit & Update images: - No image upload --> explain in Readme: replace image field with text(string) field -> (have user upload image somewhere else like aws)
+- static files nicht in /media/
+-> document in the README that aws and image upload will be a future feature  and add screenshots of admin (how it looks like)
+
 #### Filter
 
 ### Profiles app
@@ -110,38 +143,43 @@ Anime Art is a responsive e-commerce website, so it is optimized for all devices
 ## Features left to implement:
 - Footer with imprint, SEO Texts, Contact Us page, Newsletter Signup
 
+- django pagination (too many products on one page)
+- Leave out sorting for now, might add later when time left
+
+-> document in the README that aws and image upload will be a future feature  and add screenshots of admin (how it looks like)
+
 # Database Schema
 ### Data Models
 ---> List all models and their name, database key,field type and type validation
 
 
-# Technologies used:
+# Technologies used
 
-## Languages:
+## Languages
 - [Python](https://www.python.org/): logic and structure for backend
 - [JavaScript](https://en.wikipedia.org/wiki/JavaScript): to add interactivity to the frontend
-
 - [HTML](https://en.wikipedia.org/wiki/Hypertext_Markup_Language): to structure the website
 - [Jinja](https://jinja.palletsprojects.com/en/2.11.x/): templating language for python
 
 ## Database
-[SQLite](https://www.sqlite.org/index.html): default database in django; used in development
-[PostgreSQL](https://www.postgresql.org/): production database in heroku
+- [SQLite](https://www.sqlite.org/index.html): default database in django; used in development
+- [PostgreSQL](https://www.postgresql.org/): production database in heroku
 
-## Styling:
+## Styling
 - [CSS](https://en.wikipedia.org/wiki/Cascading_Style_Sheets): to style the HTML code
 - [Bootstrap 5.1](https://getbootstrap.com/docs/5.1/getting-started/introduction/): to add responsiveness, styling and some functionality
 - [Fontawesome](https://fontawesome.com/): as an icon library
 - [Google Fonts](https://fonts.google.com/): as a font resource
 - [Favicon](https://favicon.io/): to generate favicon
 
-## Frameworks and libraries:
+## Frameworks and libraries
 - [Django](https://www.djangoproject.com/): high-level Python web framework
 - [JQuery](https://jquery.com/): as a JavaScript library
 
 ## Planning
 - [Balsamiq](https://balsamiq.com/): for creating wireframes
 - [Google Sheets](https://en.wikipedia.org/wiki/Google_Sheets): to write user stories and planning the data models
+- [DBeaver](https://dbeaver.io/): for database schema
 
 ## Testing
 - [Am I responsive?](http://ami.responsivedesign.is/): for checking responsiveness on different screen sizes and using screenshot as a showcase for this projects README.md
@@ -151,10 +189,10 @@ Anime Art is a responsive e-commerce website, so it is optimized for all devices
 ## Miscellaneous:
 
 - [Github](https://github.com/): for hosting the projects repository
+- [Git](https://en.wikipedia.org/wiki/Git): for version control
 - [Heroku](https://www.heroku.com/): cloud platform for deploying web app
 - [Stripe](https://stripe.com/en-gb-de): to manage (test) payment transactions
 - [Visual Studio Code](https://code.visualstudio.com/): as a IDE (Integrated Development Environment) for developing the project
-- [Git](https://en.wikipedia.org/wiki/Git): for version control
 - [Popper.js](https://getbootstrap.com/docs/5.1/getting-started/introduction/): required for using bootstrap
 
 ## Code Validation Tools
@@ -163,81 +201,220 @@ Anime Art is a responsive e-commerce website, so it is optimized for all devices
 - [W3 CSS Validator](https://jigsaw.w3.org/css-validator/) to validate CSS code
 - [W3 HTML Validator](https://validator.w3.org/) to validate HTML code
 
-# Code validation
-- [PEP8 checker](http://pep8online.com/): 
-- [JShint](https://jshint.com/): 
-- [W3 CSS Validator](https://jigsaw.w3.org/css-validator/): 
-- [W3 HTML Validator](https://validator.w3.org/): 
-
-
 # Database
-## Postgres
+## Entity Relationship Diagram
+![screenshot_erd](readme-files/db-images/erd.jpeg)
 
+## Data Models
 
 # Deployment
+To run this project, you have to install 
+- [Python3](https://www.python.org/downloads/): to run the app
+- [PIP](https://pip.pypa.io/en/stable/installation/): to install all app requirements
+- Any [IDE](https://en.wikipedia.org/wiki/Integrated_development_environment) (e.g. [Visual Studio Code](https://code.visualstudio.com/)) or if you want to work virtually e.g. [Gitpod](https://www.gitpod.io/)
+- [GIT](https://gist.github.com/derhuerst/1b15ff4652a867391f03): for cloning and version control
 
-To run this project, you have to install:
-- [Django](): to use as a framework
-- [Python3](): to run the app
-- [PIP](): to install all app requirements
-- Any [IDE]() (e.g. [Visual Studio Code]()) or if you want to work virtually e.g. [Gitpod]()
-- [GIT](): for cloning and version control
-
-- Heroku & Postgres
-
-If you use Visual Studio Code:
-how to run
-- python3 -m venv .venv  
-- source .venv/bin/activate
-
-how to stop
-- deactivate
+And you have to create (free) accounts for these services:
+- [Stripe](https://stripe.com/en-gb-de)
+- [Gmail](https://www.google.com/intl/en/gmail/about/)
 
 ## [Local deployment](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository)
-1. Go to repository
-2. Click on the button "code"
-3. Select the "HTTPS" option.
-4. Copy the URL presented
-5. Open your Terminal
-6. Create a directory for storing this repository
-7. Type `git clone https://github.com/jacqueline-kraus/MS4-anime-art`
-8. Press enter to create local clone repository
+1. Clone repository
+- Go to repository
+- Click on the button "code"
+- Select the "HTTPS" option
+- Copy the URL presented
+- Open your Terminal
+- Create a directory for storing this repository
+- Type `git clone https://github.com/jacqueline-kraus/MS4-anime-art.git`
+- Press enter to create local clone repository
+- Alternatively, if using Gitpod, you can click below to create your own workspace using this repository
+
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/jacqueline-kraus/MS4-anime-art)
+
+2. Set up environment variables
+- Create an `.env.py` file with your own credentials. You can use this [.env_sample.py](https://github.com/jacqueline-kraus/MS4-anime-art/blob/main/env_sample.py) file as a sample and insert your environment variables
+
+3. Install all requirements from `requirements.txt`:
+```
+pip3 install -r requirements.txt
+```
+
+4. Migrate the models to create the database schema:
+```
+python3 manage.py makemigrations
+```
+```
+python3 manage.py migrate
+```
+
+5. Load the data fixtures in this exact order:
+```
+python3 manage.py loaddata types
+```
+```
+python3 manage.py loaddata products
+```
+
+6. Create a superuser in order to access the django admin panel:
+```
+python3 manage.py createsuperuser
+
+
+(assign an admin username, email, and secure password)
+```
+
+7. Launch the django project in the IDE terminal:
+```
+python3 manage.py runserver
+```
+
+8. Log into django admin
+- After running the web app, add `/admin` at the end of the URL and log in with the superuser credentials from the previous step
 
 ## Heroku Deployment
-1. 
-2. 
-3. 
+1. For Heroku to know which required dependencies to install, first create a `requirements.txt` file by running the following command in the CLI:
+```
+pip3 freeze --local > requirements.txt
+``` 
 
+2. Create a `Procfile` in the root directory and add the following line to the file:
+```
+web: gunicorn anime_art.wsgi:application
+```
+
+3. Sign up and/or log in to [Heroku](https://www.heroku.com/)
+
+4. Create a new app by clicking on the button "New"
+
+5. Give your app a name, select your region and click "Create app"
+
+6. Navigate to the "Deploy" tab and select "Github" as a deployment method
+
+7. Search for your repository name and connect
+
+8. Set up Heroku Postgres
+- In the 'Resources' tab search for 'Heroku Postgres'
+- Select the 'Hobby Dev' free plan
+
+9. Set up conf variables
+- Open the "Settings" tab and click on "Reveal Config Vars"
+- Add your configuration variables, you can find these in your `.env.py` file
+
+10. Set up new database
+- In `settings.py`:
+```
+import dj_database_url
+```
+- Comment out `DATABASES` (temporarily, do not commit/push this code to GitHub until instructed so)
+- Add this code snippet:
+```
+if 'DATABASE_URL' in os.environ:
+    DATABASES = {
+        'default': dj_database_url.parse(os.environ.get('<your Postgres database URL>'))
+    }
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        }
+    }
+```
+
+11. Migrate the models to Postgres database:
+```
+python3 manage.py makemigrations
+```
+```
+python3 manage.py migrate
+```
+
+12. Load the data fixtures in this exact order:
+```
+python3 manage.py loaddata types
+```
+```
+python3 manage.py loaddata products
+```
+
+13. Create a superuser in order to access the django admin panel:
+```
+python3 manage.py createsuperuser
+
+
+(assign an admin username, email, and secure password)
+```
+
+14. Push to GitHub:
+```
+git add.
+
+git commit -m "<your commit message>"
+
+git push
+```
+
+10. Set up automatic deploys
+- Go back to Heroku, navigate to the tab "Deploy" and enable "Automatic Deploys"
+- Everytime you push now to your Github repository the changes will be automatically deployed in Heroku.
+
+## Handling payments with Stripe
+1. Sign up for a free Stripe account
+
+2. Navigate to the Developers section > click on API Keys
+
+3. You should have two confidential keys which need to be added to your `.env` file and your Heroku Config Vars:
+- Publishable Key (`STRIPE_PUBLIC_KEY`): pk_test_key
+- Secret Key (`STRIPE_SECRET_KEY`): sk_test_key
+
+## Sending emails through Gmail
+1. If you don't have any Gmail account yet, then you have to create one
+
+2. Navigate to "Other Google Account Settings" > "Security" tab > turn on 2-step-verification
+
+3. Go back to "Security" tab and click on "App passwords"
+
+4. Select "Mail" (in app dropdown) > select "Other" (in device dropdown)
+
+5. Copy the 16-character password
+
+6. Open Heroku > Settings > Reveal Config Vars
+
+7. Add copied password to `EMAIL_HOST_PASS` config var
+
+8. Add the Gmail email address to `EMAIL_HOST_USER` config var
 
 
 # Credits
 
 ## Images
-- Page header image for home page taken from [Pixabay](https://pixabay.com/illustrations/naruto-eyes-anime-cartoon-japan-5823848/)
 - Product images created by [Shippudeve](https://www.instagram.com/shippudeve/)
-
-- bg for loading spinner: Image by <a href="https://pixabay.com/users/jsks-632850/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=595954">ryo taka</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=595954">Pixabay</a>
+- Heroimage from [Pixabay.com](https://pixabay.com/de/illustrations/naruto-ninja-maske-charakter-5752319/)
+- Loading Spinner from [Pixabay.com](https://pixabay.com/de/illustrations/moe-frau-m%c3%a4dchen-manga-anime-595954/)
+- Image "Image coming soon" from [Freeiconspng.com](https://www.freeiconspng.com/downloadimg/23499)
+- Favicon from [Softicons.com](https://www.softicons.com/culture-icons/sharingan-icons-1.5-by-harenome-razanajato/kakashi-icon)
 
 
 ## Problem solving helpers
-- [Django documentation]()
-- [Bootstrap documentation]()
-- [w3schools.com](https://www.w3schools.com/)
+- [Django documentation](https://docs.djangoproject.com/en/3.2/)
+- [Bootstrap documentation](https://getbootstrap.com/docs/5.1/getting-started/introduction/)
+- [W3Schools.com](https://www.w3schools.com/)
 - [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Learn)
-- [stackoverflow](https://stackoverflow.com/)
+- [Stackoverflow](https://stackoverflow.com/)
 - [Python documentation](https://docs.python.org/3/)
 
-
 ## Code
-- Bootstrap
+- [Boutique Ado Walkthrough Project from Code Institute](https://github.com/Code-Institute-Solutions/boutique_ado_v1): for understanding how django works, coded along many steps, to understand the concepts
+- [Bootstrap](https://getbootstrap.com/docs/5.1/getting-started/introduction/)
 - [Google Fonts](https://fonts.google.com/): for the fonts used
 - [Fontawesome](https://fontawesome.com/): for the icons
-- [Understanding messages and how to use them in Django with bootstrap](https://www.ordinarycoders.com/blog/article/django-messages-framework)
-- django allauth for authentication (login etc.)
-- Hover effect copied from Hover.css (https://github.com/IanLunn/Hover/blob/master/css/hover.css)
-- https://stackoverflow.com/questions/39031224/how-to-center-cards-in-bootstrap-4
---> to align the product cards in center
-- https://github.com/SmileyChris/django-countries to understand django countries in iso
+- [Ordinarycoders](https://www.ordinarycoders.com/blog/article/django-messages-framework): using messages in Django with bootstrap
+- [Django-allauth.readthedocs.io](https://django-allauth.readthedocs.io/en/latest/installation.html): django allauth for authentication
+- [Hover.css](https://github.com/IanLunn/Hover/blob/master/css/hover.css): hover effects
+- [Stackoverflow](https://stackoverflow.com/questions/39031224/how-to-center-cards-in-bootstrap-4): aligning the product cards in center
+- [SmileyChris](https://github.com/SmileyChris/django-countries): django countries in ISO format
+- [Mdbootstrap](https://mdbootstrap.com/docs/standard/extended/back-to-top/):back to top button
 
 ## Acknowledgments
 - 
@@ -246,59 +423,33 @@ how to stop
 
 
 # NOTES
+- feature screenshots can be reused in testing readme
 
-## Todos
-### Small styling/content stuff:
-- add favicon
-- Add delivery fees to faq
-- Highlight active the button on product page that is active
-- footer is not fixed --> check how to fix for when cart is empty or how it is on XL devices
-- rename button "back to overview"
-- Order product list page by showing digital type first
-- show total cost not always, only by hovering over
-- fix navbar alignment -> when there is something in the cart, it breaks in two rows
-- evtl change font size of p
-- change color of account menu when logged in or show a small dot
-- search: error message when no result found
+#### Readme
 
-- Messages
-- loading overlay in checkout --> fix image
-- product list: sm col 12 not 1
-- write texts
-- increment/decrement buttons --> right one is edgy, left is round
+- Database schema (as image) ERD (entity relationship data)
 
-### Responsive adjustments
-- Navbar and header image needs to be mobile adjusted
-
-### Features missing
-- django pagination (too many products on one page)
-- profile/account page
-- admin
-- Leave out sorting for now, might add later when time left
 
 ### Other
 - Finish Readme
 - write down a simple marketing strategy, why some things are like they are
 
-
-### Bugs / Problems that NEED to be solved
-- static / images are not shown in development
-
-
+#### bugs:
+- profile page footer --> not sticky
+- loading times
 
 
-### done:
-- add subtotal
-update subtotal when adjusting the quantity in the cart.
-add subtotal to checkout
-- evtl bug: look at the buttons logic before adding to cart. 
-- Change home to "about us" and show on home not the whole text
-- Add information like faq and delivery cost to about us page
-- upload wireframes
-- find solution with image problem!! Maybe aws after all?
-- add stripe keys to heroku
-- crispy forms in checkout
-- test if webhooks are working
-- social icons target blank
-- checkout app / stripe payment
-- alt names
+### Missing
+- image of eve in about
+
+
+DEBUG TRUE TO FALSE!!!
+
+q:
+
+- should  delete social accounts?
+- should I delete all my test users ?
+- Should I delete all test orders?
+- Login redirect landing page (when the user is in the checkout and logins, he goes to homepage)
+- should I make the alerts push down the page or is overlay ok?
+- Is it correct that I deleted "DISABLE_COLLECTSTATIC" in heroku config vars?
