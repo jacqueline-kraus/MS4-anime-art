@@ -11,6 +11,26 @@ Tested all python code with the [PEP8 checker](http://pep8online.com/):
 ![products-view-validation](readme-files/code-validation/products-view-validation.png)
 - The issues (blank lines, line too long, whitespaces) are fixed and besides the 2 know errors above the code is clean without errors
 
+### JavaScript
+Tested all javascript code with [JShint](https://jshint.com/):
+- `stripe_elements.js`
+![stripe-elements-js-validation](readme-files/code-validation/stripe-elements-js-validation.png)
+
+- `cart.js`
+![cart-js-validation](readme-files/code-validation/cart-js-validation.png)
+
+- `product.js`
+![product-js-validation](readme-files/code-validation/product-js-validation.png)
+
+### HTML
+Tested html code with [W3 HTML Validator](https://validator.w3.org/): 
+- All good! No errors or warnings
+![html-validation](readme-files/code-validation/html-validation.png)
+
+### CSS
+Tested css code with [W3 CSS Validator](https://jigsaw.w3.org/css-validator/): 
+- All good! No errors
+![css-validation](readme-files/code-validation/css-validation.png)
 
 
 
@@ -75,11 +95,3 @@ The website was tested on following hardware devices:
 
 ### 
 
-
-# Code validation
-- [PEP8 checker](http://pep8online.com/): 
-- [JShint](https://jshint.com/): 
-- [W3 CSS Validator](https://jigsaw.w3.org/css-validator/): 
-- [W3 HTML Validator]( ): 
-
-- code validation: screenshots
