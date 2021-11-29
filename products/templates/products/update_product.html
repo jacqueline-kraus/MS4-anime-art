@@ -15,14 +15,14 @@
 {% block content %}
     <div class="container">
         <div class="row">
-            <div class="col-12 col-md-6 offset-3">
+            <div class="col-12 col-md-6 offset-md-3">
                 <form method="POST" action="{% url 'update_product' product.id %}" class="form" enctype="multipart/form-data">
                     {% csrf_token %}
                     {{ form | crispy }}
                     <p class='alert alert-warning'>Unfortunately you can't change images here. 
                     Please use a service like AWS to host a new image.</p>
-                    <a href="{% url 'products' %}" class="btn cus-btn-red hvr-grow mx-2">Cancel</a>
-                    <button class="btn green-btn hvr-grow mx-2" type="submit">Update Product</button>
+                    <a href="{% url 'products' %}" class="btn cus-btn-red hvr-grow mx-2 mt-2">Cancel</a>
+                    <button class="btn green-btn hvr-grow mx-2 mt-2" type="submit">Update Product</button>
                 </form>
             </div>
         </div>
