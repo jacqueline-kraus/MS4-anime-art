@@ -1,5 +1,8 @@
 # MS4-anime-art
 
+Anime Art is a online shop for buying authentic, unique drawings from a real artist, who is specialized in drawing animes.
+
+![showcase](readme-files/showcase/showcase.png)
 
 # Table of contents
 - [UX](#ux)
@@ -8,8 +11,9 @@
     - [Structure of the website](#structure-of-the-website)
     - [Wireframes](#wireframes)
     - [Surface](#surface)
-- [Features](#features)
-    - [Existing features](#existing-features)
+- [Apps and Features](#apps-and-features)
+    - [Global features](#global-features)
+    - [Apps](#apps)
     - [Features left to implement](#features-left-to-implement)
 - [Database Schema](#database-schema)
 - [Technologies used](#technologies-used)
@@ -20,9 +24,9 @@
 
 #  UX 
 ### Backstory:
-My friend [Shippudeve](https://www.instagram.com/shippudeve/) draws amazing anime images - both <b>classic (with pen and paper) and also digital</b>. This e-commerce website should help her in the future to be able to sell her drawings as posters and with more features implemented, she can even draw images on request or on different materials (like shoes or shirts). To support her talent the idea of "Anime Art" came up. 
+My friend [Shippudeve](https://www.instagram.com/shippudeve/) draws amazing anime images - both **classic (with pen and paper) and also digital**. This e-commerce website should help her in the future to be able to sell her drawings as posters and with more features implemented, she can even draw images on request or on different materials (like shoes or shirts). To support her talent the idea of "Anime Art" came up. 
 
-<b>Anime Art stands for exclusive, selfmade drawings that you can purchase nowhere else.</b> One day every anime fan (or not fan) should be able to say: "I have a drawing of [Shippudeve](https://www.instagram.com/shippudeve/), the great artist". 
+**Anime Art stands for exclusive, selfmade drawings that you can purchase nowhere else.** One day every anime fan (or not fan) should be able to say: "I have a drawing of [Shippudeve](https://www.instagram.com/shippudeve/), the great artist". 
 
 
 ## Business goals
@@ -54,13 +58,13 @@ My friend [Shippudeve](https://www.instagram.com/shippudeve/) draws amazing anim
 
 
 ## Structure of the website
-Anime Art is a responsive e-commerce website, so it is optimized for <b>all devices and screen sizes (desktop, mobile and tablet)</b>.
+Anime Art is a responsive e-commerce website, so it is optimized for **all devices and screen sizes (desktop, mobile and tablet)**.
 
-It has an intuitive, user friendly interface with an easy to use <b>navigation bar</b> on top. From the <b>homepage</b> a user can choose directly which kind of products to check out and on the <b>about</b> page the user finds exlpanation about Anime Art and its products.On the products navigation menu item, a user has another way to find either all products or the products filtered by type.
+It has an intuitive, user friendly interface with an easy to use **navigation bar** on top. From the **homepage** a user can choose directly which kind of products to check out and on the **about** page the user finds exlpanation about Anime Art and its products.On the products navigation menu item, a user has another way to find either all products or the products filtered by type.
 
-On the <b>account</b> menu item a user can <b>register or login</b>. When a user registers, a form has to be filled out and the user receives an email, which has to be confirmed before the account is created successfully. When a user is already logged in, the user has the possibility to view their <b>profile</b> or to <b>logout</b> of their account.
+On the **account** menu item a user can **register or login**. When a user registers, a form has to be filled out and the user receives an email, which has to be confirmed before the account is created successfully. When a user is already logged in, the user has the possibility to view their **profile** or to **logout** of their account.
 
-When clicking on the shopping cart icon, the user is able to <b>view their shopping cart</b>, so what they are about to purchase. From the shopping cart, the user can purchase what is in the shopping cart by clicking on a button ("go to secure checkout") and filling out a form on the <b>checkout page</b>. The form contains input fields for shipping/billing information and card as a payment method. On this page the user can also review what they are about to purchase (in the order summary).
+When clicking on the shopping cart icon, the user is able to **view their shopping cart**, so what they are about to purchase. From the shopping cart, the user can purchase what is in the shopping cart by clicking on a button ("go to secure checkout") and filling out a form on the **checkout page**. The form contains input fields for shipping/billing information and card as a payment method. On this page the user can also review what they are about to purchase (in the order summary).
 
 When actually purchasing the product and the purchase was successful, the user will land on a "thank you" page with a summary of all information (user information and information of the product that was purchased).
 
@@ -69,23 +73,23 @@ Wireframes can be found here: [WIREFRAMES](readme-files/wireframes/anime-art-wir
 
 ## Surface
 ### Fonts
-- Headlines (h1-h6) and buttons: [Cinzel](https://fonts.google.com/specimen/Cinzel)
-- All other elements (like paragraphs, links, etc.): [Roboto](https://fonts.google.com/specimen/Roboto)
+- Headlines (h1-h6) and buttons: [`Cinzel`](https://fonts.google.com/specimen/Cinzel)
+- All other elements (like paragraphs, links, etc.): [`Roboto`](https://fonts.google.com/specimen/Roboto)
 
 ### Colors
-- Primary background-color: #fbf9f9
+- Primary background-color: `#fbf9f9`
 
-- Secondary background-color: #e0cccc
+- Secondary background-color: `#e0cccc`
 
-- Main font color: #000000
+- Main font color: `#000000`
 
-- Borders, texts, icons: #650000
+- Borders, texts, icons: `#650000`
 
 Buttons:
 
-- Red: border and text #650000 | background #e0cccc
+- Red: border and text `#650000` | background `#e0cccc`
 
-- Green: border and text #3d4343 | background #cce0e0
+- Green: border and text `#3d4343` | background `#cce0e0`
 
 ### Effects
 - All buttons have a hover grow effect
@@ -97,128 +101,424 @@ Buttons:
 - Image "Image coming soon" from [Freeiconspng.com](https://www.freeiconspng.com/downloadimg/23499)
 - Favicon from [Softicons.com](https://www.softicons.com/culture-icons/sharingan-icons-1.5-by-harenome-razanajato/kakashi-icon)
 
-
-# Apps & Features
+# Apps and Features
 
 ## Global features
 ### Navigation
 - The Logo "Anime Art", brings the user always to the homepage
-- The website has a Bootstrap5 <b>Offcanvas</b> side navigation. It is functional and adjusted for every screensize.
+
+- The website has a Bootstrap5 **Offcanvas** side navigation. It is functional and adjusted for every screensize.
+
 ![side-navigation](readme-files/features/side-navigation.png)
+
 ![navigation](readme-files/features/navigation.png)
 
 The different navigation items:
 - The shopping cart: The total price is shown next to the shopping cart icon, when a user adds something to the cart
+
 ![navigation-cart](readme-files/features/navigation-cart.png)
+
 - Products: The user can open a dropdown item to see and select the different types of products
+
 - The options are "All Products", "Digital Drawings" or "Classic Drawings"
+
 ![navigation-products](readme-files/features/navigation-products.png)
-- Account: Via the account dropdown menu, a user can register or login (when logged out) <b>or</b> view the profile or logout (when logged in)
+
+- Account: Via the account dropdown menu, a user can register or login (when logged out) **or** view the profile or logout (when logged in)
+
 ![navigation-account-logged-out](readme-files/features/navigation-account-logged-out.png)
+
 ![navigation-logged-in](readme-files/features/navigation-logged-in.png)
+
 - Admin: When a user has admin rights (is a superuser), the user can add products. The option for this is shown by clicking on the dropdown item "Admin". As in the future there should be more items related to admin, this is a dropdown as well.
+
 ![navigation-admin](readme-files/features/navigation-admin.png)
+
 - About us: This item is not a dropdown. By clicking on this item, the user will land on the "about us" page
+
 - When a user opens a dropdown item and then clicks on another one, the previous dropdown closes by itself
+
 - In the navigation is also included the search field
 
 #### Search
 - The search field is included in the navigation offcanvas
+
 ![navigation-search](readme-files/features/navigation-search.png)
+
 - When clicking on the search button without typing search input, the field will throw an error
+
 ![search-input-error](readme-files/features/search-input-error.png)
+
 - The search field queries in all product names and product description to find a match
+
 - It brings the user to the product list page, where will be all products shown that match the search criteria
+
 - When there is no match, the user lands on the product list page with and sees an error message
+
 ![search-error-message](readme-files/features/search-error-message.png)
 
 ### Authentication (django-allauth feature)
 - Django-allauth is a Python package
+
 - "Integrated set of Django applications addressing authentication, registration, account management as well as 3rd party (social) account authentication." ([django allauth documenation](https://django-allauth.readthedocs.io/en/latest/))
+
 - It provides a set of features such as signup, login, logout and password change
+
 - After signing up, a verification e-mail is sent to the registered e-mail to confirm it
+
 - Once confirmed, the user can log in with their credentials and access the profiles app
+
 - The links to these features can be found in the navigation, under the "Account" dropdown menu
+
 - Screenshots of the flow:
+
 ![auth-sign-up](readme-files/features/auth-sign-up.png)
+
 ![auth-verify-email](readme-files/features/auth-verify-email.png)
+
 ![email-auth-conf](readme-files/features/email-auth-conf.png)
+
 ![auth-conf-email](readme-files/features/auth-conf-email.png)
+
 ![auth-sign-in](readme-files/features/auth-sign-in.png)
+
 ![auth-sign-out](readme-files/features/auth-sign-out.png)
 
 ### Messages (django, styled with bootstrap)
 - There are many ways what message a user might receive throughout the website
+
 - The messages are Bootstrap5 alerts
+
 - Here are some examples:
+
 ![messages-sign-out](readme-files/features/messages-sign-out.png)
+
 ![messages-sign-up-conf-email](readme-files/features/messages-sign-up-conf-email.png)
+
 ![messages-email-conf-success](readme-files/features/messages-email-conf-success.png)
+
 ![messages-sign-in-successful](readme-files/features/messages-sign-in-successful.png)
+
 ![messages-item-add-cart](readme-files/features/messages-item-add-cart.png)
+
 ![messages-item-removed-cart](readme-files/features/messages-item-removed-cart.png)
+
 ![messages-order-successful](readme-files/features/messages-order-successful.png)
+
 ![messages-profile-updated-successful](readme-files/features/messages-profile-updated-successful.png)
 
 ### Back to top button
-- On every page there is a <b>back to top button</b>, that the user can click to have an easy way to go to the top of the page without scrolling
+- On every page there is a **back to top button**, that the user can click to have an easy way to go to the top of the page without scrolling
+
 ![back-to-top-btn-desktop](readme-files/features/back-to-top-btn-desktop.png)
+
 ![back-to-top-btn-mobile](readme-files/features/back-to-top-btn-mobile.png)
 
 ### Automatic emails
+- A gmail account **animeartonlineshop@gmail.com** has been created specifically for this project and used as a sender for all verification, reset and confirmation e-mails.
+- Users receive for instance an **order confirmation e-mail** after a purchase, **account verification e-mail** after the registration, **password reset e-mail** after requesting a password reset, etc.
+
+## Apps
+Anime Art is a [django project](https://docs.djangoproject.com/en/3.1/ref/applications/), which consists of 5 applications:
+
+- `home`
+- `products`
+- `cart`
+- `checkout`
+- `profiles`
+
+Some features are available across the django project, while others are tied to a specific django application. The following lists explains every app and feature in detail.
 
 ### Home app
-- `home` django app includes two pages `home page` and `about page`
+- `home` django app includes two pages `home` page and `about` page
 
 #### Home
-- On the `home page` the user will be welcomed and can read a short introduction to the Anime Art Onlineshop. The user can also start looking for products by clicking on one of the three prominent CTAs
+- On the `home` page the user will be welcomed and can read a short introduction to the Anime Art Onlineshop. The user can also start looking for products by clicking on one of the three prominent CTAs
+
 ![homepage-desktop](readme-files/features/homepage-desktop.png)
+
 ![homepage-mobile](readme-files/features/homepage-mobile.png)
 
 #### About
-- The `about page` is informative. The user can read here about why Anime Art was founded, about the products it offers and about the artist, who creates the products. Also the user can find a small FAQ on this page
+- The `about` page is informative. The user can read here about why Anime Art was founded, about the products it offers and about the artist, who creates the products. Also the user can find a small FAQ on this page
+
 ![about-desktop](readme-files/features/about-desktop.png)
+
 ![about-mobile](readme-files/features/about-mobile.png)
 
-
 ### Products app
-`products`
+#### `products`
+- The `products` app has 4 different pages: `products`, `product_display`, `add_product` and `update_product`
 
-#### Products (List Page)
-###### Filter
-#### Product Display
+#### `products` (-list)
+- On the products(-list) the user can see a list of all products available in the shop
 
-#### Admin
-Edit & Update images: - No image upload --> explain in Readme: replace image field with text(string) field -> (have user upload image somewhere else like aws)
-- static files nicht in /media/
--> document in the README that aws and image upload will be a future feature  and add screenshots of admin (how it looks like)
+![product-list](readme-files/features/products/product-list.png)
+
+![product-list-mobile](readme-files/features/products/product-list-mobile.png)
+
+- the user can see product cards that contain: an image, the product name, the product price and by clicking on the image, the user can view the details of the product (`product_display`)
+
+![product-card](readme-files/features/products/product-card.png)
+
+![product-card-mobile](readme-files/features/products/product-card-mobile.png)
+
+- the user can `filter` by clicking on different types of products via the buttons on top of the page
+
+![product-filter](readme-files/features/products/product-filter.png)
+
+![product-filter-mobile](readme-files/features/products/product-filter-mobile.png)
+
+#### `product_display`
+- On the product_display page the user can view more details about the product: **product image, product name, product description and product price**
+
+![product-display-details](readme-files/features/products/product-display-details.png)
+
+![product-display-details-mobile](readme-files/features/products/product-display-details-mobile.png)
+
+- The user can also adjust the quanity of products that should be added to the cart
+
+![product-display-quantity](readme-files/features/products/product-display-quantity.png)
+
+![product-display-quantity-mobile](readme-files/features/products/product-display-quantity-mobile.png)
+
+- The user can add the product to the shopping cart. When an item is added to the cart, the user will be redirected back to the `product_display`page
+
+![product-display-add-to-cart](readme-files/features/products/product-display-add-to-cart.png)
+
+![product-display-add-to-cart-mobile](readme-files/features/products/product-display-add-to-cart-mobile.png)
+
+- The user can go directly from the `product_display`page to the shopping cart
+
+![product-display-go-to-cart](readme-files/features/products/product-display-go-to-cart.png)
+
+![product-display-go-to-cart-mobile](readme-files/features/products/product-display-go-to-cart-mobile.png)
+
+- If the user wants to keep shopping and viewing other product, by clicking on the button at the bottom of the page, the user will be redirected to the `product`(-list)
+
+![product-display-back](readme-files/features/products/product-display-back.png)
+
+![product-display-back-mobile](readme-files/features/products/product-display-back-mobile.png)
 
 
+### Product Admin
+- When a user is an admin user ([django superuser](https://docs.djangoproject.com/en/1.8/intro/tutorial02/)) and the user is logged in, it will be visible the menu item **Admin** on the navigation (explained in the section [Navigation](#navigation)). Here a user can go to the `add_product` page and add a new product by filling out a form
 
+#### `add_product`
+- The admin user can fill out the form to create a new product
+
+- The image field is diabled, as images cannot be uploaded here directly. They have to be hosted on a cloud service like [AWS](https://aws.amazon.com/). The user sees a warning under the image field that explains that uploading an image directly is not possible
+
+- When adding a product, the image will be by default a "Image coming soon" image
+
+![admin-add-product](readme-files/features/admin/admin-add-product.png)
+
+![admin-add-product-mobile](readme-files/features/admin/admin-add-product-mobile.png)
+
+- The added product will be shown in the `products`(list) page
+
+![admin-added-product](readme-files/features/admin/admin-added-product.png)
+
+![admin-added-product-mobile](readme-files/features/admin/admin-added-product-mobile.png)
+
+- And when clicking on the image, you can see the product details on the `product_display` page
+
+![admin-product-display](readme-files/features/admin/admin-product-display.png)
+
+#### `update_product`
+- The admin user can also update existing products
+
+- By clicking on the `edit` button either on the `product`(list) page or on the `product_display` page
+
+![admin-update-product](readme-files/features/admin/admin-update-product.png)
+![admin-update-product-mobile](readme-files/features/admin/admin-update-product-mobile.png)
+
+![admin-product-update](readme-files/features/admin/admin-update-product.png)
+
+- The `update_product` page contains already the existing data in the form fields, that can now be adjusted. Just like in `add_product`, it is not possible to upload and therefore to change an image
+
+![admin-update-product-page](readme-files/features/admin/admin-update-product-page.png)
+![admin-update-product-page-mobile](readme-files/features/admin/admin-update-product-page-mobile.png)
+
+#### `delete`
+- The admin user can delete a product. When viewing the `product_display` page, next to the `edit` button is a `delete` button
+
+- This button should only be clicked, when it is absolutely sure that a user wants to delete the product. There is no security layer yet, so when hitting this button, the product will be deleted immediately. This will be fixed in the future 
+
+![admin-product-delete](readme-files/features/admin/admin-product-delete.png)
+![admin-product-delete-mobile](readme-files/features/admin/admin-product-delete-mobile.png)
 
 ### Cart app
 `cart`
+- The shopping cart can be found either when clicking on **Go to cart** on the `product_display` page or via the **navigation icon**
+
+![cart-location](readme-files/features/cart/cart-location.png)
+
+- When the cart is empty, it can still be accessed, but it will throw an error message and a button that leads back to the `products`(-list)
+
+![cart-empty](readme-files/features/cart/cart-empty.png)
+
+![cart-empty-mobile](readme-files/features/cart/cart-empty-mobile.png)
+
+- When there are items in the cart, these details will be displayed: `product image`, `product name`, `product sku`, `product price`, `quantity`, `subtotal`, `cart total`, `delivery cost` and `grand total`
+
+- When clicking on the `product image`, the user will be redirected to the `product_display` page, where again the details can be viewed
+
+![cart-details](readme-files/features/cart/cart-details.png)
+
+![cart-details-mobile](readme-files/features/cart/cart-details-mobile.png)
+
+- The quantity can also be adjusted here in the cart
+- The subtotal changes, when the quantity changes (price * quantity)
+
+![cart-quantity-subtotal](readme-files/features/cart/cart-quantity-subtotal.png)
+
+![cart-quantity-subtotal-mobile](readme-files/features/cart/cart-quantity-subtotal-mobile.png)
+
+- The user can also delete completely the product from the shopping cart
+
+![cart-delete](readme-files/features/cart/cart-delete.png)
+
+![cart-delete-mobile](readme-files/features/cart/cart-delete-mobile.png)
+
+- The user has the possibility to go back to the `product`(-list) by clicking on the button "to product overview"
+
+![cart-back](readme-files/features/cart/cart-back.png)
+
+![cart-back-mobile](readme-files/features/cart/cart-back-mobile.png)
+
+- Finally the user can see in the shopping cart the `cart total`(sum of subtotal of all items in cart ), the `delivery cost`(fixed price) and the `grand total`(sum of cart total and delivery cost) and has the possibility to purchase the products in the shopping cart by clicking on the button "go to secure checkout", which brings the user to the `checkout` page
+
+![cart-checkout](readme-files/features/cart/cart-checkout.png)
+
+![cart-checkout-mobile](readme-files/features/cart/cart-checkout-mobile.png)
+
 
 ### Checkout app
 `checkout`
+- The `checkout` app serves the purpose of giving the user
+    - A form for the user to insert the shipping information
+    - A order summary of what the user is about to purchase
+    - A way to pay for the product(s)
 
+![checkout-overview](readme-files/features/checkout/checkout-overview.png)
 
+![checkout-overview-mobile](readme-files/features/checkout/checkout-overview-mobile.png)
+
+- In the order summary the user can see the `quantity` of the product(s) to be purchased, the `products name` and the `price` per unit
+- The user also finds the `cart total`, the `delivery cost` and the `grand total`, so what has to be paid in the end
+
+![checkout-order-summary](readme-files/features/checkout/checkout-order-summary.png)
+
+![checkout-order-summary-mobile](readme-files/features/checkout/checkout-order-summary-mobile.png)
+
+- The shipping information is built with [django crispy](https://django-crispy-forms.readthedocs.io/en/latest/) forms and gives the user feedback when the input is not correct
+
+- The `select country` field is a dropdown menu, where the user can choose the country from
+
+- Both registered and anonymous users can purchase products at Anime Art
+
+- When a user is not registered or logged in yet, the user will see a note under the shipping form that leads to either the sign up or the sign in page
+
+![checkout-info-logged-out](readme-files/features/checkout/checkout-info-logged-out.png)
+
+![checkout-info-logged-out-mobile](readme-files/features/checkout/checkout-info-logged-out-mobile.png)
+
+- When a user is logged in, there will be a note under the form which lets the user save their information to the profile
+
+- When a user already has a profile or did a former purchase and saved the information the form on the `checkout` page will be populated automatically with the users information (except for the `first name` and `last name`)
+
+![checkout-info-logged-in](readme-files/features/checkout/checkout-info-logged-in.png)
+
+![checkout-info-logged-in-mobile](readme-files/features/checkout/checkout-info-logged-in-mobile.png)
+
+- To be able to purchase what's in the cart, the user has to fill in their card payment details
+
+- At this stage of production cart payment is the only payment method possible
+
+- **Payments** are handled through `stripe`. A test purchase can be made with the following details:
+    - **credit card:** 4242 4242 4242 4242
+    - **expiration date:** 04 / 24
+    - **CVC:** 242
+    - **ZIP:** 42424
+
+- By clicking on the "complete order and pay" button, the payment process starts
+
+- A webhook is implemented to the `checkout` so that the order is successfully processed in case the checkout process gets interrupted. Some reasons might be closing the browser too soon or losing internet connection
+
+![checkout-payment](readme-files/features/checkout/checkout-payment.png)
+
+![checkout-payment-mobile](readme-files/features/checkout/checkout-payment-mobile.png)
+
+- While the payment is being processed, a loading overlay is shown to the user. The overlay contains an image and a loading spinner that rotates to show the user that the payment is being processed
+
+![checkout-payment-loading](readme-files/features/checkout/checkout-payment-loading.png)
+
+![checkout-payment-loading-mobile](readme-files/features/checkout/checkout-payment-loading-mobile.png)
+
+- After the payment has been processed the user will land on the `checkout_success` page with an order summary
+
+- The user will see an alert that the order was successfull
+
+![checkout-success](readme-files/features/checkout/checkout-success.png)
+
+![checkout-success-mobile](readme-files/features/checkout/checkout-success-mobile.png)
+
+- If logged in, the user will see here a button "go to profile", which leads the user to their user profile
+
+![checkout-ty](readme-files/features/checkout/checkout-ty.png)
+
+![checkout-ty-mobile](readme-files/features/checkout/checkout-ty-mobile.png)
+
+- If **not** registered or logged in, the user will see on the thank you page the button "to product overview"
+
+![checkout-ty-logged-out](readme-files/features/checkout/checkout-ty-logged-out.png)
+
+![checkout-ty-logged-out-mobile](readme-files/features/checkout/checkout-ty-logged-out-mobile.png)
 
 ### Profiles app
 `profiles`
+- When a user registers at Anime Art, an user profile will be created
+- The purpose for a user to create an account is
+    - to save their information for the next purchase
+    - to see the full order history in one place
 
+- The user can update their information in the profile
 
-## Features left to implement:
-- Footer with imprint, SEO Texts, Contact Us page, Newsletter Signup
+![profile-info-update](readme-files/features/profile/profile-info-update.png)
 
-- django pagination (too many products on one page)
-- Leave out sorting for now, might add later when time left
+![profile-info-update-mobile](readme-files/features/profile/profile-info-update-mobile.png)
 
--> document in the README that aws and image upload will be a future feature  and add screenshots of admin (how it looks like)
+- The full order history can be viewed in the profile
 
+- The order history contains the `order date`, `order number`, `quantity of products`, `product names`, `grand total` and is visually displayed via an Bootstrap5 accordion, that closes the last menu item, when a new one is being opened
+
+![profile-order-history](readme-files/features/profile/order-history.png)
+
+![profile-order-history-mobile](readme-files/features/profile/order-history-mobile.png)
+
+![profile-order-history-accordion](readme-files/features/profile/profile-order-history-accordion.png)
+
+![profile-order-history-accordion-mobile](readme-files/features/profile/profile-order-history-accordion-mobile.png)
+
+## Features left to implement
+### Footer upgrade
+- [SEO](https://en.wikipedia.org/wiki/Search_engine_optimization) wise it would be good to have more text and keywords related to the product that Anime Art sells in the footer, as well as blogarticles etc.
+
+- A proper imprint and a contact page (with a contact form) should be implemented, to make the website more serious and trustworthy
+
+- A newsletter sign up field and a regular newsletter about new products would help promote the website and bring frequent traffic to the page
+
+### Django pagination
+- When more and more products will be added, something like [django pagination](https://docs.djangoproject.com/en/3.2/topics/pagination/) should be added, so the user does not have to scroll through the whole page
+
+### Sorting products
+- At the moment there are only two types of products (with only two different prices). As the inventory increases and more products with different prices will be added, then the user should be given the option not only to filter by type, but also to sort the products by price
+
+### Service to host static images
+- As the product range is very small right now and is not increasing daily, I did not use any service for hosting static files (like [AWS](https://aws.amazon.com/)). As Heroku does not host static files by default, I used the workaround with [Whitenoise](http://whitenoise.evans.io/en/stable/), but this is not a scalable solution and does not allow you to upload images when adding or updating products in the `add_product` and `update_product` form
 
 # Technologies used
-
 ## Languages
 - [Python](https://www.python.org/): logic and structure for backend
 - [JavaScript](https://en.wikipedia.org/wiki/JavaScript): to add interactivity to the frontend
@@ -486,39 +786,6 @@ git push
 - [Mdbootstrap](https://mdbootstrap.com/docs/standard/extended/back-to-top/):back to top button
 
 ## Acknowledgments
-- 
-- 
-- 
-
-
-# NOTES
-- feature screenshots can be reused in testing readme
-
-#### Readme
-
-- Database schema (as image) ERD (entity relationship data)
-
-
-### Other
-- Finish Readme
-- write down a simple marketing strategy, why some things are like they are
-
-#### bugs:
-- profile page footer --> not sticky
-- loading times
-
-
-### Missing
-- image of eve in about
-
-
-DEBUG TRUE TO FALSE!!!
-
-q:
-
-- should  delete social accounts?
-- should I delete all my test users ?
-- Should I delete all test orders?
-- Login redirect landing page (when the user is in the checkout and logins, he goes to homepage)
-- should I make the alerts push down the page or is overlay ok?
-- Is it correct that I deleted "DISABLE_COLLECTSTATIC" in heroku config vars?
+- A huge thank you to [Shippudeve](https://www.instagram.com/shippudeve/) for letting me use her images and creativity 
+- Also thank you so much, [Tim Nelson](https://github.com/TravelTimN)! He was an amazing mentor, who used his time and patience with me and helped me incredibly to stay motivated and optimistic in meeting my deadline.
+- Also thanks to the Code Institute Slack Community and the Code Institute Tutors I could solve problems way faster than only by googling! Thank you.
