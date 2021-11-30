@@ -18,9 +18,9 @@ Anime Art is an online shop for buying authentic, unique drawings from a real ar
 - [Database Schema](#database-schema)
 - [Technologies used](#technologies-used)
 - [Database](#database)
+- [Testing](#testing)
 - [Deployment](#deployment)
 - [Credits](#credits)
-
 
 #  UX 
 ### Backstory:
@@ -578,6 +578,9 @@ As Django works with SQL databases by default, I was using SQLite in development
 
 ## Data Models
 ![database-models](readme-files/db-images/database-models.png)
+
+# Testing
+Please find all the testing documentation in the [TESTING.md file](https://github.com/jacqueline-kraus/MS4-anime-art/blob/main/TESTING.md)
 
 # Deployment
 To run this project, you have to install 
