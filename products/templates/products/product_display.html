@@ -22,7 +22,7 @@
         <div class="row mt-3 ">
             <div class="col-md-4 col-sm-12 offset-md-2">
               {% if product.image %}
-                <img src="{{ MEDIA_URL }}{{ product.image }}" class="card-img-top" alt="{{product.name}}">
+                <img src="{{ product.image }}" class="card-img-top" alt="{{product.name}}">
               {% else %}
                 <img src="{% static 'img/no-image.png' %}" class="card-img-top" alt="This product does not have an image yet.">
               {% endif %}

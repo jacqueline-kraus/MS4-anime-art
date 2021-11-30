@@ -184,7 +184,7 @@ button {
 }
 
 .classic-drawing {
-    background-image: url('/media/classic_sukunaitadori.jpeg');
+    background-image: url('https://anime-art.herokuapp.com/static/img/products/classic_sukunaitadori.jpeg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -194,7 +194,7 @@ button {
 }
 
 .digital-drawing {
-    background-image: url('/media/digital_kakshihatake.jpeg');
+    background-image: url('https://anime-art.herokuapp.com/static/img/products/digital_kakshihatake.jpeg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

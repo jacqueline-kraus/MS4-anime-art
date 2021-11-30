@@ -28,7 +28,7 @@
       {% for item in cart_items %}
         <div class="row offset-md-2 pb-5">
           <div class="col-5 col-md-2">
-            <a href="{% url 'product_display' item.product.id %}"><img class="img w-75" src="{{ MEDIA_URL }}{{ item.product.image }}"></a>
+            <a href="{% url 'product_display' item.product.id %}"><img class="img w-75" src="{{ item.product.image }}"></a>
           </div>
           <div class="col-7 col-md-2 align-self-center">
             <p class="my-0"><strong>{{ item.product.name }}</strong></p>
