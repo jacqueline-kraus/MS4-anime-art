@@ -24,7 +24,7 @@ def add_to_cart(request, item_id):
     request.session['cart'] = cart
     messages.success(request, "Item added to cart")
 
-    return redirect(redirect_url)
+    return redirect('view_cart')
 
 
 def update_cart(request, item_id):
