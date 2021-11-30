@@ -13,10 +13,10 @@
 
 {% block content %}
   {% if not products %}
-      <div class="col-sm-12 col-md-12">
-        <p class="text-center">Your search criteria "<span class="text-red">{{ search_term }}</span>" did not match any product.</p>
-        <p class="text-center">{% include 'includes/btn-product-overview.html' %}</p>
-      </div>
+    <div class="col-sm-12 col-md-12">
+      <p class="text-center">Your search criteria "<span class="text-red">{{ search_term }}</span>" did not match any product.</p>
+      <p class="text-center">{% include 'includes/btn-product-overview.html' %}</p>
+    </div>
   {% else %}
     <div class="container-fluid">
       <div class="row justify-content-center align-items-center">
@@ -45,7 +45,7 @@
                 <p class="card-text">{{ product.price}}€</p>
                 {% if request.user.is_superuser %}
                   <small>
-                  <a href="{% url 'update_product' product.id %}" class="btn btn-sm btn-outline-dark hvr-grow">Edit</a>
+                    <a href="{% url 'update_product' product.id %}" class="btn btn-sm btn-outline-dark hvr-grow">Edit</a>
                   </small>
                 {% endif %}
               </div>

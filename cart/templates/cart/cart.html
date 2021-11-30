@@ -59,7 +59,7 @@
     <div class="container-fluid">
       <div class="row offset-1 offset-md-2">
         <div class="col-sm-12">
-            {% include 'includes/btn-product-overview.html' %}
+          {% include 'includes/btn-product-overview.html' %}
         </div>
       </div>
       <div class="row offset-1 offset-md-8 mt-5 mt-md-0">
@@ -73,7 +73,7 @@
             <a href="{% url 'checkout' %}" class="btn green-btn hvr-grow">
               <span class="uppercase">Go To Secure Checkout</span>
               <span class="checkout-icon">
-                  <i class="fas fa-lock"></i>
+                <i class="fas fa-lock"></i>
               </span>
             </a>
           </div>
@@ -92,5 +92,5 @@
 
 {% block postloadjs %}
 {{ block.super }}
- <script src="{% static 'js/cart.js' %}"></script>
+  <script src="{% static 'js/cart.js' %}"></script>
 {% endblock %}

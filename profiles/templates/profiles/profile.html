@@ -21,13 +21,13 @@
       <!-- Address -->
       <div class="col-12 col-md-4 col-lg-4 offset-md-1 order-first order-md-last">
         <h6 class="text-muted">Shipping/Billing Information</h6>
-          <form class="mt-3" action="{% url 'profile' %}" method="POST" id="profile-update-form">
-              {% csrf_token %}
-              {{ form|crispy }}
-              <p class="text-center">
-                <button class="btn green-btn hvr-grow">Update Information</button>
-              </p>
-          </form>
+        <form class="mt-3" action="{% url 'profile' %}" method="POST" id="profile-update-form">
+          {% csrf_token %}
+          {{ form|crispy }}
+          <p class="text-center">
+            <button class="btn green-btn hvr-grow">Update Information</button>
+          </p>
+        </form>
       </div>
       <!-- order history -->
       <div class="col-12 col-md-5 col-lg-5 offset-md-1">
@@ -35,31 +35,31 @@
         {% if orders %}
           <div class="accordion" id="accordionExample-{{order.id}}">
             {% for order in orders %}
-                <div class="accordion-item">
-                  <p class="accordion-header font-sm" id="headingOne">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse{{order.id}}" aria-expanded="false" aria-controls="collapseOne">
-                      On {{ order.date }}
-                    </button>
-                  </p>
-                    <div id="collapse{{order.id}}" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample-{{order.id}}">
-                      <div class="accordion-body">
-                        <p>
-                          <a class="text-decoration-none" href="{% url 'order_history' order.order_number %}" title="{{ order.order_number }}">
+              <div class="accordion-item">
+                <p class="accordion-header font-sm" id="headingOne">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse{{order.id}}" aria-expanded="false" aria-controls="collapseOne">
+                    On {{ order.date }}
+                  </button>
+                </p>
+                  <div id="collapse{{order.id}}" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample-{{order.id}}">
+                    <div class="accordion-body">
+                      <p>
+                        <a class="text-decoration-none" href="{% url 'order_history' order.order_number %}" title="{{ order.order_number }}">
                           <span class="font-sm">Nr. {{ order.order_number }}</span>
-                          </a>
-                        </p>
-                        {% for item in order.lineitems.all %}
-                          <p class="font-sm">{{ item.quantity }}x <strong>{{ item.product.name }}</strong></p>
-                        {% endfor %}
-                        <p>Grand total: {{ order.grand_total }}€</p>
-                      </div>
+                        </a>
+                      </p>
+                      {% for item in order.lineitems.all %}
+                        <p class="font-sm">{{ item.quantity }}x <strong>{{ item.product.name }}</strong></p>
+                      {% endfor %}
+                      <p>Grand total: {{ order.grand_total }}€</p>
                     </div>
-                </div>
+                  </div>
+              </div>
             {% endfor %}
-          {% else %}
-            <p>You did not order anything yet. When you make a order, the order details will be shown here.</p>
-            <a href="#">Shop</a>
-          </div>
+        {% else %}
+              <p>You did not order anything yet. When you make a order, the order details will be shown here.</p>
+              <a href="#">Shop</a>
+            </div>
         {% endif %} 
       </div>
     </div>
