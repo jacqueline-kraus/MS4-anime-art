@@ -35,7 +35,7 @@
             <div class="card h-100 w-75">
               <a href="{% url 'product_display' product.id %}">
                 {% if product.image %}
-                  <img src="{% product.image %}" class="card-img-top" alt="{{ product.name }}">
+                  <img src="{{ product.image }}" class="card-img-top" alt="{{ product.name }}">
                 {% else %}
                   <img src="{% static 'img/no-image.png' %}" class="card-img-top" alt="This product does not have an image yet.">
                 {% endif %}
