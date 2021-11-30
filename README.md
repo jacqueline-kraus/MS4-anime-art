@@ -34,6 +34,9 @@ My friend [Shippudeve](https://www.instagram.com/shippudeve/) draws amazing anim
 - I want to generate revenue by offering a product that can be purchased through a webshop.
 - I want the user to understand what product I am offering.
 - I want to offer only exclusive products, that a user cannot purchase anywhere else.
+- I want to be able to add a product so that I can add new products to the shop.
+- I want to be able to edit a product so that I can update product information.
+- I want to be able to delete a product so that I can remove products from the shop.
 
 ## Customer goals
 ### As a user
@@ -44,7 +47,7 @@ My friend [Shippudeve](https://www.instagram.com/shippudeve/) draws amazing anim
 - I want to be able to login and logout so that I can access my profile.
 - I want to be able to reset my password so that I can access my profile in case I lost the password or secure my account by changing the password.
 - I want to be able to receive an email confirmation after registering so that I can know I registered successfully.
-- I want to be able to view my profile so that I can see my order history, open requests, and save my information for future orders.
+- I want to be able to view my profile so that I can see my order history and save my information for future orders.
 - I want to be able to filter products so that I can find easily the products by category.
 - I want to be able to search for a product by name or description so that I can find a specific product.
 - I want to be able to see what I have searched for and the number of results so that I can know if there are results.
@@ -184,7 +187,7 @@ The different navigation items:
 
 ![auth-sign-out](readme-files/features/auth-sign-out.png)
 
-### Messages (django, styled with bootstrap)
+### Messages (django, styled with bootstrap alerts)
 - There are many ways what message a user might receive throughout the website
 
 - The messages are Bootstrap5 alerts
@@ -543,7 +546,8 @@ Some features are available across the Django project, while others are tied to 
 ## Planning
 - [Balsamiq](https://balsamiq.com/): for creating wireframes
 - [Google Sheets](https://en.wikipedia.org/wiki/Google_Sheets): to write user stories and plan the data models
-- [DBeaver](https://dbeaver.io/): for database schema
+- [DBeaver](https://dbeaver.io/): for entity relationship diagram
+- [draw.io](https://draw.io): for database schema
 
 ## Testing
 - [Am I responsive?](http://ami.responsivedesign.is/): for checking responsiveness on different screen sizes and using screenshot as a showcase for this projects README.md
@@ -558,7 +562,6 @@ Some features are available across the Django project, while others are tied to 
 - [Stripe](https://stripe.com/en-gb-de): to manage (test) payment transactions
 - [Visual Studio Code](https://code.visualstudio.com/): as a IDE (Integrated Development Environment) for developing the project
 - [Popper.js](https://getbootstrap.com/docs/5.1/getting-started/introduction/): required for using bootstrap
-- [Stripe](https://stripe.com/docs/webhooks/signatures): for payments
 - [Gmail](https://www.google.com/intl/en/gmail/about/): for sending emails
 
 ## Code Validation Tools
@@ -784,6 +787,7 @@ git push
 - [Stackoverflow](https://stackoverflow.com/questions/39031224/how-to-center-cards-in-bootstrap-4): aligning the product cards in center
 - [SmileyChris](https://github.com/SmileyChris/django-countries): django countries in ISO format
 - [Mdbootstrap](https://mdbootstrap.com/docs/standard/extended/back-to-top/):back to top button
+- [Stripe](https://stripe.com/docs/webhooks/signatures): for payments
 
 ## Acknowledgments
 - A huge thank you to [Shippudeve](https://www.instagram.com/shippudeve/) for letting me use her images and creativity 
