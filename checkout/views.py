@@ -150,7 +150,7 @@ def checkout_success(request, order_number):
 
     messages.success(request, f'Your order was successful! \
         Your order number is {order_number}. \
-            A confrmation email will be sent to {order.email} soon.')
+            A confirmation email will be sent to {order.email} soon.')
 
     if 'cart' in request.session:
         del request.session['cart']
