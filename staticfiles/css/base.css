@@ -1,11 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;700&family=Roboto:wght@100;300;400;500&display=swap');
 
-/* Navigation */
+/* Basic elements */
 
-.logo {
+html, body {
+  height: 100%;
+}
+
+body, header {
+    background-color: #fbf9f9;
+}
+
+body > footer, .social-nav {
+    position: sticky;
+    top: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
     font-family: 'Cinzel', serif;
-    font-size: 30px;
-    text-shadow: 0.5px 0.5px 0.5px black;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
 }
 
 a {
@@ -16,12 +33,119 @@ a:hover {
     color: #000;
 }
 
-/* .navbar>.container-fluid {
-    justify-content: center;
-} */
+/* Custom content style */
 
-.nav {
-    flex-wrap: unset;
+.txt-white {
+    color: #fff;
+}
+
+.font-sm {
+    font-size: 12px;
+}
+
+.cus-bg, .dropdown-menu {
+    background-color: #fbf9f9;
+}
+
+.text-red {
+    color: #650000;
+}
+
+/* Buttons */
+
+button {
+    font-family: 'Cinzel', serif;
+    font-weight: 500;
+}
+
+.btn {
+    font-family: 'Cinzel', serif;
+    font-weight: 500;
+}
+
+.btn:focus {
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0)
+}
+
+.green-btn {
+    background-color: #cce0e0;
+    border-color: #3d4343;
+    color: #3d4343;
+    font-weight: 700;
+}
+
+.cus-btn-red {
+    color: #650000 !important;
+    border-color: #650000 !important;
+    background-color: #e0cccc;
+}
+
+.delete-btn, .delete-btn:hover {
+    border-color: #650000 !important;
+    background-color: #650000;
+    color: #fff;
+}
+
+.home-btn, .home-btn:hover {
+    font-size: 20px;
+    font-weight: 800;
+    background-color: #e0cccc;
+    color: #650000;
+    border-color: #650000;
+    border-radius: 10px;
+    border-width: 5px;
+    margin-top: 8rem;
+    padding: 2rem;
+}
+
+.home-btn-all, .home-btn-all:hover {
+    font-size: 20px;
+    font-weight: 800;
+    background-color: #e0cccc;
+    color: #650000;
+    border-color: #650000;
+    border-radius: 10px;
+    border-width: 5px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 2rem;
+}
+
+#btn-back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    background-color: #650000;
+    color: #fff;
+    z-index: 9999;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #e0cccc !important;
+    color: #650000 !important;
+}
+
+.accordion-button:focus {
+    border-color: #650000 !important;
+    box-shadow: 0 0 0 0.25rem rgb(101 0 0 / 100%);
+}
+
+/* Forms */
+
+.form-control {
+    font-size: 12px;
+}
+
+/* Navigation */
+
+.navbar {
+    border-bottom: 1px solid #650000;
+    background-color: #e0cccc;
+}
+
+.navbar-brand {
+    padding-bottom: 0;
 }
 
 .nav-link, .dropdown-item {
@@ -39,79 +163,24 @@ a:hover {
     color: #000;
 }
 
-/* Copied from Hover.css (https://github.com/IanLunn/Hover/blob/master/css/hover.css) */
-.hvr-grow {
-    display: inline-block;
-    vertical-align: middle;
-    -webkit-transform: perspective(1px) translateZ(0);
-    transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-    -webkit-transition-property: transform;
-    transition-property: transform;
-  }
-  .hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-  }
+/* Page header */
 
-  /* buttons */
+.page-header-margin {
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+}
 
-  .btn {
-      font-family: 'Cinzel', serif;
-      font-weight: 500;
-  }
-
-/* page header */
+/* Home */
 
 .heroimage {
     background-image: url('../img/heroimage.png');
-    background-size: cover;
+    background-color: #181818;
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    height: 350px;
-    width: 100%;
-    margin-top: 4rem;
-}
-
-/* content styling */
-
-h1,h2,h3,h4,h5,h6 {
-    font-family: 'Cinzel', serif;
-}
-
-p {
-    font-family: 'Roboto', sans-serif;
-    font-size: 18px;
-}
-
-/* home */
-
-.home-img {
-    width: 400px;
-    height: 400px;
-}
-
-/* .first-home-cta {
-    background-color: #000;
-    padding-bottom: 2rem;
-    margin-bottom: 6rem;
-} */
-
-/* .second-home-cta {
-    margin-top: 3rem!important;
-    margin-bottom: 6rem!important;
-
-} */
-.txt-white {
-    color: #fff;
-}
-
-.btn-lg {
-    padding: .9rem 5rem;
-    font-size: 2rem;
-    border-radius: .3rem;
+    height: 300px;
+    width: auto;
+    margin-top: 4.2rem;
 }
 
 .classic-drawing {
@@ -134,24 +203,19 @@ p {
     margin-top: 0.5rem;
 }
 
-.home-btn {
-    background-color: #fff;
-    color: #000;
-    border-color: #000;
-    border-width: 3px;
+.about-img {
+    width: 400px;
+    height: auto;
 }
 
-.home-btn-m {
-    margin-top: 150px;
+.header-text {
+    background-color: #181818;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    margin-bottom: 4rem;
 }
 
-/* page_header */
-
-.page-header-margin {
-    margin-top: 8rem;
-}
-
-/* products */
+/* Products */
 
 .card, .card-img-top {
     border: none;
@@ -159,27 +223,51 @@ p {
     margin: 0 auto;
     float: none;
     margin-bottom: 10px;
-
 }
 
-html,
-body {
-  height: 100%;
+/* Checkout */
+
+.checkout-icon {
+    color: #3d4343;
 }
 
-#page-content {
-  flex: 1 0 auto;
+/* From Hover.css (https://github.com/IanLunn/Hover/blob/master/css/hover.css) */
+
+.hvr-grow {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+  }
+
+.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+-webkit-transform: scale(1.1);
+transform: scale(1.1);
 }
 
 /* Media Queries */
 
 @media only screen and (max-width: 600px) {
     .heroimage {
-    background-image: url('../img/heroimage_mobile.png');
+    background-image: url('../img/heroimage.png');
     background-size: contain;
     margin-top: 3rem;
-    background-position: unset;
-    height: 190px;
-    background-color: #000;
+    background-position: center;
+    /* height: 3000px; */
+    background-color: #181818;
+    width: 100%;
+    }
+
+    .cart-th {
+        display: none;
+    }
+
+    .cart-mt-sm {
+        margin-top: 1rem;
     }
 }
