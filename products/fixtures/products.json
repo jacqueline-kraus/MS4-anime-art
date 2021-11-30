@@ -8,7 +8,7 @@
       "description": "From the anime My Hero Academia. This classic drawing is available in the size of 42,0cm x 59,4cm.",
       "price": 49.99,
       "type": 1,
-      "image": "classic_bakugoukatsuki.jpeg"
+      "image": "https://anime-art.herokuapp.com/static/img/products/classic_bakugoukatsuki.jpeg"
     }
   },
   {
@@ -20,7 +20,7 @@
       "description": "From the anime One Piece. This classic drawing is available in the size of 42,0cm x 59,4cm.",
       "price": 49.99,
       "type": 1,
-      "image": "classic_boahancock.jpeg"
+      "image": "https://anime-art.herokuapp.com/static/img/products/classic_boahancock.jpeg"
     }
   },
   {
@@ -32,7 +32,7 @@
       "description": "From the anime My Hero Academia. This classic drawing is available in the size of 42,0cm x 59,4cm.",
       "price": 49.99,
       "type": 1,
-      "image": "classic_bokunoheroacademia.jpeg"
+      "image": "https://anime-art.herokuapp.com/static/img/products/classic_bokunoheroacademia.jpeg"
     }
   },
   {
@@ -44,7 +44,7 @@
       "description": "From the anime Bleach. This classic drawing is available in the size of 42,0cm x 59,4cm.",
       "price": 49.99,
       "type": 1,
-      "image": "classic_grimmjowvskurosaki.jpeg"
+      "image": "https://anime-art.herokuapp.com/static/img/products/classic_grimmjowvskurosaki.jpeg"
     }
   },
   {
@@ -56,7 +56,7 @@
       "description": "From the anime Attack on Titan. This classic drawing is available in the size of 42,0cm x 59,4cm.",
       "price": 49.99,
       "type": 1,
-      "image": "classic_leviackerman.jpeg"
+      "image": "https://anime-art.herokuapp.com/static/img/products/classic_leviackerman.jpeg"
     }
   },
   {
@@ -68,7 +68,7 @@
       "description": "From the anime One Piece. This classic drawing is available in the size of 42,0cm x 59,4cm.",
       "price": 49.99,
       "type": 1,
-      "image": "classic_roronoazoro.jpeg"
+      "image": "https://anime-art.herokuapp.com/static/img/products/classic_roronoazoro.jpeg"
     }
   },
   {
@@ -80,7 +80,7 @@
       "description": "From the anime Jujutsu Kaisen. This classic drawing is available in the size of 42,0cm x 59,4cm.",
       "price": 49.99,
       "type": 1,
-      "image": "classic_sukunaitadori.jpeg"
+      "image": "https://anime-art.herokuapp.com/static/img/products/classic_sukunaitadori.jpeg"
     }
   },
   {
@@ -92,7 +92,7 @@
       "description": "From the anime Dragon Ball. This digital drawing is available in the size of 42,0cm x 59,4cm.",
       "price": 39.99,
       "type": 2,
-      "image": "digital_blackgokussjrose_bgrose.jpeg"
+      "image": "https://anime-art.herokuapp.com/static/img/products/digital_blackgokussjrose_bgrose.jpeg"
     }
   },
   {
@@ -104,7 +104,7 @@
       "description": "From the anime Dragon Ball. This digital drawing is available in the size of 42,0cm x 59,4cm.",
       "price": 39.99,
       "type": 2,
-      "image": "digital_blackgokussjrose.jpeg"
+      "image": "https://anime-art.herokuapp.com/static/img/products/digital_blackgokussjrose.jpeg"
     }
   },
   {
@@ -116,7 +116,7 @@
       "description": "From the anime Haikyu. This digital drawing is available in the size of 42,0cm x 59,4cm.",
       "price": 39.99,
       "type": 2,
-      "image": "digital_haikyu_bg.jpeg"
+      "image": "https://anime-art.herokuapp.com/static/img/products/digital_haikyu_bg.jpeg"
     }
   },
   {
@@ -128,7 +128,7 @@
       "description": "From the anime Haikyu. This digital drawing is available in the size of 42,0cm x 59,4cm.",
       "price": 39.99,
       "type": 2,
-      "image": "digital_haikyu.jpeg"
+      "image": "https://anime-art.herokuapp.com/static/img/products/digital_haikyu.jpeg"
     }
   },
   {
@@ -140,7 +140,7 @@
       "description": "From the anime Naruto. This digital drawing is available in the size of 42,0cm x 59,4cm.",
       "price": 39.99,
       "type": 2,
-      "image": "digital_hakuzabuza_bg.jpeg"
+      "image": "https://anime-art.herokuapp.com/static/img/products/digital_hakuzabuza_bg.jpeg"
     }
   },
   {
@@ -152,7 +152,7 @@
       "description": "From the anime Naruto. This digital drawing is available in the size of 42,0cm x 59,4cm.",
       "price": 39.99,
       "type": 2,
-      "image": "digital_hakuzabuza.jpeg"
+      "image": "https://anime-art.herokuapp.com/static/img/products/digital_hakuzabuza.jpeg"
     }
   },
   {
@@ -164,7 +164,7 @@
       "description": "From the anime Hunter x Hunter. This digital drawing is available in the size of 42,0cm x 59,4cm.",
       "price": 39.99,
       "type": 2,
-      "image": "digital_hisokamorow.jpeg"
+      "image": "https://anime-art.herokuapp.com/static/img/products/digital_hisokamorow.jpeg"
     }
   },
   {
@@ -176,7 +176,7 @@
       "description": "From the anime Naruto. This digital drawing is available in the size of 42,0cm x 59,4cm.",
       "price": 39.99,
       "type": 2,
-      "image": "digital_inoyamanaka.jpeg"
+      "image": "https://anime-art.herokuapp.com/static/img/products/digital_inoyamanaka.jpeg"
     }
   },
   {"pk": 16,
@@ -187,7 +187,7 @@
       "description": "From the anime Naruto. This digital drawing is available in the size of 42,0cm x 59,4cm.",
       "price": 39.99,
       "type": 2,
-      "image": "digital_kakshihatake.jpeg"
+      "image": "https://anime-art.herokuapp.com/static/img/products/digital_kakshihatake.jpeg"
     }
   },
   {
@@ -199,7 +199,7 @@
       "description": "From the anime Tokyo Ghoul. This digital drawing is available in the size of 42,0cm x 59,4cm.",
       "price": 39.99,
       "type": 2,
-      "image": "digital_kenkaneki.jpeg"
+      "image": "https://anime-art.herokuapp.com/static/img/products/digital_kenkaneki.jpeg"
     }
   },
   {
@@ -211,7 +211,7 @@
       "description": "From the anime Tokyo Revengers. This digital drawing is available in the size of 42,0cm x 59,4cm.",
       "price": 39.99,
       "type": 2,
-      "image": "digital_kenryuguji.jpeg"
+      "image": "https://anime-art.herokuapp.com/static/img/products/digital_kenryuguji.jpeg"
     }
   },
   {
@@ -223,7 +223,7 @@
       "description": "From the anime Hunter x Hunter. This digital drawing is available in the size of 42,0cm x 59,4cm.",
       "price": 39.99,
       "type": 2,
-      "image": "digital_killuazoldyck.jpeg"
+      "image": "https://anime-art.herokuapp.com/static/img/products/digital_killuazoldyck.jpeg"
     }
   },
   {
@@ -235,7 +235,7 @@
       "description": "From the anime Attack on Titan and Naruto. This digital drawing is available in the size of 42,0cm x 59,4cm.",
       "price": 39.99,
       "type": 2,
-      "image": "digital_livaixnaruto.jpeg"
+      "image": "https://anime-art.herokuapp.com/static/img/products/digital_livaixnaruto.jpeg"
     }
   },
   {
@@ -247,7 +247,7 @@
       "description": "From the anime Naruto. This digital drawing is available in the size of 42,0cm x 59,4cm.",
       "price": 39.99,
       "type": 2,
-      "image": "digital_madarauchiha.jpeg"
+      "image": "https://anime-art.herokuapp.com/static/img/products/digital_madarauchiha.jpeg"
     }
   },
   {
@@ -259,7 +259,7 @@
       "description": "From the anime Attack on Titan. This digital drawing is available in the size of 42,0cm x 59,4cm.",
       "price": 39.99,
       "type": 2,
-      "image": "digital_mikasaackerman.jpeg"
+      "image": "https://anime-art.herokuapp.com/static/img/products/digital_mikasaackerman.jpeg"
     }
   },
   {
@@ -271,7 +271,7 @@
       "description": "From the anime Neon Genesis Evangelion. This digital drawing is available in the size of 42,0cm x 59,4cm.",
       "price": 39.99,
       "type": 2,
-      "image": "digital_reiayanami.jpeg"
+      "image": "https://anime-art.herokuapp.com/static/img/products/digital_reiayanami.jpeg"
     }
   },
   {
@@ -283,7 +283,7 @@
       "description": "From the anime Jujutsu Kaisen. This digital drawing is available in the size of 42,0cm x 59,4cm.",
       "price": 39.99,
       "type": 2,
-      "image": "digital_satorugojo.jpeg"
+      "image": "https://anime-art.herokuapp.com/static/img/products/digital_satorugojo.jpeg"
     }
   },
   {
@@ -295,7 +295,7 @@
       "description": "From the anime Seraph of the End. This digital drawing is available in the size of 42,0cm x 59,4cm.",
       "price": 39.99,
       "type": 2,
-      "image": "digital_seraphoftheend.jpeg"
+      "image": "https://anime-art.herokuapp.com/static/img/products/digital_seraphoftheend.jpeg"
     }
   },
   {
@@ -307,7 +307,7 @@
       "description": "From the anime Naruto. This digital drawing is available in the size of 42,0cm x 59,4cm.",
       "price": 39.99,
       "type": 2,
-      "image": "digital_sharingan.jpeg"
+      "image": "https://anime-art.herokuapp.com/static/img/products/digital_sharingan.jpeg"
     }
   },
   {
@@ -319,7 +319,7 @@
       "description": "From the anime Cowboy Bebop. This digital drawing is available in the size of 42,0cm x 59,4cm.",
       "price": 39.99,
       "type": 2,
-      "image": "digital_spikespiegel.jpeg"
+      "image": "https://anime-art.herokuapp.com/static/img/products/digital_spikespiegel.jpeg"
     }
   },
   {
@@ -331,7 +331,7 @@
       "description": "From the anime Kakegurui. This digital drawing is available in the size of 42,0cm x 59,4cm.",
       "price": 39.99,
       "type": 2,
-      "image": "digital_yumekojabami.jpeg"
+      "image": "https://anime-art.herokuapp.com/static/img/products/digital_yumekojabami.jpeg"
       }
   }
 ]
