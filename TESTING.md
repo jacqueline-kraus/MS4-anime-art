@@ -1,6 +1,15 @@
-[Code Validation](#code-validation)
-
 # Testing
+
+## Table of contents
+- [Code Validation](#code-validation)
+- [Functionality testing](#functionality-testing)
+- [Compatibility testing](#compatibility-testing)
+- [Performance testing](#performance-testing)
+- [User stories testing](#user-stories-testing)
+    - [Business goals](#business-goals)
+    - [Customer goals](#customer-goals)
+- [Testing the features](#testing-the-features)
+- [Bugs, problems and vulnerabilities](#bugs-problems-and-vulnerabilities)
 
 ## Code Validation
 ### PEP8
@@ -54,7 +63,8 @@ The website was tested on following hardware devices:
 - Google Pixel 4a (5G) with Android 11
 - Microsoft Surface 7 Pro with Windows 10
 
-## Performance testing with [Lighthouse](https://developers.google.com/web/tools/lighthouse)
+## Performance testing
+with [Lighthouse](https://developers.google.com/web/tools/lighthouse)
 ### Overall score
 ![lighthouse-score](readme-files/testing/lighthouse-score.png)
 
@@ -283,8 +293,6 @@ The website was tested on following hardware devices:
 - When you have more than one purchase see if the order history accordion works by clicking on a button, then on another and see if the previous cicked one closes automatically
 - The "Shipping/Billing Information" should display your saved information that is pulled into the checkout form for a smooth check out - change the information and save it to see if everything gets saved properly
 - Do a test transaction to see if the new details are correctly displayed in the checkout form
-
-
 
 ## Bugs, problems and vulnerabilities
 
