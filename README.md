@@ -549,7 +549,7 @@ Some features are available across the Django project, while others are tied to 
 - [DBeaver](https://dbeaver.io/): for entity relationship diagram
 - [draw.io](https://draw.io): for database schema
 
-## Testing
+## Testing 
 - [Am I responsive?](http://ami.responsivedesign.is/): for checking responsiveness on different screen sizes and using screenshot as a showcase for this projects README.md
 - [Comparium](https://front.comparium.app/livetesting): For live testing on different browsers
 - [Chrome Developer Tools](https://developers.google.com/web/tools/chrome-devtools): constantly testing styling, responsiveness and functionality

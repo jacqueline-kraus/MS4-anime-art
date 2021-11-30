@@ -295,39 +295,29 @@ with [Lighthouse](https://developers.google.com/web/tools/lighthouse)
 - Do a test transaction to see if the new details are correctly displayed in the checkout form
 
 ## Bugs, problems and vulnerabilities
+Everything that is listed here are known issues. I did not had the time anymore to implement them and for this project
 
-- No image upload --> explain in Readme: replace image field with text(string) field -> (have user upload image somewhere else like aws)
+### Known Bugs
+`Solved`
+- When the user is on the `product display` page, clicks multiple times on the **add to cart** button and then want to use the **back button** on the browser, the user has to click the **back button** as many times as the **add to cart** button was clicked. This is because everytime the user adds an item to the cart, the site reloads. The solution for this was to redirect the user directly to the cart, after clicking on the **add to cart** button. User experience wise this is also the better solution.
 
-- note in readme: you have to click 2times back when you are on the product_display page (because of JS reload)--> add it to Bugs section
+`Open`
+- When a user is on the `checkout` page and clicks on either the login or sign up link underneath the form, the user will be redirected to login or sign up, but when this step is finished, the user gets redirected to the `home` page instead of back to the `checkout` page.
 
-- FAQ arrow is blue
+`Open`
+- The arrow icons on the Bootstrap accordion elements (on `about` and `profile` pages) are still blue when clicking on the accordion button to open the content. This comes from Bootstrap and is because a svg is used as the arrow image, that is blue. This is a minor styling issue, but should be solved in order to have everything in the same color theme throughout the website.
 
-- missing: askign to agree before delete in admin
+### Other problems
+`Open`
+- I was not using AWS or any other cloud service for hosting static files, therefore it is is not possible to upload images in the `product` app. As I created the fixtures on my own and they contain only 28 products, it was quite easy to create the json file. By using [`WhiteNoise`](http://whitenoise.evans.io/en/stable/#:~:text=Radically%20simplified%20static%20file%20serving,or%20any%20other%20external%20service.) I could work around the problem that Django does not support serving static files in production when deploying to Heroku. With this solution my web application would serve its own static files and it works in production. Nevertheless this is not a scalable approach and should be reworked on in the future by connecting a cloud platform.
+- To not let an admin user upload or update images on products on the web app, I disabled the image input fields and added a warning underneath, that explains that this action is not possible.
 
+`Open`
+- At the moment the `delivery_cost` is a hardcoded number in the `cart context.py`. For scalabilty reasons it should not be a hardcoded number, but set as an environment variable instead.
 
-- make delivery cost an environment variable --> mention in readme that it should be not hardcoded
+### Vulnerabilities
+`Open`
+- When an admin user (superuser) want to delete a product, there is no warning or confirmation modal before the actual deletion. So when clicking the button **delete** the product will be deleted immediately. This is dangerous, as it could easily happen, that by mistake an admin user clicks on it and deletes the product. As for this project, I am so far the only admin user, I did not implement any security layer yet. Anyways, before adding another admin user, this should be implemented.
 
-order history --> security put user 
-
-get_user_model instrad of usin the User model directly --> rust send link
-
-
-delete button: security layer
-
-- profile page footer --> not sticky
-- loading times
-
-
-
-
-
-
-DEBUG TRUE TO FALSE!!! doublecheck the 404
-
-q:
-
-- should I delete all my test users ?
-- Should I delete all test orders?
-- Login redirect landing page (when the user is in the checkout and logins, he goes to homepage)
-- should I make the alerts push down the page or is overlay ok?
-- Is it correct that I deleted "DISABLE_COLLECTSTATIC" in heroku config vars?
+`Open`
+- When a user knows or could guess the order number of another user, the number could be added in the address bar of the browser and the user, who guessed it would land on the `checkout success` page of another user. Though it is very unlikely someone would guess the order number of someone else, this is a security issue and should be fixed in case the online shop would handle real transactions.
