@@ -1,10 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
 
-{% comment %} {% block extracss %}
-      <link href="{% static 'checkout/css/checkout.css' %}" rel="stylesheet">  
-{% endblock %} {% endcomment %}
-
 {% block page_header%}
   <div class="container-fluid page-header-margin">
     <div class="row">
@@ -118,7 +114,7 @@
         {% else %}
             <div class="row mt-4 offset-md-4">
                 <div class="col-sm-12 col-md-12">
-                        {% include 'includes/btn-product-overview.html'%}
+                    {% include 'includes/btn-product-overview.html'%}
                 </div>
             </div>
         {% endif %}
